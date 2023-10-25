@@ -8,24 +8,33 @@ Es importante dedicar un repositorio de github a ello, porque con una inflación
 
 # FÓRMULAS DE CÁLCULO DEL INTERÉS COMPUESTO
 
-Así pues, la variación de nuestro capital según el interés compuesto a un tipo fijo TIN, en tanto por uno $i$, se calcula simplemente con:
+Si hoy tenemos 10 000 euros, ponemos ese dinero de tal modo que nos genere un 3% TIN neto (después de descontar el pago de impuesto por rendimientos del capital que es de un 19%, que aquí no vamos a considerar). En un año tendremos:
 
+$$ 10000 \cdot 1.03 = 10300 $$
 
+En dos años:
 
-```latex
-\begin{equation}
-    Q(n) = Q \cdot (1+i)^p
-\end{equation}
+$$ (10000 \cdot 1.03)*1.03= 10609 $$
 
-```
+Y, por lo tanto, la fórmula general para calcular cuánto habrá crecido nuestro capital será simplemente exponencial con exponente n:
+
+$$ Q(n) = Q \cdot (1+i)^n $$
+
+Si queremos determinar las ganancias netas a medida que van pasando los años podemos escribir la siguiente función $$Q_{g}(n) $$, que nos servirá para calcular el momento exacto en el que nuestras inversiones en renta fija podrán vencer la inflación:
+
+$$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
 # FÓRMULAS DE CÁLCULO DE LA INFLACIÓN
 
 La inflación podemos calcularla en función del número de n años que pasan, mediante dos funciones distintas.
 
-Intuitivamente podemos entender el IPC de forma multiplicativa, como si el dinero, cada año que pase, se fuese descontando a sí mismo, con la función Q'(n):
+Intuitivamente podemos entender el IPC de forma multiplicativa, como si el dinero, cada año que pasase, se fuese descontando a sí mismo con la función Q'(n).
 
-$$ Q'(n) = Q \cdot (1-i)^p $$
+POSAR CAS INDUCTIU
+
+ Análogamente al caso anterior, cada año que pasa hay un descuento. En este caso, sin embargo, es un descuento que, cada año que pasa, en valor absoluto, se hace más pequeño (lo cual hace factible que podamos vencerlo con tipos de interés más bajos que la propia inflación):
+
+$$ Q'(n) = Q \cdot (1-i)^n $$
 
 TO DO
 
