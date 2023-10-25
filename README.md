@@ -43,22 +43,22 @@ En un año podríamos comprar con 10 000 euros lo que ahora compraríamos con  $
 
 $$ Q(1) = 10000 \cdot 0.94 = 9400 $$
 
-En dos años nuestro captial habrá ascendido a:
+En dos años nuestro capital habrá minorado a:
 
 $$ Q(2) = (10000 \cdot  0.94)* 0.94 = 8836 $$
 
-En tres:
+Quedando reducido el tercer año en:
 
 $$ Q(3) = (10000 \cdot 0.94\cdot 0.94 )  \cdot 0.94 \approx 8305.84 $$
 
 Y, por lo tanto, siguiendo el razonamiento inductivo, igual que antes, es muy fácil ver que la fórmula general para calcular cuánto habrá decrecido nuestro capital por la inflación es usar una función donde a nuestro capital inicial $Q$ lo multiplicamos por un "descuento" anual, al que denominaremos $1 - i^{'}$, donde i' será el que yo denomino "interés inflacionario" del dinero o, el que en españa sería el IPC, según la siguiente expresión $Q_{inf}(n)$ (de cantidad -quantitat del catalán- inflacionada):
 
-$$ Q_{inf}(n) = Q \cdot (1-i)^n $$
+$$ Q_{inf}(n) = Q \cdot (1-i^{'})^n $$
 
 Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interes compuesto $Q_{g}(n)$, pero ahora generando la función $QP_{inf}(n)$ (cantidad de pérdidas inflacionarias) que proponesmos a continuación:
 
 
-$$ QP_{inf}(n) = Q - Q \cdot (1-i)^n $$
+$$ QP_{inf}(n) = Q - Q \cdot (1-i^{'})^n $$
 
 Siendo esta fórmula de cálculo idéntica a la que implementan los desarrolladores en la aplicación bancaria de BBVA, al menos, a fecha de septiembre-octubre de 2023.
 
@@ -66,11 +66,11 @@ Siendo esta fórmula de cálculo idéntica a la que implementan los desarrollado
 
 La otra forma de calcular la inflación, a la que denominaremos  $Q^{'}_{inf}(n)$, es tomando la fórmula del interés compuesto clásica $Q(n)$ pero modificarla de tal modo que en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$, la divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como, por ejemplo, esta página web de reino unido: ([wesleyan.co.uk](https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator)): 
 
-$$ Q^{'}_{inf}(n) = \dfrac{Q}{(1+i)^n} $$
+$$ Q^{'}_{inf}(n) = \dfrac{Q}{(1+i^{'})^n} $$
 
-Y para las pérdidasSS:
+Y para las pérdidas:
 
-$$ QP^{'}_{inf}(n) = Q - \dfrac{Q}{(1+i)^n} $$
+$$ QP^{'}_{inf}(n) = Q - \dfrac{Q}{(1+i^{'})^n} $$
 
 ## FORMA 1 VS FORMA 2 (¿cuál es mejor?)
 
@@ -78,12 +78,29 @@ Ambas formas de cálculo de la inflación parecen efectivas. Son muy parecidas, 
 
 $$Q_{inf}(n) < Q^{'}_{inf}(n)$$
 
-$$Q \cdot (1-i)^n \lt \dfrac{Q}{(1+i)^n}$$
+$$Q \cdot (1-i)^n \lt \dfrac{Q}{(1+i^{'})^n}$$
 
  Por lo tanto, aunque ambas funciones puedan ser buenas candidatas para estimar la inflación, para las estimaciones inflacionarias tomaremos la <em>forma 1</em>, es decir $Q_{inf}(n)$ y su variante para calcular pérdidas $QP_{inf}(n)$, por ser <strong>más conservadora</strong>.
 
 
 
+# CÁLCULOS DEL PROGRAMA
+
+La idea, pues es vencer la inflación usando instrumentos financieros que nos permitan simplemente incrementar el dinero, por unidad de tiempo, más que la minoración de la inflación. Nótese que crece más rápido la función que incrementa el dinero que la función 1 que lo decrece por inflación. Por lo tanto, con un interés medio del 3 o 4 por ciento podemos vencer una inflación del 6 por ciento, si se hace bien.
+
+## GRÁFICO DE INCREMENTOS DE RENTA VS DECREMENTOS INFLACIONARIOS
+
+## CÁLCULO DEL PUNTO DE CORTE ENTRE EL GRÁFICO DE INCREMENTOS DE RENTA Y EL GRÁFICO DE DECREMENTO INFLACIONARIO
+Este punto de corte es importante porque el número de años (variable n) al que ambas funciones cortan es el número de años que hay que invertir el dinero para no perderlo por la inflación.
+
+Se consigue sustituuendo los valores $i$ e $i^$ en las funciones que hemos visto para las ganancias de los intereses ( $Q_{g}(n)$ ) y para la f pérdidas de la inflación mediante la FORMA 1 de cáculo ( $QP_{inf}(n)$ ) e igualándolas nos queda que podemos obtener n:
+
+
+$$Q_{g}(n) = QP_{inf}(n)$$
+
+$$Q \cdot (1+i)^n - Q = Q - Q \cdot (1-i^{'})^n$$
+
+$$n = X$$
 
 
 # CONCLUSIONES
