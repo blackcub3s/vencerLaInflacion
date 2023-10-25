@@ -90,17 +90,25 @@ La idea, pues es vencer la inflación usando instrumentos financieros que nos pe
 
 ## GRÁFICO DE INCREMENTOS DE RENTA VS DECREMENTOS INFLACIONARIOS
 
+TO DO
+
 ## CÁLCULO DEL PUNTO DE CORTE ENTRE EL GRÁFICO DE INCREMENTOS DE RENTA Y EL GRÁFICO DE DECREMENTO INFLACIONARIO
 Este punto de corte es importante porque el número de años (variable n) al que ambas funciones cortan es el número de años que hay que invertir el dinero para no perderlo por la inflación.
 
-Se consigue sustituuendo los valores $i$ e $i^{'}$ en las funciones que hemos visto para las ganancias de los intereses ( $Q_{g}(n)$ ) y para la f pérdidas de la inflación mediante la FORMA 1 de cáculo ( $QP_{inf}(n)$ ) e igualándolas nos queda que podemos obtener n:
+Se consigue sustituuendo los valores $i$ e $i^{'}$ en las funciones que hemos visto para las ganancias de los intereses ( $Q_{g}(n)$ ) y para la f pérdidas de la inflación mediante la FORMA 1 de cálculo ( $QP_{inf}(n)$ ) e igualándolas nos queda que podemos obtener n:
 
 
 $$Q_{g}(n) = QP_{inf}(n)$$
 
 $$Q \cdot (1+i)^n - Q = Q - Q \cdot (1-i^{'})^n$$
 
-$$n = X$$
+Operando en la expresión anterior, podemos obtener n dando valores a $i$ e $i'$:
+
+$$Q \cdot (1+i)^n - Q = Q - Q \cdot (1-i^{'})^n$$
+$$Q \cdot (1+i)^n - 2Q = - Q \cdot (1-i^{'})^n$$
+$$-(1+i)^n + 2 = (1-i^{'})^n$$
+$$2 = (1-i^{'})^n + (1+i)^n $$
+$$n = XXXX$$
 
 
 # CONCLUSIONES
