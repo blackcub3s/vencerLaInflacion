@@ -25,12 +25,7 @@ La inflación podemos calcularla en función del número de n años que pasan, m
 
 Intuitivamente podemos entender el IPC de forma multiplicativa, como si el dinero, cada año que pase, se fuese descontando a sí mismo, con la función Q'(n):
 
-$$
-\begin{equation}
-    Q'(n) = Q \cdot (1-i)^p
-\end{equation}
-
-$$
+$$ Q'(n) = Q \cdot (1-i)^p $$
 
 TO DO
 
