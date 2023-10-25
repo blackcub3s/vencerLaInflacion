@@ -87,14 +87,26 @@ $$Q \cdot (1-i^{'})^n \lt \dfrac{Q}{(1+i^{'})^n}$$
 
 # CÁLCULOS DE NUESTRO PROGRAMA
 
-La idea de nuestro programa, pues es hacer una aplicación web que calcule un gráfico que muestre nuestras ganancias año a años y nuestras pérdidas inflacionarias año a año (en valor absoluto) y que muestre el punto de corte de ambas funciones. La idea es permitir que el usuario introduzca el tipo de interés de cada uno de los instrumentos financieros que utilice para incrementar su dinero, por unidad de tiempo.
+La idea de nuestro programa es hacer una aplicación web que dada una inflación entrada por el usuario y un tipo de interés que pueda ganar el usuario con sus inversiones, mostrar un gráfico que muestre nuestras ganancias año a año, por un lado; y nuestras pérdidas por inflación en valor absoluto también año a año, por el otro. Además, sería interesante que muostrase una aproximación al punto de corte de ambas funciones de forma análoga a como lo hace google con su sistema.
 
-Nótese que crece más rápido la función que incrementa el dinero con interés compuesto ( $Q(n)$ ) que no la función que muestra el decrecimiento por inflación ( $Q_{inf}(n)$). Por lo tanto, con un interés medio del 3 o 4 por ciento podemos vencer una inflación del 6 por ciento, si se hace bien.
+La idea, pues, es permitir que el usuario introduzca el tipo de interés de cada uno de los instrumentos financieros que utilice para incrementar su dinero, por unidad de tiempo.
+
+Nótese que crece más rápido la función que incrementa el dinero con interés compuesto ( $Q(n)$ ) que no la función que muestra el decrecimiento por inflación ( $Q_{inf}(n)$ ). Por lo tanto, con un interés medio del 3 o 4 por ciento podemos vencer una inflación del 6 por ciento, si se hace bien.
+
+## GRÁFICO DE VARIACIÓN DEL CAPITAL POR INVERSIÓN VS VARIACIÓN DEL CAPITAL POR INFLACIÓN -SIN INVERSIÓN QUE LO CONTRARRESTE-
+
+TO DO 
+
+
+
 
 ## GRÁFICO DE INCREMENTOS DE RENTA VS DECREMENTOS INFLACIONARIOS
 
 TO DO
-FER GRÀFIC DE 
+
+La idea es mostrar $Q_{g}(n)$ (en azul) en relación a $Q_{p'[Inf]}(n)$ (en rojo), de la misma forma que lo muestra google. Por ejemplo, para una cantidad inicial $Q$ de 100 000 euros google nos muestra:
+
+![grafico de google no se pudo mostrar](incrementoDecrementoGoogle.png)
 
 ## CÁLCULO DEL PUNTO DE CORTE ENTRE EL GRÁFICO DE INCREMENTOS DE RENTA Y EL GRÁFICO DE DECREMENTO INFLACIONARIO
 Este punto de corte es importante porque el número de años (variable n) al que ambas funciones cortan es el número de años que hay que invertir el dinero para no perderlo por la inflación.
