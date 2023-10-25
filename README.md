@@ -69,7 +69,7 @@ $$ Q^{'}_{inf}(n) = \dfrac{Q}{(1+i^{'})^n} $$
 
 Y para las pérdidas:
 
-$$ Q_{p[Inf]}^{'}_{[inf]}(n) = Q - \dfrac{Q}{(1+i^{'})^n} $$
+$$ Q_{p'[Inf]}(n) = Q - \dfrac{Q}{(1+i^{'})^n} $$
 
 
 
