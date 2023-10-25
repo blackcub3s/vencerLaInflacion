@@ -134,6 +134,6 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 $$QP_{inf}$$
 
-$$QP_{pInf}$$
+$$Q_{pInf}$$
 
-prova en text $QP_{pInf}$
+prova en text $Q_{pInf}$
