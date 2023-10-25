@@ -22,19 +22,17 @@ En tres:
 
 $$ Q(3) = (10000 \cdot 1.03\cdot 1.03 )  \cdot 1.03= 10609 $$
 
-Y, por lo tanto, siguoendo el razonamiento inductivo es muy fácil ver que la fórmula general para calcular cuánto habrá crecido nuestro capital será simplemente una exponencial con exponente $n$ e interés, en tanto por uno, $i$ con capital inicial invertido $Q$.
+Y, por lo tanto, siguiendo el razonamiento inductivo es muy fácil ver que la fórmula general para calcular cuánto habrá crecido nuestro capital será simplemente una exponencial con exponente $n$ e interés, en tanto por uno, $i$ con capital inicial invertido $Q$:
 
 $$ Q(n) = Q \cdot (1+i)^n $$
 
-Si ahora lo que queremos determinar es <strong>solamente</strong> las ganancias netas a medida que van pasando los años podemos escribir la siguiente función $Q_{g}(n)$, que nos servirá para calcular el momento exacto en el que nuestras inversiones en renta fija podrán vencer la inflación y que es la función anterior a la que le restamos el capital inicial $Q$.
+Si ahora lo que queremos determinar es <strong>solamente</strong> las ganancias netas a medida que van pasando los años podemos escribir la siguiente función $Q_{g}(n)$, que nos servirá para calcular el momento exacto en el que nuestras inversiones en renta fija podrán vencer la inflación (concretamente, es la función anterior a la que le restamos el capital inicial $Q$).
 
 $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
 # FÓRMULAS DE CÁLCULO DE LA INFLACIÓN
 
-
-
-La inflación podemos calcularla en función del número de n años que pasan, mediante dos funciones distintas.
+El cálculo de la inflación es algo de lo que solamente se habla anualmente. Podemos calcularla en función del número de n años que pasan, mediante dos funciones distintas. Una función que multiplique por un "descuento" del dinero (como hace la aplicación bancaria de BBVA), o una función idéntica al interés compuesto pero que en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$ lo divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como por ejemplo esta página web de reino unido: ((wesleyan.co.uk)[https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator]). Ambas funciones no son iguales, y creo pueden ser funciones buenas para estimar la inflación.
 
 Intuitivamente podemos entender el IPC de forma multiplicativa, como si el dinero, cada año que pasase, se fuese descontando a sí mismo con la función Q'(n).
 
