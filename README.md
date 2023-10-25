@@ -87,23 +87,43 @@ $$Q \cdot (1-i^{'})^n \lt \dfrac{Q}{(1+i^{'})^n}$$
 
 # CÁLCULOS DE NUESTRO PROGRAMA
 
-La idea de nuestro programa es hacer una aplicación web que dada una inflación entrada por el usuario y un tipo de interés que pueda ganar el usuario con sus inversiones, mostrar un gráfico que muestre nuestras ganancias año a año, por un lado; y nuestras pérdidas por inflación en valor absoluto también año a año, por el otro. Además, sería interesante que muostrase una aproximación al punto de corte de ambas funciones de forma análoga a como lo hace google con su sistema.
+La idea de nuestro programa es hacer una aplicación web que dada una inflación entrada por el usuario y un tipo de interés que el mismo pueda ganar con sus inversiones, muestre:
 
-La idea, pues, es permitir que el usuario introduzca el tipo de interés de cada uno de los instrumentos financieros que utilice para incrementar su dinero, por unidad de tiempo.
+1) Un gráfico de como incrementa el capital con el intereés compuesto.
+
+2) Un gráfico que muestre como decrementa el capital debido a la inflación: esto podemos mirarlo como "<i>cuánto dinero de hoy comprará lo mismo que todo el dinero que tenemos ahora podría comprar mañana</i>".
+
+3)  un gráfico que represente nuestras ganancias año a año, por un lado; y nuestras pérdidas por inflación en valor absoluto también año a año, por el otro. Además, sería interesante que muostrase una aproximación al punto de corte de ambas funciones de forma análoga a como lo hace google con su sistema.
+
+
+APRECIACIÓN:
 
 Nótese que crece más rápido la función que incrementa el dinero con interés compuesto ( $Q(n)$ ) que no la función que muestra el decrecimiento por inflación ( $Q_{inf}(n)$ ). Por lo tanto, con un interés medio del 3 o 4 por ciento podemos vencer una inflación del 6 por ciento, si se hace bien.
 
-## GRÁFICO DE VARIACIÓN DEL CAPITAL POR INVERSIÓN VS VARIACIÓN DEL CAPITAL POR INFLACIÓN -SIN INVERSIÓN QUE LO CONTRARRESTE-
+## GRÁFICO DE VARIACIÓN DEL CAPITAL POR INVERSIÓN
 
-TO DO 
+En la aplicación web queremos mostrar $Q(n)$, de forma análoga a como lo muestra google. Para $Q = 100 000$ euros de capital inicial y un interés compuesto $i = 0.03$ (3%) la función exponencial en el buscador queda de este modo:
 
+![No mostra exponencial](image.png)
 
+Y en nuestra aplicación queda así:
+
+TO DO
+
+## DISMINUCIÓN DEL CAPITAL POR INFLACIÓN (SIN INVERTIR EL CAPITAL)
+
+En la aplicación web queremos mostrar la función $Q_{inf}(n)$, como google. Igual que en el caso anterior, para 100 000 euros de capital inicial y para $i^{'} = 0.06$ (inflación del 6%) en el buscador queda:
+
+![no mostra reduccio exponencial](image-1.png)
+
+Y en nuestra aplicación queda así:
+
+TO DO
 
 
 ## REPRESENTACIÓN DEL GRÁFICO DE INCREMENTO DE RENTA VS GRÁFICO DE DECREMENTO INFLACIONARIOS
 
-
-La idea es mostrar, en esta aplicación web, la función de ganancias acumuladas a lo largo de los años $Q_{g}(n)$ (en azul) en relación a las pérdidas producidas por la inflación en un capital que no obtiene rentabilidad $Q_{p'[Inf]}(n)$ (en rojo), de la misma forma que lo muestra google. Por ejemplo, para una cantidad inicial $Q$ de 100 000 euros google nos muestra:
+En la aplicación web también queremos mostrar la función de ganancias acumuladas a lo largo de los años $Q_{g}(n)$ (en azul) en relación a las pérdidas producidas por la inflación en un capital que no obtiene rentabilidad $Q_{p'[Inf]}(n)$ (en rojo), de la misma forma que lo muestra google. Por ejemplo, para una cantidad inicial $Q$ de 100 000 euros google nos muestra:
 
 ![grafico de google no se pudo mostrar](incrementoDecrementoGoogle.png)
 
