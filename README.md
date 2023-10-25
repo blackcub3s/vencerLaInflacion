@@ -132,4 +132,8 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 # CONCLUSIONES
 
-TO DO
+$$QP_{inf}$$
+
+$$QP_{p}_{inf}$$
+
+prova en text $QP_{p}_{inf}$
