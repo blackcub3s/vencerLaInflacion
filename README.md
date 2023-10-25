@@ -65,7 +65,7 @@ $$Q_{inf}(n) < Q^{'}_{inf}(n)$$
 
 $$Q \cdot (1-i)^n \lt \dfrac{Q}{(1+i)^n}$$
 
- Por lo tanto, aunque ambas funciones puedan ser buenas candidatas para estimar la inflación, para las estimaciones inflacionarias tomaremos la <em>forma 1<em> ($Q_{inf}(n)$ y $QP_{inf}(n)$) su variante por ser <strong>más conservadora</strong>.
+ Por lo tanto, aunque ambas funciones puedan ser buenas candidatas para estimar la inflación, para las estimaciones inflacionarias tomaremos la <em>forma 1<em>, es decir $Q_{inf}(n)$ y su variante para calcular pérdidas $QP_{inf}(n)$, por ser <strong>más conservadora</strong>.
 
 
 
