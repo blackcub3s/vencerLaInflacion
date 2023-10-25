@@ -32,7 +32,7 @@ $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
 # FÓRMULAS DE CÁLCULO DE LA INFLACIÓN
 
-El cálculo de la inflación es algo de lo que solamente se habla anualmente. Podemos calcularla en función del número de n años que pasan, mediante dos funciones distintas. Una función que multiplique por un "descuento" del dinero (como hace la aplicación bancaria de BBVA), o una función idéntica al interés compuesto pero que en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$ lo divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como por ejemplo esta página web de reino unido: ([wesleyan.co.uk]/(https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator)). Ambas funciones no son iguales, y creo pueden ser funciones buenas para estimar la inflación.
+El cálculo de la inflación es algo de lo que solamente se habla anualmente. Podemos calcularla en función del número de n años que pasan, mediante dos funciones distintas. Una función que multiplique por un "descuento" del dinero (como hace la aplicación bancaria de BBVA), o una función idéntica al interés compuesto pero que en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$ lo divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como por ejemplo esta página web de reino unido: ([wesleyan.co.uk](https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator)). Ambas funciones no son iguales, y creo pueden ser funciones buenas para estimar la inflación.
 
 Intuitivamente podemos entender el IPC de forma multiplicativa, como si el dinero, cada año que pasase, se fuese descontando a sí mismo con la función Q'(n).
 
