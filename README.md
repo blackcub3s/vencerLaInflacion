@@ -36,9 +36,22 @@ El cálculo de la inflación es algo de lo que solamente se habla con respecto a
 
 ## Forma 1
 
-<strong>TO DO : FER EL CAS INDUCTIU</strong>
 
-Podemos usar una función que multiplique nuestro capital inicial $Q$ por un "descuento" anual, al que denominaremos $1 - i^{'}$, donde i' será el que yo denomino "interés inflacionario" del dinero o, el que en españa sería el IPC, según la siguiente expresión $Q_{inf}(n)$ (de cantidad -quantitat del catalán- inflacionada):
+De forma análoga a lo que pasaba con el interés compuesto, la inflación funciona de forma similar. Con la fórmula de cálculo 1, que denominaremos $Q_{inf}(n)$, si tenemos 10 000 euros y el dinero no está invertido con una inflación de 6%  de interés interanual el capital iría variando:
+
+En un año podríamos comprar con 10 000 euros lo que ahora compraríamos con  $Q(1)$:
+
+$$ Q(1) = 10000 \cdot 0.94 = 9400 $$
+
+En dos años nuestro captial habrá ascendido a:
+
+$$ Q(2) = (10000 \cdot  0.94)* 0.94 = 8836 $$
+
+En tres:
+
+$$ Q(3) = (10000 \cdot 0.94\cdot 0.94 )  \cdot 0.94 \approx 8305.84 $$
+
+Y, por lo tanto, siguiendo el razonamiento inductivo, igual que antes, es muy fácil ver que la fórmula general para calcular cuánto habrá decrecido nuestro capital por la inflación es usar una función donde a nuestro capital inicial $Q$ lo multiplicamos por un "descuento" anual, al que denominaremos $1 - i^{'}$, donde i' será el que yo denomino "interés inflacionario" del dinero o, el que en españa sería el IPC, según la siguiente expresión $Q_{inf}(n)$ (de cantidad -quantitat del catalán- inflacionada):
 
 $$ Q_{inf}(n) = Q \cdot (1-i)^n $$
 
