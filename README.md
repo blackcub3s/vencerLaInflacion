@@ -55,9 +55,9 @@ Y, por lo tanto, siguiendo el razonamiento inductivo, igual que antes, es muy f�
 
 $$ Q_{inf}(n) = Q \cdot (1-i^{'})^n $$
 
-Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interes compuesto $Q_{g}(n)$, pero ahora generando la función $QP_{inf}(n)$ (<strong>cantidad de pérdidas inflacionarias en función del número de años</strong>) que proponesmos a continuación:
+Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interes compuesto $Q_{g}(n)$, pero ahora generando la función $Q_{p[Inf]}(n)$ (<strong>cantidad de pérdidas inflacionarias en función del número de años</strong>) que proponesmos a continuación:
 
-$$ QP_{inf}(n) = Q - Q \cdot (1-i^{'})^n $$
+$$ Q_{p[Inf]}(n) = Q - Q \cdot (1-i^{'})^n $$
 
 Siendo esta fórmula de cálculo idéntica a la que implementan los desarrolladores en la aplicación bancaria de BBVA, al menos, a fecha de septiembre-octubre de 2023.
 
@@ -79,7 +79,7 @@ $$Q_{inf}(n) < Q^{'}_{inf}(n)$$
 
 $$Q \cdot (1-i^{'})^n \lt \dfrac{Q}{(1+i^{'})^n}$$
 
- Por lo tanto, aunque ambas funciones puedan ser buenas candidatas para estimar la inflación, para las estimaciones inflacionarias tomaremos la <em>forma 1</em>, es decir $Q_{inf}(n)$ y su variante para calcular pérdidas $QP_{inf}(n)$, por ser <strong>más conservadora</strong>.
+ Por lo tanto, aunque ambas funciones puedan ser buenas candidatas para estimar la inflación, para las estimaciones inflacionarias tomaremos la <em>forma 1</em>, es decir $Q_{inf}(n)$ y su variante para calcular pérdidas $Q_{p[Inf]}(n)$, por ser <strong>más conservadora</strong>.
 
 
 
@@ -97,10 +97,10 @@ FER GRÀFIC DE
 ## CÁLCULO DEL PUNTO DE CORTE ENTRE EL GRÁFICO DE INCREMENTOS DE RENTA Y EL GRÁFICO DE DECREMENTO INFLACIONARIO
 Este punto de corte es importante porque el número de años (variable n) al que ambas funciones cortan es el número de años que hay que invertir el dinero para no perderlo por la inflación.
 
-Se consigue sustituyendo los valores $i$ e $i^{'}$ en las funciones que hemos visto para las ganancias de los intereses ( $Q_{g}(n)$ ) y para la función de pérdidas producidas por la inflación mediante la FORMA 1 de cálculo ( $QP_{inf}(n)$ ) e igualándolas podemos intentar obtener n en función de $i$ y de $i^{'} ( $n(i,i^{'}) )$ manipulando algebraicamente:
+Se consigue sustituyendo los valores $i$ e $i^{'}$ en las funciones que hemos visto para las ganancias de los intereses ( $Q_{g}(n)$ ) y para la función de pérdidas producidas por la inflación mediante la FORMA 1 de cálculo ( $Q_{p[Inf]}(n)$ ) e igualándolas podemos intentar obtener n en función de $i$ y de $i^{'} ( $n(i,i^{'}) )$ manipulando algebraicamente:
 
 
-$$Q_{g}(n) = QP_{inf}(n)$$
+$$Q_{g}(n) = Q_{p[Inf]}(n)$$
 
 Es decir:
 
@@ -132,7 +132,7 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 # CONCLUSIONES
 
-$$QP_{inf}$$
+$$Q_{p[Inf]}$$
 
 $$Q_{p[Inf]}$$
 
