@@ -8,13 +8,13 @@ Es importante dedicar un repositorio de github a ello, porque con una inflación
 
 # FÓRMULAS DE CÁLCULO DEL INTERÉS COMPUESTO
 
-Si hoy tenemos 10 000 euros, ponemos ese dinero de tal modo que nos genere un 3% TIN neto (después de descontar el pago de impuesto por rendimientos del capital que es de un 19%, que aquí no vamos a considerar). En un año tendremos:
+Si hoy tenemos 10 000 euros, ponemos ese dinero de tal modo que nos genere un 3% TIN neto (después de descontar el pago de impuesto por rendimientos del capital que es de un 19%, que aquí no vamos a considerar). En un año tendremos $$Q(1)$$:
 
-$$ 10000 \cdot 1.03 = 10300 $$
+$$ Q(1) = 10000 \cdot 1.03 = 10300 $$
 
 En dos años:
 
-$$ (10000 \cdot 1.03)*1.03= 10609 $$
+$$ Q(2) = (10000 \cdot 1.03)*1.03= 10609 $$
 
 Y, por lo tanto, la fórmula general para calcular cuánto habrá crecido nuestro capital será simplemente exponencial con exponente n:
 
