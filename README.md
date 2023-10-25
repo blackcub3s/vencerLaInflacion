@@ -34,7 +34,7 @@ $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
 El cálculo de la inflación es algo de lo que solamente se habla anualmente. No hay mucha información en el saber popular sobre el impacto que tiene la misma. Podemos calcularla en función del número de n años que pasan, mediante dos funciones distintas, muy parecidas a la fórmula del interés compuesto. 
 
-Podemos usar una función que multiplique nuestro capital inicial $Q$ por un "descuento" anual, al que denominaremos $1 - i^'$, donde i' será el que yo denomino "interés inflacionario" del dinero o, el que en españa sería el IPC, según la siguiente expresión $Q_{inf}(n)$ (de cantidad -quantitat del catalán- inflacionada) :
+Podemos usar una función que multiplique nuestro capital inicial $Q$ por un "descuento" anual, al que denominaremos $1 - i^{'}$, donde i' será el que yo denomino "interés inflacionario" del dinero o, el que en españa sería el IPC, según la siguiente expresión $Q_{inf}(n)$ (de cantidad -quantitat del catalán- inflacionada) :
 
 $$ Q_{inf}(n) = Q \cdot (1-i)^n $$
 
