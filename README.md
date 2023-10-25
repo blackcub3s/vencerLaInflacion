@@ -49,7 +49,9 @@ Siendo esta fórmula de cálculo idéntica a la que implementan los desarrollado
 
 ## Forma 2
 
-La otra forma de calcular la inflación (a la que denominaremos  $QP^{'}_{inf}(n)$ ) es tomando la fórmula del interés compuesto que lo que hace es, en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$, la divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como, por ejemplo, esta página web de reino unido: ([wesleyan.co.uk](https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator)). 
+La otra forma de calcular la inflación (a la que denominaremos  $QP^{'}_{inf}(n)$) es tomando la fórmula del interés compuesto clásica ($Q(n)$) pero modificarla de tal modo que en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$, la divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como, por ejemplo, esta página web de reino unido: ([wesleyan.co.uk](https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator)): 
+
+$$ QP^{'}_{inf}(n) = \drac{Q}{(1+i)^n} $$
 
 
 
