@@ -8,7 +8,7 @@ Es importante dedicar un repositorio de github a ello, porque con una inflación
 
 # FÓRMULAS DE CÁLCULO DEL INTERÉS COMPUESTO
 
-Si hoy tenemos 10 000 euros, ponemos ese dinero de tal modo que nos genere un 3% TIN neto (después de descontar el pago de impuesto por rendimientos del capital que es de un 19%, que aquí no vamos a considerar). En un año tendremos $$Q(1)$$:
+Si hoy tenemos 10 000 euros, ponemos ese dinero de tal modo que nos genere un 3% TIN neto (después de descontar el pago de impuesto por rendimientos del capital que es de un 19%, que aquí no vamos a considerar). En un año tendremos $Q(1)$:
 
 $$ Q(1) = 10000 \cdot 1.03 = 10300 $$
 
@@ -20,7 +20,7 @@ Y, por lo tanto, la fórmula general para calcular cuánto habrá crecido nuestr
 
 $$ Q(n) = Q \cdot (1+i)^n $$
 
-Si queremos determinar las ganancias netas a medida que van pasando los años podemos escribir la siguiente función $$Q_{g}(n) $$, que nos servirá para calcular el momento exacto en el que nuestras inversiones en renta fija podrán vencer la inflación:
+Si queremos determinar las ganancias netas a medida que van pasando los años podemos escribir la siguiente función $Q_{g}(n)$, que nos servirá para calcular el momento exacto en el que nuestras inversiones en renta fija podrán vencer la inflación:
 
 $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
