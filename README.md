@@ -105,9 +105,13 @@ $$Q \cdot (1+i)^n - Q = Q - Q \cdot (1-i^{'})^n$$
 Operando en la expresión anterior, podemos obtener n dando valores a $i$ e $i'$:
 
 $$Q \cdot (1+i)^n - Q = Q - Q \cdot (1-i^{'})^n$$
+
 $$Q \cdot (1+i)^n - 2Q = - Q \cdot (1-i^{'})^n$$
+
 $$-(1+i)^n + 2 = (1-i^{'})^n$$
+
 $$2 = (1-i^{'})^n + (1+i)^n $$
+
 $$n = XXXX$$
 
 
