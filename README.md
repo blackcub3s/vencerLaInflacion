@@ -20,13 +20,13 @@ $$ Q(2) = (10000 \cdot 1.03)*1.03= 10609 $$
 
 En tres:
 
-$$ Q(3) = (10000 \cdot 1.03)*1.03*1.03= 10609 $$
+$$ Q(3) = (10000 \cdot 1.03\cdot 1.03 )  \cdot 1.03= 10609 $$
 
-Y, por lo tanto, es muy fácil ver que la fórmula general para calcular cuánto habrá crecido nuestro capital será simplemente exponencial con exponente $n$ e interés en tanto por uno $i$:
+Y, por lo tanto, siguoendo el razonamiento inductivo es muy fácil ver que la fórmula general para calcular cuánto habrá crecido nuestro capital será simplemente una exponencial con exponente $n$ e interés, en tanto por uno, $i$ con capital inicial invertido $Q$.
 
 $$ Q(n) = Q \cdot (1+i)^n $$
 
-Si queremos determinar <strong>solamente</strong> las ganancias netas a medida que van pasando los años podemos escribir la siguiente función $Q_{g}(n)$, que nos servirá para calcular el momento exacto en el que nuestras inversiones en renta fija podrán vencer la inflación:
+Si ahora lo que queremos determinar es <strong>solamente</strong> las ganancias netas a medida que van pasando los años podemos escribir la siguiente función $Q_{g}(n)$, que nos servirá para calcular el momento exacto en el que nuestras inversiones en renta fija podrán vencer la inflación y que es la función anterior a la que le restamos el capital inicial $Q$.
 
 $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
