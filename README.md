@@ -40,7 +40,7 @@ Podemos usar una función que multiplique nuestro capital inicial $Q$ por un "de
 
 $$ Q_{inf}(n) = Q \cdot (1-i)^n $$
 
-Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interes compuesto $Q_{g}(n)$, pero ahora generando la expresión función $QP_{inf}(n)$ (cantidad de pérdidas inflacionarias) que proponesmos a continuación:
+Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interes compuesto $Q_{g}(n)$, pero ahora generando la función $QP_{inf}(n)$ (cantidad de pérdidas inflacionarias) que proponesmos a continuación:
 
 
 $$ QP_{inf}(n) = Q - Q \cdot (1-i)^n $$
@@ -57,14 +57,16 @@ Y para las pérdidasSS:
 
 $$ QP^{'}_{inf}(n) = Q - \dfrac{Q}{(1+i)^n} $$
 
-Ambas funciones son muy parecidas, pero no son iguales. Para todo valor de $n > 0$ vemos que:
+## FORMA 1 VS FORMA 2 (¿cuál es mejor?)
+
+Ambas formas de cálculo de la inflación parecen efectivas. Son muy parecidas, pero no son iguales. Para todo valor de $n > 0$ vemos vemos que la forma 1 implica estimar mayores pérdidas por inflación con el paso del tiempo que la forma 2:
 
 $$Q_{inf}(n) < Q^{'}_{inf}(n)$$
 
-$$ Q \cdot (1-i)^n < \dfrac{Q}{(1+i)^n}
+$$Q \cdot (1-i)^n \lt \dfrac{Q}{(1+i)^n}$$
 
 
-vemos que la forma 1 implica mayor pérdidas por inflación con el paso del tiempo que la forma 2, y por lo tanto, aunque ambas funciones pueden funcionar para estimar la inflación, para la aplicación que haremos tomaremos la primera por ser más conservadora.
+ Por lo tanto, aunque ambas funciones puedan funcionar para estimar la inflación, para la aplicación que haremos tomaremos la primera por ser más conservadora.
 
 
 
