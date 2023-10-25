@@ -32,21 +32,26 @@ $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
 # FÓRMULAS DE CÁLCULO DE LA INFLACIÓN
 
-El cálculo de la inflación es algo de lo que solamente se habla anualmente. No hay mucha información en el saber popular sobre el impacto que tiene la misma. Podemos calcularla en función del número de n años que pasan, mediante dos funciones distintas, muy parecidas a la fórmula del interés compuesto. 
+El cálculo de la inflación es algo de lo que solamente se habla con respecto al año anterior. No hay mucha información en el saber popular sobre el impacto que tiene la misma a lo largo de múltiples años. Podemos calcularla en función del número de n años que pasan, mediante dos funciones distintas, muy parecidas a la fórmula del interés compuesto.
 
-Podemos usar una función que multiplique nuestro capital inicial $Q$ por un "descuento" anual, al que denominaremos $1 - i^{'}$, donde i' será el que yo denomino "interés inflacionario" del dinero o, el que en españa sería el IPC, según la siguiente expresión $Q_{inf}(n)$ (de cantidad -quantitat del catalán- inflacionada) :
+## Forma 1
+
+Podemos usar una función que multiplique nuestro capital inicial $Q$ por un "descuento" anual, al que denominaremos $1 - i^{'}$, donde i' será el que yo denomino "interés inflacionario" del dinero o, el que en españa sería el IPC, según la siguiente expresión $Q_{inf}(n)$ (de cantidad -quantitat del catalán- inflacionada):
 
 $$ Q_{inf}(n) = Q \cdot (1-i)^n $$
 
-Para lo que podemos sacar las pérdidas en función del número de años $n$ que pasan de forma análoga a como hicimos con las ganancias del interés compuesto $ Q_{g}(n) $ mediante la expresión $QP_{inf}(n)$ (de cantidad -quantitat- perdida por inflación), siendo este cálculo idéntico al que implementan los desarrolladores en la aplicación bancaria de BBVA, al menos, a fecha de septiembre-octubre de 2023:
+Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las ganancias del interés compuesto $ Q_{g}(n) $ mediante la expresión $Q_{g}(n)$, pero ahora generando la expresión función $QP_{inf}(n)$ (cantidad de pérdidas inflacionarias) que proponesmos a continuación:
 
 
 $$ QP_{inf}(n) = Q - Q \cdot (1-i)^n $$
 
+Siendo esta fórmula de cálculo idéntica a la que implementan los desarrolladores en la aplicación bancaria de BBVA, al menos, a fecha de septiembre-octubre de 2023.
 
-O podemos calcularla con una función idéntica al interés compuesto pero que en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$ lo divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como, por ejemplo, esta página web de reino unido: ([wesleyan.co.uk](https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator)). 
+## Forma 2
 
-FORMA B INSERT
+La otra forma de calcular la inflación (a la que denominaremos  $QP^{'}_{inf}(n)$ ) es tomando la fórmula del interés compuesto que lo que hace es, en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$, la divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como, por ejemplo, esta página web de reino unido: ([wesleyan.co.uk](https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator)). 
+
+
 
 Ambas funciones no son iguales, ya que vemos que <strong>A > B</strong> creo pueden ser funciones buenas para estimar la reducción teórica a la que se sotmete nuestro dinero con el paso del tiempo.
 
