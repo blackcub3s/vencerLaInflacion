@@ -40,7 +40,7 @@ Podemos usar una función que multiplique nuestro capital inicial $Q$ por un "de
 
 $$ Q_{inf}(n) = Q \cdot (1-i)^n $$
 
-Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las ganancias del interés compuesto $ Q_{g}(n) $ mediante la expresión $Q_{g}(n)$, pero ahora generando la expresión función $QP_{inf}(n)$ (cantidad de pérdidas inflacionarias) que proponesmos a continuación:
+Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las ganancias del interés compuesto $Q_{g}(n)$ mediante la expresión $Q_{g}(n)$, pero ahora generando la expresión función $QP_{inf}(n)$ (cantidad de pérdidas inflacionarias) que proponesmos a continuación:
 
 
 $$ QP_{inf}(n) = Q - Q \cdot (1-i)^n $$
@@ -49,22 +49,24 @@ Siendo esta fórmula de cálculo idéntica a la que implementan los desarrollado
 
 ## Forma 2
 
-La otra forma de calcular la inflación (a la que denominaremos  $QP^{'}_{inf}(n)$) es tomando la fórmula del interés compuesto clásica ($Q(n)$) pero modificarla de tal modo que en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$, la divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como, por ejemplo, esta página web de reino unido: ([wesleyan.co.uk](https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator)): 
+La otra forma de calcular la inflación (a la que denominaremos  $Q^{'}_{inf}(n)$) es tomando la fórmula del interés compuesto clásica ($Q(n)$) pero modificarla de tal modo que en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$, la divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como, por ejemplo, esta página web de reino unido: ([wesleyan.co.uk](https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator)): 
 
-$$ QP^{'}_{inf}(n) = \dfrac{Q}{(1+i)^n} $$
+$$ Q^{'}_{inf}(n) = \dfrac{Q}{(1+i)^n} $$
+
+Y para las pérdidasSS:
+
+$$ QP^{'}_{inf}(n) = Q - \dfrac{Q}{(1+i)^n} $$
+
+Ambas funciones son muy parecidas, pero no son iguales. Para todo valor de $n > 0$ vemos que:
+
+$$Q_{inf}(n) < Q^{'}_{inf}(n)$$
+
+$$ Q \cdot (1-i)^n < \dfrac{Q}{(1+i)^n}
 
 
+vemos que la forma 1 implica mayor pérdidas por inflación con el paso del tiempo que la forma 2, y por lo tanto, aunque ambas funciones pueden funcionar para estimar la inflación, para la aplicación que haremos tomaremos la primera por ser más conservadora.
 
-Ambas funciones no son iguales, ya que vemos que <strong>A > B</strong> creo pueden ser funciones buenas para estimar la reducción teórica a la que se sotmete nuestro dinero con el paso del tiempo.
 
-## FORMA 1 
-Intuitivamente podemos entender el IPC de forma multiplicativa, como si el dinero, cada año que pasase, se fuese descontando a sí mismo con la función Q'(n).
-
-POSAR CAS INDUCTIU
-
- Análogamente al caso anterior, cada año que pasa hay un descuento. En este caso, sin embargo, es un descuento que, cada año que pasa, en valor absoluto, se hace más pequeño (lo cual hace factible que podamos vencerlo con tipos de interés más bajos que la propia inflación):
-
-$$ Q'(n) = Q \cdot (1-i)^n $$
 
 
 
