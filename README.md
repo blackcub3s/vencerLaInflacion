@@ -39,24 +39,23 @@ El cálculo de la inflación es algo de lo que solamente se habla con respecto a
 
 De forma análoga a lo que pasaba con el interés compuesto, la inflación funciona de forma similar. Con la fórmula de cálculo 1, que denominaremos $Q_{inf}(n)$, si tenemos 10 000 euros y el dinero no está invertido con una inflación de 6%  de interés interanual el capital iría variando:
 
-En un año podríamos comprar con 10 000 euros lo que ahora compraríamos con  $Q(1)$:
+En un año podríamos comprar con 10 000 euros lo que ahora compraríamos con $Q_{inf}(1)$:
 
-$$ Q(1) = 10000 \cdot 0.94 = 9400 $$
+$$ Q_{inf}(1) = 10000 \cdot 0.94 = 9400 $$
 
 En dos años nuestro capital habrá minorado a:
 
-$$ Q(2) = (10000 \cdot  0.94)* 0.94 = 8836 $$
+$$ Q_{inf}(2) = (10000 \cdot  0.94)* 0.94 = 8836 $$
 
 Quedando reducido el tercer año en:
 
-$$ Q(3) = (10000 \cdot 0.94\cdot 0.94 )  \cdot 0.94 \approx 8305.84 $$
+$$ Q_{inf}(3) = (10000 \cdot 0.94\cdot 0.94 )  \cdot 0.94 \approx 8305.84 $$
 
 Y, por lo tanto, siguiendo el razonamiento inductivo, igual que antes, es muy fácil ver que la fórmula general para calcular cuánto habrá decrecido nuestro capital por la inflación es usar una función donde a nuestro capital inicial $Q$ lo multiplicamos por un "descuento" anual, al que denominaremos $1 - i^{'}$, donde i' será el que yo denomino "interés inflacionario" del dinero o, el que en españa sería el IPC, según la siguiente expresión $Q_{inf}(n)$ (de cantidad -quantitat del catalán- inflacionada):
 
 $$ Q_{inf}(n) = Q \cdot (1-i^{'})^n $$
 
-Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interes compuesto $Q_{g}(n)$, pero ahora generando la función $QP_{inf}(n)$ (cantidad de pérdidas inflacionarias) que proponesmos a continuación:
-
+Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interes compuesto $Q_{g}(n)$, pero ahora generando la función $QP_{inf}(n)$ (<strong>cantidad de pérdidas inflacionarias en función del número de años</strong>) que proponesmos a continuación:
 
 $$ QP_{inf}(n) = Q - Q \cdot (1-i^{'})^n $$
 
@@ -84,13 +83,16 @@ $$Q \cdot (1-i^{'})^n \lt \dfrac{Q}{(1+i^{'})^n}$$
 
 
 
-# CÁLCULOS DEL PROGRAMA
+# CÁLCULOS DE NUESTRO PROGRAMA
 
-La idea, pues es vencer la inflación usando instrumentos financieros que nos permitan simplemente incrementar el dinero, por unidad de tiempo, más que la minoración de la inflación. Nótese que crece más rápido la función que incrementa el dinero que la función 1 que lo decrece por inflación. Por lo tanto, con un interés medio del 3 o 4 por ciento podemos vencer una inflación del 6 por ciento, si se hace bien.
+La idea de nuestro programa, pues es hacer una aplicación web que calcule un gráfico que muestre nuestras ganancias año a años y nuestras pérdidas inflacionarias año a año (en valor absoluto) y que muestre el punto de corte de ambas funciones. La idea es permitir que el usuario introduzca el tipo de interés de cada uno de los instrumentos financieros que utilice para incrementar su dinero, por unidad de tiempo.
+
+Nótese que crece más rápido la función que incrementa el dinero con interés compuesto ( $Q(n)$ ) que no la función que muestra el decrecimiento por inflación ( $Q_{inf}(n)$). Por lo tanto, con un interés medio del 3 o 4 por ciento podemos vencer una inflación del 6 por ciento, si se hace bien.
 
 ## GRÁFICO DE INCREMENTOS DE RENTA VS DECREMENTOS INFLACIONARIOS
 
 TO DO
+FER GRÀFIC DE 
 
 ## CÁLCULO DEL PUNTO DE CORTE ENTRE EL GRÁFICO DE INCREMENTOS DE RENTA Y EL GRÁFICO DE DECREMENTO INFLACIONARIO
 Este punto de corte es importante porque el número de años (variable n) al que ambas funciones cortan es el número de años que hay que invertir el dinero para no perderlo por la inflación.
@@ -115,14 +117,16 @@ $$-(1+i)^n + 2 = (1-i^{'})^n$$
 $$(1-i^{'})^n + (1+i)^n = 2$$
 
 
-La última solución no se puede obtener mediante técnicas numéricas tradicionales, y se necesitan técnicas computacionales para obtenerla. Hemos usado la representación de funciones de google para, para que en una inflación del 6% (i'= 0.06) y un interés en las inversiones del 3% (i=0.03) en cuántos años $n$ podremos vencer la inflación tratando de solucionar la expresión:
+Para obtener la expresión $n(i,i')$ como deseábamos con la última ecuación nos hemos dado cuenta que no se puede conseguir mediante técnicas numéricas tradicionales; son necesarias técnicas computacionales para obtenerla. Hemos usado la representación de funciones de google para que en una inflación del 6% (i'= 0.06) y un interés en las inversiones del 3% (i=0.03) en cuántos años $n$ podremos vencer la inflación tratando de solucionar la expresión:
 
 $$ (1 - 0.06)^n + (1 + 0.03)^n = 2$$
 $$ 0.94^n + 1.03^n = 2$$
 
-Siendo 
+Y el resultado ha sido el siguiente:
 
 $$n = 16.922$$
+
+Es decir, con la inflación al 6% anual y las inversiones en interés compuesto rindiendo un 3% anual <strong>podemos vencer la inflación en poco menos de 17 años, independientemente de la cantidad inicial $Q$ que tengamos</strong>.
 
 
 
