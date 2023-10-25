@@ -65,8 +65,7 @@ $$Q_{inf}(n) < Q^{'}_{inf}(n)$$
 
 $$Q \cdot (1-i)^n \lt \dfrac{Q}{(1+i)^n}$$
 
-
- Por lo tanto, aunque ambas funciones puedan funcionar para estimar la inflación, para la aplicación que haremos tomaremos la primera por ser más conservadora.
+ Por lo tanto, aunque ambas funciones puedan ser buenas candidatas para estimar la inflación, <strong>para las estimaciones inflacionarias tomaremos la <em>forma 1<em> ($Q_{inf}(n)$ y $QP_{inf}(n)$) su variante por ser más conservadora<strong>
 
 
 
