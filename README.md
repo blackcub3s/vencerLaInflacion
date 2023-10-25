@@ -40,7 +40,7 @@ Podemos usar una función que multiplique nuestro capital inicial $Q$ por un "de
 
 $$ Q_{inf}(n) = Q \cdot (1-i)^n $$
 
-Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las ganancias del interés compuesto $Q_{g}(n)$ mediante la expresión $Q_{g}(n)$, pero ahora generando la expresión función $QP_{inf}(n)$ (cantidad de pérdidas inflacionarias) que proponesmos a continuación:
+Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interes compuesto $Q_{g}(n)$, pero ahora generando la expresión función $QP_{inf}(n)$ (cantidad de pérdidas inflacionarias) que proponesmos a continuación:
 
 
 $$ QP_{inf}(n) = Q - Q \cdot (1-i)^n $$
