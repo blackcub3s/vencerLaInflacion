@@ -100,19 +100,20 @@ TO DO
 
 
 
-## GRÁFICO DE INCREMENTOS DE RENTA VS DECREMENTOS INFLACIONARIOS
+## REPRESENTACIÓN DEL GRÁFICO DE INCREMENTO DE RENTA VS GRÁFICO DE DECREMENTO INFLACIONARIOS
 
-TO DO
 
-La idea es mostrar $Q_{g}(n)$ (en azul) en relación a $Q_{p'[Inf]}(n)$ (en rojo), de la misma forma que lo muestra google. Por ejemplo, para una cantidad inicial $Q$ de 100 000 euros google nos muestra:
+La idea es mostrar, en esta aplicación web, la función de ganancias acumuladas a lo largo de los años $Q_{g}(n)$ (en azul) en relación a las pérdidas producidas por la inflación en un capital que no obtiene rentabilidad $Q_{p'[Inf]}(n)$ (en rojo), de la misma forma que lo muestra google. Por ejemplo, para una cantidad inicial $Q$ de 100 000 euros google nos muestra:
 
 ![grafico de google no se pudo mostrar](incrementoDecrementoGoogle.png)
 
-## CÁLCULO DEL PUNTO DE CORTE ENTRE EL GRÁFICO DE INCREMENTOS DE RENTA Y EL GRÁFICO DE DECREMENTO INFLACIONARIO
-Este punto de corte es importante porque el número de años (variable n) al que ambas funciones cortan es el número de años que hay que invertir el dinero para no perderlo por la inflación.
+En este gráfico la importancia está encontrar el momento en que se produce el punto de corte entre ambas funciones, como veremos en el siguiente apartado.
 
-Se consigue sustituyendo los valores $i$ e $i^{'}$ en las funciones que hemos visto para las ganancias de los intereses ( $Q_{g}(n)$ ) y para la función de pérdidas producidas por la inflación mediante la FORMA 1 de cálculo ( $Q_{p[Inf]}(n)$ ) e igualándolas podemos intentar obtener n en función de $i$ y de $i^{'} ( $n(i,i^{'}) )$ manipulando algebraicamente:
+## CÁLCULO DEL PUNTO DE CORTE DEL GRÁFICO DE INCREMENTO DE RENTA Y EL GRÁFICO DE DECREMENTO INFLACIONARIO
 
+Como decíamos en el apartado anterior, el punto de corte entre las funciones $Q_{g}(n)$ y $Q_{p'[Inf]}(n)$ es importante porque el número de años (variable $n$) al que ambas funciones cortan es el número de años que hay que estar invertiendo el dinero con interés compuesto $i$ para no perderlo por una supuesta inflación constante $i'$.
+
+Para encontrar el punto de corte podríamos tratar de sustituir los valores $i$ e $i^{'}$ tanto en la función que hemos visto para las ganancias de los intereses ( $Q_{g}(n)$ ) y para la función de pérdidas producidas por la inflación mediante la FORMA 1 de cálculo ( $Q_{p[Inf]}(n)$ ), respectivamente. Igualándolas podemos intentar obtener n en función de $i$ y de $i^{'} ( $n(i,i^{'}) )$ manipulando algebraicamente:
 
 $$Q_{g}(n) = Q_{p[Inf]}(n)$$
 
