@@ -95,14 +95,16 @@ TO DO
 ## CÁLCULO DEL PUNTO DE CORTE ENTRE EL GRÁFICO DE INCREMENTOS DE RENTA Y EL GRÁFICO DE DECREMENTO INFLACIONARIO
 Este punto de corte es importante porque el número de años (variable n) al que ambas funciones cortan es el número de años que hay que invertir el dinero para no perderlo por la inflación.
 
-Se consigue sustituuendo los valores $i$ e $i^{'}$ en las funciones que hemos visto para las ganancias de los intereses ( $Q_{g}(n)$ ) y para la f pérdidas de la inflación mediante la FORMA 1 de cálculo ( $QP_{inf}(n)$ ) e igualándolas nos queda que podemos obtener n:
+Se consigue sustituyendo los valores $i$ e $i^{'}$ en las funciones que hemos visto para las ganancias de los intereses ( $Q_{g}(n)$ ) y para la función de pérdidas producidas por la inflación mediante la FORMA 1 de cálculo ( $QP_{inf}(n)$ ) e igualándolas podemos intentar obtener n en función de $i$ y de $i^{'} ( $n(i,i^{'}) )$ manipulando algebraicamente:
 
 
 $$Q_{g}(n) = QP_{inf}(n)$$
 
+Es decir:
+
 $$Q \cdot (1+i)^n - Q = Q - Q \cdot (1-i^{'})^n$$
 
-Operando en la expresión anterior, podemos obtener n dando valores a $i$ e $i'$:
+Operando en la expresión anterior, podemos acercarnos a la obtención de $n(i,i')$ (n en función de $i$ e $i'$ ):
 
 $$Q \cdot (1+i)^n - Q = Q - Q \cdot (1-i^{'})^n$$
 
@@ -110,9 +112,18 @@ $$Q \cdot (1+i)^n - 2Q = - Q \cdot (1-i^{'})^n$$
 
 $$-(1+i)^n + 2 = (1-i^{'})^n$$
 
-$$2 = (1-i^{'})^n + (1+i)^n $$
+$$(1-i^{'})^n + (1+i)^n = 2$$
 
-$$n = XXXX$$
+
+La última solución no se puede obtener mediante técnicas numéricas tradicionales, y se necesitan técnicas computacionales para obtenerla. Hemos usado la representación de funciones de google para, para que en una inflación del 6% (i'= 0.06) y un interés en las inversiones del 3% (i=0.03) en cuántos años $n$ podremos vencer la inflación tratando de solucionar la expresión:
+
+$$ (1 - 0.06)^n + (1 + 0.03)^n = 2$$
+$$ 0.94^n + 1.03^n = 2$$
+
+Siendo 
+
+$$n = 16.922$$
+
 
 
 # CONCLUSIONES
