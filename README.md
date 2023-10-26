@@ -147,7 +147,7 @@ $$-(1+i)^n + 2 = (1-i^{'})^n$$
 $$(1-i^{'})^n + (1+i)^n = 2$$
 
 
-Para obtener la expresión $n(i,i')$ como deseábamos con la última ecuación nos hemos dado cuenta que no se puede conseguir mediante técnicas numéricas tradicionales; son necesarias técnicas computacionales para obtenerla. Hemos usado la representación de funciones de google para que en una inflación del 6% (i'= 0.06) y un interés en las inversiones del 3% (i=0.03) en cuántos años $n$ podremos vencer la inflación tratando de solucionar la expresión:
+Para obtener la expresión $n(i,i^{'})$ (n en función del interés de la inversión $i$ y de la inflación $i^{'}$ ) como deseábamos con la última ecuación nos hemos dado cuenta que no se puede conseguir mediante técnicas numéricas algebraicas tradicionales; son necesarias técnicas computacionales o métodos numéricos para obtenerla[^1]. Hemos usado la representación de funciones de google para que en una inflación del 6% ( $i^{'}=0.06$ ) y un interés en las inversiones del 3% ( $i^{'}=0.03$ ) en cuántos años $n$ podremos vencer la inflación tratando de solucionar la expresión:
 
 $$ (1 - 0.06)^n + (1 + 0.03)^n = 2$$
 $$ 0.94^n + 1.03^n = 2$$
@@ -160,6 +160,12 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 
 
+
+
+
 # CONCLUSIONES
 
 <strong>TO DO</strong>
+
+
+[^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección.Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
