@@ -77,7 +77,7 @@ $$ Q_{p'[Inf]}(n) = Q - \dfrac{Q}{(1+i^{'})^n} $$
 
 ## FORMA 1 VS FORMA 2 (¿cuál es mejor?)
 
-Ambas formas de cálculo de la inflación parecen efectivas. Son muy parecidas, pero no son iguales. Para todo valor de $n > 0$ vemos vemos que la forma 1 implica estimar mayores pérdidas por inflación con el paso del tiempo que la forma 2 ya que tenemos:
+Ambas formas de cálculo de la inflación parecen efectivas. Son muy parecidas, pero no son iguales. Para todo valor de $n > 0$ vemos que la <em>forma 1</em> implica estimar mayores pérdidas por inflación con el paso del tiempo que <em>la forma 2</em> ya que tenemos:
 
 $$Q_{inf}(n) < Q^{'}_{inf}(n)$$
 
