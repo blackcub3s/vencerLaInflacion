@@ -77,7 +77,7 @@ $$ Q_{p'[Inf]}(n) = Q - \dfrac{Q}{(1+i^{'})^n} $$
 
 ## FORMA 1 VS FORMA 2 (¿cuál es mejor?)
 
-Ambas formas de cálculo de la inflación parecen efectivas. Son muy parecidas, pero no son iguales. Para todo valor de $n > 0$ vemos que la <em>forma 1</em> implica estimar mayores pérdidas por inflación con el paso del tiempo que <em>la forma 2</em> ya que tenemos:
+Ambas formas de cálculo de la inflación parecen efectivas. Son muy parecidas, pero no son iguales. Para todo valor de $n > 0$ vemos que la <em>forma 1</em> implica estimar mayores pérdidas por inflación con el paso del tiempo que la <em>forma 2</em> ya que tenemos:
 
 $$Q_{inf}(n) < Q^{'}_{inf}(n)$$
 
@@ -89,9 +89,9 @@ $$Q \cdot (1-i^{'})^n \lt \dfrac{Q}{(1+i^{'})^n}$$
 
 La idea de nuestro programa es hacer una aplicación web que dada una inflación entrada por el usuario y un tipo de interés que el mismo pueda ganar con sus inversiones, muestre:
 
-1) Un gráfico de como incrementa el capital con el interés compuesto.
+1) Un gráfico de como <strong>incrementa el capital</strong>con el <em>interés compuesto</em>.
 
-2) Un gráfico que muestre como "decrementa" el capital debido a la inflación: este gráfico podremos mirarlo como "<i>con la inflación que ha habido desde ahora hasta mismo hasta un determinado año $n$ cuántas cosas podré comprar en ese año futuro $n$ con exactamente el mismo número de euros que tengo hoy, si quisierlas compralas hoy</i>". Es decir, si tengo 10 000 euros y la inflación es de un  100 por ciento al año, el año que viene seguiré teniendo 10 000 euros, sí, pero solo podré comprar lo mismo que hoy comprarían 5 000 euros (porque en un año, de media, las cosas van a costar el doble).
+2) Un gráfico que muestre como <strong>"decrementa" el capital</strong> debido a la <em>inflación</em>: este gráfico podremos mirarlo como "<i>con la inflación que ha habido desde ahora hasta mismo hasta un determinado año $n$ cuántas cosas podré comprar en ese año futuro $n$ con exactamente el mismo número de euros que tengo hoy, si quisierlas compralas hoy</i>". Es decir, si tengo 10 000 euros y la inflación es de un  100 por ciento al año, el año que viene seguiré teniendo 10 000 euros, sí, pero solo podré comprar lo mismo que hoy comprarían 5 000 euros (porque en un año, de media, las cosas van a costar el doble).
 
 3)  un gráfico que represente nuestras ganancias año a año, por un lado; y nuestras pérdidas por inflación en valor absoluto también año a año, por el otro. Además, sería interesante que muostrase una aproximación al punto de corte de ambas funciones de forma análoga a como lo hace google con su sistema. Este punto tres es algo inédito que no hemos visto en ninguna función de cálculo para la inflación. Y hay que añadir algo MUY importante: nótese que crece más rápido la función que incrementa el dinero con interés compuesto ( $Q(n)$ ) que no lo rápido que decrece la función que muestra el decrecimiento por inflación ( $Q_{inf}(n)$ ). Por lo tanto, y por poner un ejemplo, con un interés medio del 3 por ciento que se puede obtener ahora mismo en depósitos españoles podemos vencer una inflación del 6 por ciento, en 17 años, si lo hacemos bien tomando beneficios del interés compuesto.
 
