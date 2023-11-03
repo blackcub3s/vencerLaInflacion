@@ -1,22 +1,24 @@
-# ÍNDICE
 
-1. [INTRODUCCIÓN](#introducción)
-2. [FÓRMULAS DE CÁLCULO DEL INTERÉS COMPUESTO](#fórmulas-de-cálculo-del-interés-compuesto)
-3. [FÓRMULAS DE CÁLCULO DE LA INFLACIÓN](#fórmulas-de-cálculo-de-la-inflación)
-    - [Forma 1](#forma-1)
-    - [Forma 2](#forma-2)
-    - [FORMA 1 VS FORMA 2 (¿cuál es mejor?)](#forma-1-vs-forma-2-cuál-es-mejor)
-4. [CÁLCULOS DE NUESTRO PROGRAMA](#cálculos-de-nuestro-programa)
-    - [GRÁFICO DE VARIACIÓN DEL CAPITAL POR INVERSIÓN](#gráfico-de-variación-del-capital-por-inversión)
-    - [DISMINUCIÓN DEL CAPITAL POR INFLACIÓN (SIN INVERTIR EL CAPITAL)](#disminución-del-capital-por-inflación-sin-invertir-el-capital)
-    - [REPRESENTACIÓN DEL GRÁFICO DE INCREMENTO DE RENTA VS GRÁFICO DE DECREMENTO INFLACIONARIOS](#representación-del-gráfico-de-incremento-de-renta-vs-gráfico-de-decremento-inflacionarios)
-    - [CÁLCULO DEL PUNTO DE CORTE DEL GRÁFICO DE INCREMENTO DE RENTA Y EL GRÁFICO DE DECREMENTO INFLACIONARIO](#cálculo-del-punto-de-corte-del-gráfico-de-incremento-de-renta-y-el-gráfico-de-decremento-inflacionario)
-5. [CONCLUSIONES](#conclusiones)
+# Índice
+
+1. [Introducción](#introducción)
+2. [Interés Compuesto](#interés-compuesto)
+   2.1. [Fórmulas de cálculo](#fórmulas-de-cálculo)
+3. [Inflación](#inflación)
+   3.1. [Fórmulas de cálculo](#fórmulas-de-cálculo)
+   3.2. [Forma Multiplicativa Decremental](#forma-multiplicativa-decremental)
+   3.3. [Forma Divisora Decremental](#forma-divisora-decremental)
+   3.4. [Multiplicativa vs. Divisora (¿Cuál es mejor?)](#multiplicativa-vs-divisora-¿cuál-es-mejor)
+4. [Implementación de la Aplicación Web](#implementación-de-la-aplicación-web)
+   4.1. [Cálculos](#cálculos)
+   4.2. [Gráfico de Variación del Capital por Inversión](#gráfico-de-variación-del-capital-por-inversión)
+   4.3. [Disminución del Capital por Inflación (sin invertir el capital)](#disminución-del-capital-por-inflación-sin-invertir-el-capital)
+   4.4. [Representación del Gráfico de Incremento de Renta vs. Gráfico de Decremento Inflacionario](#representación-del-gráfico-de-incremento-de-renta-vs-gráfico-de-decremento-inflacionario)
+   4.5. [Cálculo del Punto de Corte del Gráfico de Incremento de Renta y el Gráfico de Decremento Inflacionario](#cálculo-del-punto-de-corte-del-gráfico-de-incremento-de-renta-y-el-gráfico-de-decremento-inflacionario)
+5. [Conclusiones](#conclusiones)
 
 
-
-
-# INTRODUCCIÓN
+# Introducción
 
 La inflación es una lacra producida por la impresión sin restricciones de moneda por parte de los bancos centrales (Reserva Federal en EEUU, Banco Central Europeo en Europa, Banco Central de la República Argentina, en Argentina, etc.). Al aumentar la masa monetaria de forma artificiosa para subvencionar el déficit presupuestario de los estados, empresas o individuos, permitiendo que estos se endeuden excesivamente a futuro y que esa deuda se eternalice y nunca se pague, se genera algo inevitable: el incremento de la masa monetaria sin que ello conlleve un incremento parejo de los bienes producidos. Esto, al menos bajo mi leal saber y entender, genera la inflación.
 
@@ -26,7 +28,9 @@ Con este repositorio queremos cumplir una triple función: primero, generar una 
 
 La voz popular pone en boca de Einstein la frase: "El interés compuesto es la fuerza más poderosa de la galaxia". En este apartado y el siguiente vamos a ver por qué el interés compuesto es la clave para vencer la inflación.
 
-# FÓRMULAS DE CÁLCULO DEL INTERÉS COMPUESTO
+# Interés compuesto
+
+## Fórmulas de cálculo
 
 Si hoy tenemos 10 000 euros y ponemos ese dinero en un instrumento de renta fija, variable, etc. de tal modo que nos genere un 3% TIN neto (es decir, después de haber ajustado el TIN bruto a TIN neto descontándole el IRPF correspondiente -que aquí no mostraremos-) tendremos que:
 
@@ -52,12 +56,13 @@ $$ Q_{g}(n) = Q(n)  - Q$$
 
 $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
-# FÓRMULAS DE CÁLCULO DE LA INFLACIÓN
+# Inflación
+
+## Fórmulas de cálculo
 
 El cálculo de la inflación es algo de lo que solamente se habla con respecto al año anterior (el IPC interanual, el IPC mensual...) No hay mucha información en el saber popular sobre el impacto que tiene la misma a lo largo de múltiples años a pesar del efecto devastador que tiene en la economía de los ahorradores como se ha especificado en la introducción. Se me ocurre hacer una estimación de cálculo de la misma en función del número $n$ de años que pasan, mediante dos funciones distintas, muy parecidas a la fórmula del interés compuesto.
 
-## Forma 1
-
+### Forma mutliplicativa decremental
 
 De forma análoga a lo que pasaba con el interés compuesto, la inflación funciona de forma similar. Con la fórmula de cálculo 1, que denominaremos $Q_{inf}(n)$, si tenemos 10 000 euros y el dinero no está invertido con una inflación de 6%  de interés interanual el capital iría variando:
 
@@ -85,7 +90,7 @@ $$ Q_{p[Inf]}(n) = Q - Q \cdot (1-i^{'})^n $$
 
 Siendo esta fórmula de cálculo idéntica a la que implementan los desarrolladores en la aplicación bancaria de BBVA, al menos, a fecha de septiembre-octubre de 2023.
 
-## Forma 2
+### Forma divisora decremental
 
 La otra forma de calcular la inflación, a la que denominaremos  $Q^{'}_{inf}(n)$, es tomando la fórmula del interés compuesto clásica $Q(n)$ pero modificarla de tal modo que en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$, la divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como, por ejemplo, esta página web de reino unido: ([wesleyan.co.uk](https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator)): 
 
@@ -97,7 +102,7 @@ $$ Q_{p'[Inf]}(n) = Q - \dfrac{Q}{(1+i^{'})^n} $$
 
 
 
-## FORMA 1 VS FORMA 2 (¿cuál es mejor?)
+### Multiplicativa vs. divisora (¿Cuál es mejor?)
 
 Ambas formas de cálculo de la inflación parecen efectivas. Son muy parecidas, pero no son iguales. Para todo valor de $n > 0$ vemos que la <em>forma 1</em> implica estimar mayores pérdidas por inflación con el paso del tiempo que la <em>forma 2</em> ya que tenemos:
 
@@ -107,7 +112,9 @@ $$Q \cdot (1-i^{'})^n \lt \dfrac{Q}{(1+i^{'})^n}$$
 
  Por lo tanto, aunque ambas funciones puedan ser buenas candidatas para estimar la inflación, para las estimaciones inflacionarias tomaremos la <em>forma 1</em>, es decir $Q_{inf}(n)$ y su variante para calcular pérdidas $Q_{p[Inf]}(n)$, por ser <strong>más conservadora</strong>.
 
-# CÁLCULOS DE NUESTRO PROGRAMA
+# Implementación de la aplicación web
+
+## Cálculos
 
 La idea de nuestro programa es hacer una aplicación web que dada una inflación entrada por el usuario y un tipo de interés que el mismo pueda ganar con sus inversiones, muestre:
 
@@ -117,7 +124,7 @@ La idea de nuestro programa es hacer una aplicación web que dada una inflación
 
 3)  un gráfico que represente nuestras ganancias año a año, por un lado; y nuestras pérdidas por inflación en valor absoluto también año a año, por el otro. Además, sería interesante que muostrase una aproximación al punto de corte de ambas funciones de forma análoga a como lo hace google con su sistema. Este punto tres es algo inédito que no hemos visto en ninguna función de cálculo para la inflación. Y hay que añadir algo MUY importante: nótese que crece más rápido la función que incrementa el dinero con interés compuesto ( $Q(n)$ ) que no lo rápido que decrece la función que muestra el decrecimiento por inflación ( $Q_{inf}(n)$ ). Por lo tanto, y por poner un ejemplo, con un interés medio del 3 por ciento que se puede obtener ahora mismo en depósitos españoles podemos vencer una inflación del 6 por ciento, en 17 años, si lo hacemos bien tomando beneficios del interés compuesto.
 
-## GRÁFICO DE VARIACIÓN DEL CAPITAL POR INVERSIÓN
+## Gráfico de variación del capital por inversión
 
 En la aplicación web queremos mostrar $Q(n)$, de forma análoga a como lo muestra google. Para $Q = 100 000$ euros de capital inicial y un interés compuesto $i = 0.03$ (3%) la función exponencial en el buscador queda de este modo:
 
@@ -127,7 +134,7 @@ Y en nuestra aplicación web queda así:
 
 TO DO
 
-## DISMINUCIÓN DEL CAPITAL POR INFLACIÓN (SIN INVERTIR EL CAPITAL)
+## Disminución del capital por inflación (sin invertir el capital)
 
 En la aplicación web queremos mostrar la función $Q_{inf}(n)$, como google. Igual que en el caso anterior, para 100 000 euros de capital inicial y para $i^{'} = 0.06$ (inflación del 6%) en el buscador queda:
 
@@ -138,7 +145,8 @@ Y en nuestra aplicación queda así:
 TO DO
 
 
-## REPRESENTACIÓN DEL GRÁFICO DE INCREMENTO DE RENTA VS GRÁFICO DE DECREMENTO INFLACIONARIOS
+## Representación del gráfico de incremento de renta vs. gráfico de decremento inflacionario
+
 
 En la aplicación web también queremos mostrar la función de ganancias acumuladas a lo largo de los años $Q_{g}(n)$ (en azul) en relación a las pérdidas producidas por la inflación en un capital que no obtiene rentabilidad $Q_{p'[Inf]}(n)$ (en rojo), de la misma forma que lo muestra google. Por ejemplo, para una cantidad inicial $Q$ de 100 000 euros google nos muestra:
 
@@ -146,7 +154,8 @@ En la aplicación web también queremos mostrar la función de ganancias acumula
 
 En este gráfico la importancia está encontrar el momento en que se produce el punto de corte entre ambas funciones, como veremos en el siguiente apartado.
 
-## CÁLCULO DEL PUNTO DE CORTE DEL GRÁFICO DE INCREMENTO DE RENTA Y EL GRÁFICO DE DECREMENTO INFLACIONARIO
+## Cálculo del punto de corte del gráfico de incremento de renta y el gráfico de decremento inflacionario
+
 
 Como decíamos en el apartado anterior, el punto de corte entre las funciones $Q_{g}(n)$ y $Q_{p'[Inf]}(n)$ es importante porque el número de años (variable $n$) al que ambas funciones cortan es el número de años que hay que estar invertiendo el dinero con interés compuesto $i$ para no perderlo por una supuesta inflación constante $i'$.
 
@@ -185,7 +194,7 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 
 
-# CONCLUSIONES
+# Conclusiones
 
 <strong>TO DO</strong>
 
