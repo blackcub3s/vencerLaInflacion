@@ -57,7 +57,9 @@ Y, por lo tanto, siguiendo el razonamiento inductivo, igual que antes, es muy f�
 
 $$ Q_{inf}(n) = Q \cdot (1-i^{'})^n $$
 
-Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interes compuesto $Q_{g}(n)$, pero ahora generando la función $Q_{p[Inf]}(n)$ (<strong>cantidad de pérdidas inflacionarias en función del número de años</strong>) que proponesmos a continuación:
+Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interes compuesto $Q_{g}(n)$, pero ahora generando la función $Q_{p[Inf]}(n)$ (<strong>cantidad de pérdidas inflacionarias en función del número de años</strong>) que proponemos a continuación:
+
+$$ Q_{p[Inf]}(n) = Q - Q_{inf}(n) $$
 
 $$ Q_{p[Inf]}(n) = Q - Q \cdot (1-i^{'})^n $$
 
@@ -99,7 +101,7 @@ La idea de nuestro programa es hacer una aplicación web que dada una inflación
 
 En la aplicación web queremos mostrar $Q(n)$, de forma análoga a como lo muestra google. Para $Q = 100 000$ euros de capital inicial y un interés compuesto $i = 0.03$ (3%) la función exponencial en el buscador queda de este modo:
 
-![No mostra exponencial](image.png)
+![No mostra exponencial](imagenes/image.png)
 
 Y en nuestra aplicación web queda así:
 
@@ -109,7 +111,7 @@ TO DO
 
 En la aplicación web queremos mostrar la función $Q_{inf}(n)$, como google. Igual que en el caso anterior, para 100 000 euros de capital inicial y para $i^{'} = 0.06$ (inflación del 6%) en el buscador queda:
 
-![no mostra reduccio exponencial](image-1.png)
+![no mostra reduccio exponencial](imagenes/image-1.png)
 
 Y en nuestra aplicación queda así:
 
@@ -120,7 +122,7 @@ TO DO
 
 En la aplicación web también queremos mostrar la función de ganancias acumuladas a lo largo de los años $Q_{g}(n)$ (en azul) en relación a las pérdidas producidas por la inflación en un capital que no obtiene rentabilidad $Q_{p'[Inf]}(n)$ (en rojo), de la misma forma que lo muestra google. Por ejemplo, para una cantidad inicial $Q$ de 100 000 euros google nos muestra:
 
-![grafico de google no se pudo mostrar](incrementoDecrementoGoogle.png)
+![grafico de google no se pudo mostrar](imagenes/incrementoDecrementoGoogle.png)
 
 En este gráfico la importancia está encontrar el momento en que se produce el punto de corte entre ambas funciones, como veremos en el siguiente apartado.
 
