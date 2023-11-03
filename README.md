@@ -1,3 +1,21 @@
+# ÍNDICE
+
+1. [INTRODUCCIÓN](#introducción)
+2. [FÓRMULAS DE CÁLCULO DEL INTERÉS COMPUESTO](#fórmulas-de-cálculo-del-interés-compuesto)
+3. [FÓRMULAS DE CÁLCULO DE LA INFLACIÓN](#fórmulas-de-cálculo-de-la-inflación)
+    - [Forma 1](#forma-1)
+    - [Forma 2](#forma-2)
+    - [FORMA 1 VS FORMA 2 (¿cuál es mejor?)](#forma-1-vs-forma-2-cuál-es-mejor)
+4. [CÁLCULOS DE NUESTRO PROGRAMA](#cálculos-de-nuestro-programa)
+    - [GRÁFICO DE VARIACIÓN DEL CAPITAL POR INVERSIÓN](#gráfico-de-variación-del-capital-por-inversión)
+    - [DISMINUCIÓN DEL CAPITAL POR INFLACIÓN (SIN INVERTIR EL CAPITAL)](#disminución-del-capital-por-inflación-sin-invertir-el-capital)
+    - [REPRESENTACIÓN DEL GRÁFICO DE INCREMENTO DE RENTA VS GRÁFICO DE DECREMENTO INFLACIONARIOS](#representación-del-gráfico-de-incremento-de-renta-vs-gráfico-de-decremento-inflacionarios)
+    - [CÁLCULO DEL PUNTO DE CORTE DEL GRÁFICO DE INCREMENTO DE RENTA Y EL GRÁFICO DE DECREMENTO INFLACIONARIO](#cálculo-del-punto-de-corte-del-gráfico-de-incremento-de-renta-y-el-gráfico-de-decremento-inflacionario)
+5. [CONCLUSIONES](#conclusiones)
+
+
+
+
 # INTRODUCCIÓN
 
 La inflación es una lacra producida por la impresión sin restricciones de moneda por parte de los bancos centrales (Reserva Federal en EEUU, Banco Central Europeo en Europa, Banco Central de la República Argentina, en Argentina, etc.). Al aumentar la masa monetaria de forma artificiosa para subvencionar el déficit presupuestario de los estados, empresas o individuos, permitiendo que estos se endeuden excesivamente a futuro y que esa deuda se eternalice y nunca se pague, se genera algo inevitable: el incremento de la masa monetaria sin que ello conlleve un incremento parejo de los bienes producidos. Esto, al menos bajo mi leal saber y entender, genera la inflación.
