@@ -1,20 +1,19 @@
-
 # Índice
 
 1. [Introducción](#introducción)
 2. [Interés Compuesto](#interés-compuesto)
-   2.1. [Fórmulas de cálculo](#fórmulas-de-cálculo)
+   - 2.1 [Fórmulas de cálculo](#fórmulas-de-cálculo)
 3. [Inflación](#inflación)
-   3.1. [Fórmulas de cálculo](#fórmulas-de-cálculo)
-   3.2. [Forma Multiplicativa Decremental](#forma-multiplicativa-decremental)
-   3.3. [Forma Divisora Decremental](#forma-divisora-decremental)
-   3.4. [Multiplicativa vs. Divisora (¿Cuál es mejor?)](#multiplicativa-vs-divisora-¿cuál-es-mejor)
+   - 3.1 [Fórmulas de cálculo](#fórmulas-de-cálculo)
+   - 3.2 [Forma Multiplicativa Decremental](#forma-multiplicativa-decremental)
+   - 3.3 [Forma Divisora Decremental](#forma-divisora-decremental)
+   - 3.4 [Multiplicativa vs. Divisora (¿Cuál es mejor?)](#multiplicativa-vs-divisora-¿cuál-es-mejor)
 4. [Implementación de la Aplicación Web](#implementación-de-la-aplicación-web)
-   4.1. [Cálculos](#cálculos)
-   4.2. [Gráfico de Variación del Capital por Inversión](#gráfico-de-variación-del-capital-por-inversión)
-   4.3. [Disminución del Capital por Inflación (sin invertir el capital)](#disminución-del-capital-por-inflación-sin-invertir-el-capital)
-   4.4. [Representación del Gráfico de Incremento de Renta vs. Gráfico de Decremento Inflacionario](#representación-del-gráfico-de-incremento-de-renta-vs-gráfico-de-decremento-inflacionario)
-   4.5. [Cálculo del Punto de Corte del Gráfico de Incremento de Renta y el Gráfico de Decremento Inflacionario](#cálculo-del-punto-de-corte-del-gráfico-de-incremento-de-renta-y-el-gráfico-de-decremento-inflacionario)
+   - 4.1 [Cálculos](#cálculos)
+   - 4.2 [Gráfico de Variación del Capital por Inversión](#gráfico-de-variación-del-capital-por-inversión)
+   - 4.3 [Disminución del Capital por Inflación (sin invertir el capital)](#disminución-del-capital-por-inflación-sin-invertir-el-capital)
+   - 4.4 [Representación del Gráfico de Incremento de Renta vs. Gráfico de Decremento Inflacionario](#representación-del-gráfico-de-incremento-de-renta-vs-gráfico-de-decremento-inflacionario)
+   - 4.5 [Cálculo del Punto de Corte del Gráfico de Incremento de Renta y el Gráfico de Decremento Inflacionario](#cálculo-del-punto-de-corte-del-gráfico-de-incremento-de-renta-y-el-gráfico-de-decremento-inflacionario)
 5. [Conclusiones](#conclusiones)
 
 
