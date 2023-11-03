@@ -30,6 +30,8 @@ $$ Q(n) = Q \cdot (1+i)^n $$
 
 Si ahora lo que queremos determinar es <strong>solamente</strong> las ganancias netas a medida que van pasando los años podemos escribir la siguiente función $Q_{g}(n)$, que nos servirá para calcular el momento exacto en el que nuestras inversiones, de mantener un interés anual $i$ que sea compuesto año tras año, podrán vencer la minoración que la inflación produce sobre ese mismo capital (concretamente, es la función anterior a la que le restamos el capital inicial $Q$).
 
+$$ Q_{g}(n) = Q(n)  - Q$$
+
 $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
 # FÓRMULAS DE CÁLCULO DE LA INFLACIÓN
