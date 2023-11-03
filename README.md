@@ -5,9 +5,9 @@
    - 2.1 [Fórmulas de cálculo](#fórmulas-de-cálculo)
 3. [Inflación](#inflación)
    - 3.1 [Formas de calcularla](#formas-de-calcularla)
-   - 3.2 [Forma Multiplicativa Decremental](#forma-multiplicativa-decremental)
-   - 3.3 [Forma Divisora Decremental](#forma-divisora-decremental)
-   - 3.4 [Multiplicativa vs. Divisora (¿Cuál es mejor?)](#multiplicativa-vs-divisora-¿cuál-es-mejor)
+   - 3.2 [Forma multiplicativa](#forma-multiplicativa)
+   - 3.3 [Forma divisora](#forma-divisora)
+   - 3.4 [Multiplicativa vs Divisora](#multiplicativa-vs-divisora)
 4. [Implementación de la Aplicación Web](#implementación-de-la-aplicación-web)
    - 4.1 [Cálculos](#cálculos)
    - 4.2 [Gráfico de Variación del Capital por Inversión](#gráfico-de-variación-del-capital-por-inversión)
@@ -61,7 +61,7 @@ $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
 El cálculo de la inflación es algo de lo que solamente se habla con respecto al año anterior (el IPC interanual, el IPC mensual...) No hay mucha información en el saber popular sobre el impacto que tiene la misma a lo largo de múltiples años a pesar del efecto devastador que tiene en la economía de los ahorradores como se ha especificado en la introducción. Se me ocurre hacer una estimación de cálculo de la misma en función del número $n$ de años que pasan, mediante dos funciones distintas, muy parecidas a la fórmula del interés compuesto.
 
-### Forma mutliplicativa decremental
+### Forma multiplicativa
 
 De forma análoga a lo que pasaba con el interés compuesto, la inflación funciona de forma similar. Con la fórmula de cálculo 1, que denominaremos $Q_{inf}(n)$, si tenemos 10 000 euros y el dinero no está invertido con una inflación de 6%  de interés interanual el capital iría variando:
 
@@ -89,7 +89,7 @@ $$ Q_{p[Inf]}(n) = Q - Q \cdot (1-i^{'})^n $$
 
 Siendo esta fórmula de cálculo idéntica a la que implementan los desarrolladores en la aplicación bancaria de BBVA, al menos, a fecha de septiembre-octubre de 2023.
 
-### Forma divisora decremental
+### Forma divisora
 
 La otra forma de calcular la inflación, a la que denominaremos  $Q^{'}_{inf}(n)$, es tomando la fórmula del interés compuesto clásica $Q(n)$ pero modificarla de tal modo que en lugar de multiplicar la cantidad incial $Q$ por el factor $(1 + i)^n$, la divida (que es como algunas calculadoras online están implementadas, al menos a octubre de 2023, como, por ejemplo, esta página web de reino unido: ([wesleyan.co.uk](https://www.wesleyan.co.uk/savings-and-investments/inflation-calculator)): 
 
@@ -101,7 +101,7 @@ $$ Q_{p'[Inf]}(n) = Q - \dfrac{Q}{(1+i^{'})^n} $$
 
 
 
-### Multiplicativa vs. divisora (¿Cuál es mejor?)
+### Multiplicativa vs Divisora
 
 Ambas formas de cálculo de la inflación parecen efectivas. Son muy parecidas, pero no son iguales. Para todo valor de $n > 0$ vemos que la <em>forma 1</em> implica estimar mayores pérdidas por inflación con el paso del tiempo que la <em>forma 2</em> ya que tenemos:
 
