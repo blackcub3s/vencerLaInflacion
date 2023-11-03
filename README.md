@@ -4,7 +4,7 @@
 2. [Interés Compuesto](#interés-compuesto)
    - 2.1 [Fórmulas de cálculo](#fórmulas-de-cálculo)
 3. [Inflación](#inflación)
-   - 3.1 [Fórmulas de cálculo](#fórmulas-de-cálculo)
+   - 3.1 [Formas de calcularla](#formas-de-calcularla)
    - 3.2 [Forma Multiplicativa Decremental](#forma-multiplicativa-decremental)
    - 3.3 [Forma Divisora Decremental](#forma-divisora-decremental)
    - 3.4 [Multiplicativa vs. Divisora (¿Cuál es mejor?)](#multiplicativa-vs-divisora-¿cuál-es-mejor)
@@ -57,7 +57,7 @@ $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
 # Inflación
 
-## Fórmulas de cálculo
+## Formas de calcularla
 
 El cálculo de la inflación es algo de lo que solamente se habla con respecto al año anterior (el IPC interanual, el IPC mensual...) No hay mucha información en el saber popular sobre el impacto que tiene la misma a lo largo de múltiples años a pesar del efecto devastador que tiene en la economía de los ahorradores como se ha especificado en la introducción. Se me ocurre hacer una estimación de cálculo de la misma en función del número $n$ de años que pasan, mediante dos funciones distintas, muy parecidas a la fórmula del interés compuesto.
 
