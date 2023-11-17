@@ -1,0 +1,78 @@
+
+
+/* Center the form within the div */
+.formulari {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust the height as needed to center vertically */
+  }
+  
+  /* Style the form elements */
+  .inline-form {
+    background-color: var(--verdMeu);
+    padding-right: 0em;
+    padding-left: 0em;
+    text-align: left;
+  }
+
+form {
+  text-align: center;
+}
+fieldset {
+  text-align: center;
+}
+
+  
+  label {
+    display: block;
+    margin: .2em 0;
+    font-weight: bold;
+    
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  fieldset label {
+    display: inline-block;
+    margin: 5px 0;
+  }
+  
+  .inline-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .inline-form>label {
+    margin-left:2em;
+    margin-right:1em;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin-top: .5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
