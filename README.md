@@ -18,6 +18,7 @@
    - 4.4 [Representación del Gráfico de Incremento de Renta vs. Gráfico de Decremento Inflacionario](#representación-del-gráfico-de-incremento-de-renta-vs-gráfico-de-decremento-inflacionario)
    - 4.5 [Cálculo del Punto de Corte del Gráfico de Incremento de Renta y el Gráfico de Decremento Inflacionario](#cálculo-del-punto-de-corte-del-gráfico-de-incremento-de-renta-y-el-gráfico-de-decremento-inflacionario)
 5. [Conclusiones](#conclusiones)
+6. [Anexo](#Anexo)
 
 
 # Introducción
@@ -60,7 +61,7 @@ $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
 ## Fórmula de cálculo (con ahorro salarial anual)
 
-TO DO 
+Para esta sección remitimos al lector al anexo (véase [link](#Anexo)), dado que su complejidad técnica es mayor. Por ahora, podemos decir que la mejor forma de ahorrar puede ser reinvertir todos nuestros ahorros, no solamente unos ahorros iniciales. En este caso el incremento exponencial que produce el interés compuesto en el capital inicial invertido más la cantidad de ahorro que se produce anualmente en un salario tienen un efecto multiplicativo muy interesante.
 
 # Inflación
 
@@ -203,6 +204,11 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 # Conclusiones
 
 <strong>TO DO</strong>
+
+# Anexo
+
+To do
+
 
 
 [^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección.Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
