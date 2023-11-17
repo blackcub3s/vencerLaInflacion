@@ -2,7 +2,7 @@
 
 1. [Introducción](#introducción)
 2. [Interés Compuesto](#interés-compuesto)
-   - 2.1 [Fórmulas de cálculo](#fórmulas-de-cálculo)
+   - 2.1 [Fórmula de cálculo (con reinversión)](#Fórmula-de-cálculo-(con-reinversión))
 3. [Inflación](#inflación)
    - 3.1 [Formas de calcularla](#formas-de-calcularla)
       * 3.1.1 [Forma multiplicativa](#forma-multiplicativa)
@@ -29,7 +29,7 @@ La voz popular pone en boca de Einstein la frase: "El interés compuesto es la f
 
 # Interés compuesto
 
-## Fórmulas de cálculo
+## Fórmula de cálculo (con reinversión)
 
 Si hoy tenemos 10 000 euros y ponemos ese dinero en un instrumento de renta fija, variable, etc. de tal modo que nos genere un 3% TIN neto (es decir, después de haber ajustado el TIN bruto a TIN neto descontándole el IRPF correspondiente -que aquí no mostraremos-) tendremos que:
 
