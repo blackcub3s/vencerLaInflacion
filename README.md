@@ -211,7 +211,7 @@ Hace tiempo escuché una especie de acertijo:
 
 
 
-<kbd style="display: block; padding: 1em; border: 2px solid #ccc; border-radius: 5px;">
+<kbd style="display: block; padding: 1em; border: 2px solid #ccc; border-radius: 5px; font-size:1.5em;">
   "_Luís_ cobra 10 000 euros al mes, ahorra la mitad de esa candidad mensualmente y no invierte su dinero. _Eulalia_ cobra 3000 euros al mes, ahorra 2000 euros porque vive "frugalmente" y sí invierte su dinero. ¿Quien ahorra más? ¿Luís o Eulalia?" Los datos eran:"
 </kbd>
 
