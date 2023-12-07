@@ -260,6 +260,8 @@ Que factorizando nos quedaría:
 
 $$ E(t) = Q' \cdot (1.03^{t-1} +  1.03^{t-2} + [...] +  1.03 + 1)$$
 
+Y considerando la propiedad asociativa de la suma podemos reescribir los sumandos del parentesis de izquierda a derecha y representarlos con un sumatorio tal que así:
+
 $$ E(t) = Q' \cdot \sum_{i=0}^{n-1} 1.03^{t}$$
 
 
