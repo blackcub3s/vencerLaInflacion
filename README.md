@@ -207,8 +207,16 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 # Anexo
 
-Navegando por Twitter me encontré a un usuario que planteaba la siguiente pregunta. Quien va ahorrar más
+Hace tiempo escuché que quien ahorra más, _Luís_ que cobra 10 000 euros al mes, ahorra la mitad de esa candidad mensualmente y no invierte su dinero; o _Eulalia_, que cobra 3000 euros al mes, ahorra 2000 euros porque vive frugalmente y sí invierte su dinero.
 
+Es una pregunta muy abierta pero podríamos tratar de estimar qué porcentaje anual puede conseguir _Eulalia_ en sus inversiones (digamos que un 3 por ciento neto) y comparar si el dinero de pepita superaría al dinero de Pepe dado que el de esta primera crecería de forma exponencial mientra que el de  _Luís_ lo haría linealmente.
+
+La función lineal que identificaría el crecimiento del dinero de luís en función del tiempo sería:
+
+$$L(f) = 5000 \cdot 12 \cdot t$$
+$$L(f) = 6000t$$
+
+TO CONTINUAR HERE XD
 
 
 [^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección.Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
