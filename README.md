@@ -207,19 +207,28 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 # Anexo
 
-Hace tiempo escuché que quien ahorra más, _Luís_ que cobra 10 000 euros al mes, ahorra la mitad de esa candidad mensualmente y no invierte su dinero; o _Eulalia_, que cobra 3000 euros al mes, ahorra 2000 euros porque vive frugalmente y sí invierte su dinero.
+Hace tiempo escuché una especie de acertijo: "¿quien ahorra más? ¿Luís o Eulalia? Los datos eran:
 
-Es una pregunta muy abierta pero podríamos tratar de estimar qué porcentaje anual puede conseguir _Eulalia_ en sus inversiones (digamos que un 3 por ciento neto sería algo plausible) en comparación con  _Luís_ que no generaría rentas:
+   _Luís_ cobra 10 000 euros al mes, ahorra la mitad de esa candidad mensualmente y no invierte su dinero.
+   _Eulalia_ cobra 3000 euros al mes, ahorra 2000 euros porque vive "frugalmente" y sí invierte su dinero.
 
-La función lineal que identificaría el crecimiento del dinero que luís ahorra cada año (Q) en función del tiempo en años (t) sería $L(t)$:
+Es una pregunta muy abierta pero podríamos tratar de estimar qué porcentaje anual puede conseguir _Eulalia_ en sus inversiones (digamos que un 3 por ciento neto sería algo plausible) en comparación con  _Luís_ que tendría un dinero que se acumula de forma gradual pero sin generar intereses.
+
+## Crecimiento del dinero de luís (lineal)
+
+La función que identificaría el crecimiento del dinero que luís ahorra cada año (Q) en función del tiempo en años (t) sería una función $L(t)$ que sería, pues, lineal:
 
 $$L(t) = Qt$$
 
-Que en su caso particular: 
+Que en el caso particular: 
 
 $$L(t) = 5000 \cdot 12 \cdot t =  6000t$$
 
-Mientras el caso de eulalia econtrar la funcion $E(t)$ sería un poco más complejo. Asumamos que cuando pasa un año todo lo que ha ahorrado (llamémoslo $Q'$) lo invierte con un interés anual en tanto por uno $i$ al 3 por ciento, por lo tanto al cabo de un año (sustituyendo) y dejando $1 + i$ como el coeficiente de incremento 1.03:
+## crecimiento del dinero de eulalia (exponencial con ahorro recurrente)
+
+El caso de eulalia sería distinto. El crecimiento de su dinero sería exponencial y, además, habría que tener en cuenta un ahorro recurrente, digamos, anual. Así pues, la funcion $E(t)$ sería un poco más compleja. Vamos a construirla.
+
+Asumamos que cuando pasa un año todo lo que ha ahorrado _Eulalia_ (llamémoslo $Q'$) ella lo invierte con un interés anual en tanto por uno de un 3 por ciento ($i = 0.03$ ), por lo tanto al cabo de un año (sustituyendo) y dejando $1 + i$ como el coeficiente de incremento $1.03$:
 
 $$ 
 \begin{align*} 
@@ -230,9 +239,9 @@ $$
 \end{align*}
 $$
 
-Es decir, generamos interés compuesto con el interés compuesto acumulado pero añadiendo cada año una cantidad de salario acumulado Q'.
+Es decir, el dinero de Eulàlia generaría interés compuesto, pero añadiendo cada año una cantidad de salario acumulado Q'.
 
-Si nos fijamos podemos reescribir las expresiones anteriores así:
+Si nos fijamos bien podemos reescribir las expresiones anteriores así:
 
 $$ 
 \begin{align*} 
@@ -243,7 +252,7 @@ $$
 \end{align*}
 $$
 
-De ello podemos sacar una ley general para este caso:
+De ello podemos sacar una ley general para el caso de Eulalia:
 
 $$ E(t) = Q' \cdot 1.03^{t-1} +  Q' \cdot 1.03^{t-2} + [...] + Q' \cdot 1.03 + q$$
 
@@ -258,7 +267,6 @@ Y en general, sustituyendo la expresión para que se adapte a cualquier tipo de 
 
 
 $$ E(t) = Q' \cdot \sum_{i=0}^{n-1} (1 + i)^{t}$$
-
 
 
 [^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección.Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
