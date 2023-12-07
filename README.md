@@ -243,12 +243,13 @@ $$
 \end{align*}
 $$
 
-De ello podemos sacar una ley general:
+De ello podemos sacar una ley general para este caso:
 
-$$ A(t) = q*1.03$$
+$$ E(t) = Q' \cdot 1.03^{t-1} +  Q' \cdot 1.03^{t-2} + [...] + Q' \cdot 1.03 + q$$
 
+Que factorizando nos quedaría:
 
-
+$$ E(t) = Q' \cdot (1.03^{t-1} +  1.03^{t-2} + [...] +  1.03 + 1)$$
 
 Y en general podríamos escribir:
 
