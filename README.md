@@ -227,7 +227,7 @@ $$L(t) = 5000 \cdot 12 \cdot t =  6000t$$
 
 El caso de eulalia sería distinto. El crecimiento de su dinero sería exponencial y, además, habría que tener en cuenta un ahorro recurrente, digamos, anual. Así pues, la funcion $E(t)$ sería un poco más compleja. Vamos a construirla.
 
-Asumamos que cuando pasa un año todo lo que ha ahorrado _Eulalia_ (llamémoslo $Q'$) ella lo invierte con un interés anual en tanto por uno de un 3 por ciento ($i = 0.03$ ), por lo tanto al cabo de un año (sustituyendo) y dejando $1 + i$ como el coeficiente de incremento $1.03$:
+Asumamos que cuando pasa un año todo lo que ha ahorrado _Eulalia_ (llamémoslo $Q'$) lo invierte a un interés anual de un 3% ($i = 0.03$ ). Si tomamos estos datos, al final del primer año Eulalia tendría una cantidad $E(1)$ igual a $Q'$ que invertiría sin cesar año a año. Si en lugar de tomar $1 + i$ como coeficiente de incremento tomamos su $1.03$, su caso de inversión particular, tenemos:
 
 $$ 
 \begin{align*} 
