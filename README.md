@@ -254,7 +254,7 @@ $$ E(t) = Q' \cdot (1.03^{t-1} +  1.03^{t-2} + [...] +  1.03 + 1)$$
 $$ E(t) = Q' \cdot \sum_{i=0}^{n-1} 1.03^{t}$$
 
 
-Y en general podríamos escribir:
+Y en general, sustituyendo la expresión para que se adapte a cualquier tipo de interés anual $i$ en tanto por uno, podríamos escribir la función anterior como:
 
 
 $$ E(t) = Q' \cdot \sum_{i=0}^{n-1} (1 + i)^{t}$$
