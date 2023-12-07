@@ -230,6 +230,26 @@ $$
 \end{align*}
 $$
 
+Es decir, generamos interés compuesto con el interés compuesto acumulado pero añadiendo cada año una cantidad de salario acumulado Q'.
+
+Si nos fijamos podemos reescribir las expresiones anteriores así:
+
+$$ 
+\begin{align*} 
+   E(1) & = Q' \\
+   E(2) & = Q' \cdot 1.03 + Q' \\
+   E(3) & = Q' \cdot 1.03^{2} + Q' \cdot 1.03 + Q'\\
+   E(4) & = Q' \cdot 1.03^{3} + Q' \cdot 1.03^{2} + Q' \cdot 1.03+ Q'
+\end{align*}
+$$
+
+De ello podemos sacar una ley general:
+
+$$ A(t) = q*1.03$$
+
+
+
+
 Y en general podríamos escribir:
 
 
