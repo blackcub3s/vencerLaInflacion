@@ -225,8 +225,8 @@ $$
 \begin{align*} 
    E(1) & = Q' \\
    E(2) & = Q' \cdot 1.03 + Q' \\
-   E(3) & = [Q' \cdot 1.03 + Q'] \cdot 1.03 + Q'\\
-   E(4) & = [[Q' \cdot 1.03 + Q'] \cdot 1.03 + Q'] \cdot 1.03 + Q'
+   E(3) & = (Q' \cdot 1.03 + Q') \cdot 1.03 + Q'\\
+   E(4) & = ((Q' \cdot 1.03 + Q') \cdot 1.03 + Q') \cdot 1.03 + Q'
 \end{align*}
 $$
 
