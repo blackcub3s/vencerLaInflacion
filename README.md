@@ -224,6 +224,8 @@ Mientras el caso de eulalia econtrar la funcion $E(t)$ sería un poco más compl
 $$E(1) = Q^{'} $$
 $$E(2) = Q^{'} \cdot (1 + i) + Q^{'} $$
 
+asd
+
 
 
 [^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección.Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
