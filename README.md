@@ -207,10 +207,13 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 # Anexo
 
-Hace tiempo escuché una especie de acertijo: "¿quien ahorra más? ¿Luís o Eulalia? Los datos eran:
+Hace tiempo escuché una especie de acertijo: 
 
-   _Luís_ cobra 10 000 euros al mes, ahorra la mitad de esa candidad mensualmente y no invierte su dinero.
-   _Eulalia_ cobra 3000 euros al mes, ahorra 2000 euros porque vive "frugalmente" y sí invierte su dinero.
+
+
+<kbd style="display: block; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+  "_Luís_ cobra 10 000 euros al mes, ahorra la mitad de esa candidad mensualmente y no invierte su dinero. _Eulalia_ cobra 3000 euros al mes, ahorra 2000 euros porque vive "frugalmente" y sí invierte su dinero. ¿Quien ahorra más? ¿Luís o Eulalia?" Los datos eran:"
+</kbd>
 
 Es una pregunta muy abierta pero podríamos tratar de estimar qué porcentaje anual puede conseguir _Eulalia_ en sus inversiones (digamos que un 3 por ciento neto sería algo plausible) en comparación con  _Luís_ que tendría un dinero que se acumula de forma gradual pero sin generar intereses.
 
