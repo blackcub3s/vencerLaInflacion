@@ -211,7 +211,7 @@ Hace tiempo escuché que quien ahorra más, _Luís_ que cobra 10 000 euros al me
 
 Es una pregunta muy abierta pero podríamos tratar de estimar qué porcentaje anual puede conseguir _Eulalia_ en sus inversiones (digamos que un 3 por ciento neto) y comparar si el dinero de pepita superaría al dinero de Pepe dado que el de esta primera crecería de forma exponencial mientra que el de  _Luís_ lo haría linealmente.
 
-La función lineal que identificaría el crecimiento del dinero de luís en función del tiempo sería:
+La función lineal que identificaría el crecimiento del dinero de luís en función del tiempo en años (t) sería:
 
 $$L(f) = 5000 \cdot 12 \cdot t$$
 
