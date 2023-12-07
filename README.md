@@ -215,11 +215,11 @@ La función lineal que identificaría el crecimiento del dinero que luís ahorra
 
 $$L(t) = Qt$$
 
-$$L(t) = 5000 \cdot 12 \cdot t$$
+Que en su caso particular: 
 
-$$L(t) = 6000t$$
+$$L(t) = 5000 \cdot 12 \cdot t =  6000t
 
-Mientras el caso de eulalia econtrar la funcion $E(t)$ sería un poco más complejo. Asumamos que cuando pasa un año todo lo que ha ahorrado lo invierte, por lo tanto al cabo de un año tiene:
+Mientras el caso de eulalia econtrar la funcion $E(t)$ sería un poco más complejo. Asumamos que cuando pasa un año todo lo que ha ahorrado (llamémoslo $Q^{'}$ también) lo invierte, por lo tanto al cabo de un año 
 
 $$E(1) = 6000t$$
 
