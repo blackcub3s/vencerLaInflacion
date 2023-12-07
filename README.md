@@ -207,7 +207,7 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 # Anexo
 
-To do
+Navegando por Twitter me encontré a un usuario que planteaba la siguiente pregunta. Quien va ahorrar más
 
 
 
