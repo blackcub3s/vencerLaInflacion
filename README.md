@@ -257,15 +257,7 @@ $$ E(t) = Q' \cdot \sum_{i=0}^{n-1} 1.03^{t}$$
 Y en general podríamos escribir:
 
 
-
-$$ 
-\begin{align*} 
-   E(1) & = Q' \\
-   E(2) & = Q' \cdot (1 + i) + Q' \\
-   E(3) & = [Q' \cdot (1 + i) + Q'] \cdot (1 + i) + Q'\\
-   E(4) & = [[Q' \cdot (1 + i) + Q'] \cdot (1 + i) + Q'] \cdot (1 + i) + Q'
-\end{align*}
-$$
+$$ E(t) = Q' \cdot \sum_{i=0}^{n-1} (1 + i)^{t}$$
 
 
 
