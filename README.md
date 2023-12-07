@@ -227,8 +227,8 @@ Mientras el caso de eulalia econtrar la funcion $E(t)$ sería un poco más compl
 $$ 
 \begin{align*} 
    E(1) & = Q' \\
-   E(2) & = Q' \cdot (1 + i) + Q'
-   E(3) & = [Q' \cdot (1 + i) + Q'] \cdot (1 + i) + Q'
+   E(2) & = Q' \cdot (1 + i) + Q' \\
+   E(3) & = [Q' \cdot (1 + i) + Q'] \cdot (1 + i) + Q'\\
 \end{align*}
 $$
 
