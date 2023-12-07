@@ -251,7 +251,11 @@ Que factorizando nos quedaría:
 
 $$ E(t) = Q' \cdot (1.03^{t-1} +  1.03^{t-2} + [...] +  1.03 + 1)$$
 
+$$ E(t) = Q' \cdot \sum_{i=0^{n-1} 1.03^t$$
+
+
 Y en general podríamos escribir:
+
 
 
 $$ 
