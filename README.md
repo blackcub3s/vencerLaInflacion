@@ -217,11 +217,12 @@ $$L(t) = Qt$$
 
 Que en su caso particular: 
 
-$$L(t) = 5000 \cdot 12 \cdot t =  6000t
+$$L(t) = 5000 \cdot 12 \cdot t =  6000t$$
 
-Mientras el caso de eulalia econtrar la funcion $E(t)$ sería un poco más complejo. Asumamos que cuando pasa un año todo lo que ha ahorrado (llamémoslo $Q^{'}$ también) lo invierte, por lo tanto al cabo de un año 
+Mientras el caso de eulalia econtrar la funcion $E(t)$ sería un poco más complejo. Asumamos que cuando pasa un año todo lo que ha ahorrado (llamémoslo $Q^{'}$) lo invierte con un interés anual en tanto por uno $i$ por lo tanto al cabo de un año:
 
-$$E(1) = 6000t$$
+$$E(1) = Q^{'} $$
+$$E(2) = Q^{'} \cdot (1 + i) + Q^{'} $$
 
 
 
