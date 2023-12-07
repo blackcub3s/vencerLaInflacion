@@ -214,6 +214,7 @@ Es una pregunta muy abierta pero podríamos tratar de estimar qué porcentaje an
 La función lineal que identificaría el crecimiento del dinero de luís en función del tiempo sería:
 
 $$L(f) = 5000 \cdot 12 \cdot t$$
+
 $$L(f) = 6000t$$
 
 TO CONTINUAR HERE XD
