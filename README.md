@@ -306,8 +306,15 @@ Damos valores a los distintos años desde que empezamos a invertir (separador de
 
 </div>
 
-Eulàlia, invirtiendo a un tres por ciento anual, tendrá más patrimonio que David cuando lleve 56 años invirtiendo. ¡Doradas sean las bondades del interés compuesto! Puede que ella pueda permitirse un mejor ataúd que Luís, aunque siendo tan frugal probablemente habrá dejado en su testamento que su familia compre el más barato de todos...
+_Eulàlia_, invirtiendo a un tres por ciento anual, tendrá más patrimonio que David cuando lleve 56 años invirtiendo. ¡Doradas sean las bondades del interés compuesto! Puede que ella pueda permitirse un mejor ataúd que Luís, aunque siendo tan frugal probablemente habrá dejado en su testamento que su familia compre el más barato de todos...
 
-¿Y qué hubiese pasado si Ana hubiese conseguido una rentabilidad del 10 por ciento anual? Pues que hubiese ganado a Luís en solo 18 años y hubiese amasando más de un millón de euros (1094380 €). Algo irreal, por supuesto, porque en búsqueda de una rentabilidad tan grande probablemente caería en estafas piramidales, criptomonedas o habría invertido en deuda de estados fallidos que no devuelven el dinero (Islandia, 2008), etc.
+¿Y qué hubiese pasado si _Eulàlia_ hubiese conseguido una rentabilidad del 10 por ciento anual? Pues que hubiese ganado a Luís en solo 18 años y hubiese amasando más de un millón de euros (1094380 €). Algo irreal, por supuesto, porque en búsqueda de una rentabilidad tan grande probablemente caería en estafas piramidales, criptomonedas o habría invertido en deuda de estados fallidos que no devuelven el dinero (Islandia, 2008), etc.
 
-En resumen, que Ana seguirá siendo pobre independientemente de lo que haga.
+En resumen, que _Eulàlia_ seguirá siendo pobre independientemente de lo que haga.
+
+Para ver como calcular el crecimiento del dinero de _Eulàlia_ y de Luís tenemos sendas funciones. Aquí abajo ponemos la función $E(n)$ con la que modelizamos el crecimiento del patrimonio de _Eulàlia_:
+
+https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c8bc3cec5c37ad/scriptExponencialRecurrent.js#L10C1-L21C2
+
+
+
