@@ -306,4 +306,8 @@ Damos valores a los distintos años desde que empezamos a invertir (separador de
 
 </div>
 
-Eulàlia tendrá más patrimonio que David cuando lleve 56 años invirtiendo. ¡Doradas sean las bondades del interés compuesto! Puede que Eulàlia pueda permitirse un mejor ataúd que Luís, aunque siendo ella tan frugal probablemente habrá dejado en su testamento a su familia que compren el más barato de todos y sigan reinvirtiendo el dinero.
+Eulàlia tendrá más patrimonio que David cuando lleve 56 años invirtiendo. ¡Doradas sean las bondades del interés compuesto! Puede que Eulàlia pueda permitirse un mejor ataúd que Luís, aunque siendo ella tan frugal probablemente habrá dejado en su testamento a su familia que compren el más barato de todos.
+
+Y qué hubiese pasado si Ana hubiese conseguido una rentabilidad del 10 por ciento anual? Pues que hubiese ganado a Luís en solo 18 años, amasando más de un millón de euros (1094380 €). Algo irreal, por supuesto, porque en búsqueda de una rentabilidad tan grande probablemente caería en estafas piramidales, criptomonedas, habría invertido en deuda de estados fallidos que no devuelven el dinero (Islandia, 2008), etc.
+
+En resumen, que Ana seguirá siendo pobre independientemente de lo que haga.

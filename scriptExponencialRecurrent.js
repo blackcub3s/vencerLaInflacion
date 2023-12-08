@@ -24,7 +24,7 @@ function E(n,Q,i) {
 let n = 100;
 for (let i = 1; i <= n; ++i) {
     let Q_lluis = L(i,60000);
-    let Q_Eulalia = E(i,24000,0.03);
+    let Q_Eulalia = E(i,24000,0.1);
     console.log( "L("+i+"): "+Q_lluis+" €"+"  "+"E("+i+"): "+Q_Eulalia+" €");
     if (Q_Eulalia > Q_lluis) {
         break;
