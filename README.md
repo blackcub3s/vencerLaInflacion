@@ -308,7 +308,7 @@ _Eulàlia_, invirtiendo a un tres por ciento anual, tendrá más patrimonio que 
 
 ¿Y qué hubiese pasado si _Eulàlia_ hubiese conseguido una rentabilidad del 10 por ciento anual? Pues que hubiese ganado a Luís en solo 18 años y hubiese amasando más de un millón de euros (1.094.380 €). Algo irreal, por supuesto, porque en búsqueda de una rentabilidad tan grande probablemente caería en estafas piramidales; por ejemplo, habría invertido en deuda de estados o empresas fallidos/as que no devuelven el dinero (Islandia, crisis financiera de 2008 a 2010[^2]; Albania, esquemas piramidales de 1997[^3]) o en estafas relacionadas con las criptomonedas en donde los fundadores de los exchange se quedan todo o gran parte del capital (véanse las estafas piramidales de FTX con Sam Bankman Fried[^4], del exchange canadiense QuadrigaCX[^5], o la criptomoneda OneCoin acuñada por Ruja Ignatova[^6] calificada por el new york times como una de las estafas más grandes de la historia).
 
-En resumen, que _Eulàlia_ seguirá siendo pobre independientemente de lo que haga.
+En resumen, que _Eulàlia_ seguirá siendo pobre independientemente de lo que haga. Pero, con la inversión sí puede aspirar a que el dinero crezca a un ritmo igual o superior al de la inflación de modo que le dinero guardado que quede en líquido mantenga su valor.
 
 Para ver como calcular el crecimiento del dinero de _Eulàlia_ y de Luís tenemos sendas funciones. Aquí abajo ponemos la función $E(n)$ con la que hemos visualizado el patrimonio de _Eulàlia_ junto con un bucle para imprimir el crecimiento del dinero:
 
