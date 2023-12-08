@@ -314,7 +314,7 @@ En resumen, que _Eulàlia_ seguirá siendo pobre independientemente de lo que ha
 
 Para ver como calcular el crecimiento del dinero de _Eulàlia_ y de Luís tenemos sendas funciones. Aquí abajo ponemos la función $E(n)$ con la que modelizamos el crecimiento del patrimonio de _Eulàlia_:
 
-https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c8bc3cec5c37ad/scriptExponencialRecurrent.js#L10C1-L21C2
+https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c8bc3cec5c37ad/scriptExponencialRecurrent.js#L10-L21
 
 
 
