@@ -323,7 +323,7 @@ https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c
 
 [^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección. Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
 
-[^2]: [https://en.wikipedia.org/wiki/2008%E2%80%932011_Icelandic_financial_crisis](https://en.wikipedia.org/wiki/2008%E2%80%932011_Icelandic_financial_crisis) for more information.
+[^2]: [https://en.wikipedia.org/wiki/2008%E2%80%932011_Icelandic_financial_crisis](https://en.wikipedia.org/wiki/2008%E2%80%932011_Icelandic_financial_crisis)
 
 [^3]: [https://en.wikipedia.org/wiki/1997_Albanian_civil_unrest](https://en.wikipedia.org/wiki/1997_Albanian_civil_unrest)
 
