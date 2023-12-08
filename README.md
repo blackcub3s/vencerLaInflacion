@@ -19,10 +19,10 @@
    - 4.5 [Cálculo del Punto de Corte del Gráfico de Incremento de Renta y el Gráfico de Decremento Inflacionario](#cálculo-del-punto-de-corte-del-gráfico-de-incremento-de-renta-y-el-gráfico-de-decremento-inflacionario)
 5. [Conclusiones](#conclusiones)
 6. [Anexo](#anexo)
-   - [Acertijo](#acertijo)
-   - [Crecimiento del dinero de Luís (lineal, con ahorro recurrente)](#crecimiento-del-dinero-de-luís-lineal-con-ahorro-recurrente)
-   - [Crecimiento del dinero de Eulàlia (exponencial, con ahorro recurrente)](#crecimiento-del-dinero-de-eulàlia-exponencial-con-ahorro-recurrente)
-   - [Crecimiento lineal con ahorro recurrente vs. exponencial con ahorro recurrente](#crecimiento-lineal-con-ahorro-recurrente-vs-exponencial-con-ahorro-recurrente)
+   - 6.1 [Acertijo](#acertijo)
+   - 6.2 [Crecimiento del dinero de Luís (lineal, con ahorro recurrente)](#crecimiento-del-dinero-de-luís-lineal-con-ahorro-recurrente)
+   - 6.3 [Crecimiento del dinero de Eulàlia (exponencial, con ahorro recurrente)](#crecimiento-del-dinero-de-eulàlia-exponencial-con-ahorro-recurrente)
+   - 6.4 [Crecimiento lineal con ahorro recurrente vs. exponencial con ahorro recurrente](#crecimiento-lineal-con-ahorro-recurrente-vs-exponencial-con-ahorro-recurrente)
  
 
 
