@@ -279,12 +279,22 @@ $$ E(n) = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{t}$$
 
 Vamos a comparar como crece el dinero de _Luís_ ( $L(n)$ ) con respecto al de _Eulàlia_ ( $E(n)$ ) con las funciones que hemos visto para cada uno de ellos:
 
-$$L(n) =  60000t$$
+$$ 
+\begin{align*} 
+   L(n) =  60000n
 
-$$ E(n) = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{t}$$
+   E(n) = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{n}
+\end{align*}
+$$
+
+Damos valores a los distintos años desde que empezamos a invertir:
+
 
 | n | L(n) | E(n) |
-|:-------------|:--------------:|--------------:|
-| 1 | 60000 | Right content |
-| 2 | Center content | Right content |
-| 3 | Center content | Right content |
+|:-------------|:--------------:|:--------------:|
+| 1  | 60000  | 24000      |
+| 2  | 120000 | 72000      |
+| 3  | 180000 | 175440     |
+| 5  | 300000 | 484843.14  |
+| 10 | 600000 | 1909977.96 |
+| 15 | 900000 | 6369463.64 |
