@@ -115,7 +115,7 @@ function FesGraficInflacio_i_InteresCompost() {
 
 
 
-var Qinicial = 30000;
+var Qinicial = 100000;
 var totalAnys = 20;
 var i = 3/100; //interes anual: 3 per cent.
 var i_prima = 6/100; //inlfacio anual
