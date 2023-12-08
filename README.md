@@ -155,7 +155,7 @@ En la aplicación web queremos mostrar la función $Q_{inf}(n)$, como google. Ig
 
 Y en nuestra aplicación queda así:
 
-TO DO
+![no mostra reduccio exponencial](imagenes/disminucioPerInflacio.png)
 
 
 ## Representación del gráfico de incremento de renta vs. gráfico de decremento inflacionario
@@ -164,6 +164,10 @@ TO DO
 En la aplicación web también queremos mostrar la función de ganancias acumuladas a lo largo de los años $Q_{g}(n)$ (en azul) en relación a las pérdidas producidas por la inflación en un capital que no obtiene rentabilidad $Q_{p'[Inf]}(n)$ (en rojo), de la misma forma que lo muestra google. Por ejemplo, para una cantidad inicial $Q$ de 100 000 euros google nos muestra:
 
 ![grafico de google no se pudo mostrar](imagenes/incrementoDecrementoGoogle.png)
+
+Y en nuestra aplicación web se ve así: 
+
+![grafic inflacio vs interes compost no s ha pogut mostrar](imagenes/Inflacio_vs_interesCompost.png)
 
 En este gráfico la importancia está encontrar el momento en que se produce el punto de corte entre ambas funciones, como veremos en el siguiente apartado.
 
