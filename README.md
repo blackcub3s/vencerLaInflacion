@@ -153,7 +153,7 @@ En la aplicación web queremos mostrar la función $Q_{inf}(n)$, como google. Ig
 
 ![no mostra reduccio exponencial](imagenes/image-1.png)
 
-Y en nuestra aplicación queda así:
+Y en nuestra aplicación web (en este caso para una cantidad de 2queda así:
 
 ![no mostra reduccio exponencial](imagenes/disminucioPerInflacio.png)
 
@@ -322,7 +322,7 @@ _Eulàlia_, invirtiendo a un tres por ciento anual, tendrá más patrimonio que 
 
 En resumen, que _Eulàlia_ seguirá siendo pobre independientemente de lo que haga. Pero, con la inversión sí puede aspirar a que el dinero crezca a un ritmo igual o superior al de la inflación de modo que le dinero guardado que quede en líquido mantenga su valor.
 
-Para ver como calcular el crecimiento del dinero de _Eulàlia_ y de Luís tenemos sendas funciones. Aquí abajo ponemos la función $E(n)$ con la que hemos visualizado el patrimonio de _Eulàlia_ junto con un bucle para imprimir el crecimiento del dinero:
+Para ver como calcular el crecimiento del dinero de _Eulàlia_ y de Luís tenemos sendas funciones. Aquí abajo ponemos la función $E(n)$ con la que hemos visualizado en la tabla anterior la evolución del patrimonio de _Eulàlia_ a lo largo del tiempo, junto con el bucle para imprimir las cantidades año a año:
 
 https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c8bc3cec5c37ad/scriptExponencialRecurrent.js#L10-L33
 
