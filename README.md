@@ -253,23 +253,23 @@ $$
 
 Y de ellas podemos sacar una ley general para el caso de Eulalia:
 
-$$ E(n) = Q' \cdot 1.03^{t-1} +  Q' \cdot 1.03^{t-2} + [...] + Q' \cdot 1.03 + q$$
+$$ E(n) = Q' \cdot 1.03^{n-1} +  Q' \cdot 1.03^{n-2} + [...] + Q' \cdot 1.03 + q$$
 
 Que factorizando quedaría:
 
-$$ E(n) = Q' \cdot (1.03^{t-1} +  1.03^{t-2} + [...] +  1.03 + 1)$$
+$$ E(n) = Q' \cdot (1.03^{n-1} +  1.03^{n-2} + [...] +  1.03 + 1)$$
 
 Y considerando la propiedad asociativa de la suma podemos reescribir los sumandos del paréntesis de menor a mayor (ahora están de mayor a menor) y representarlos con un sumatorio, tal que así:
 
-$$ E(n) = Q' \cdot \sum_{i=0}^{n-1} 1.03^{t}$$
+$$ E(n) = Q' \cdot \sum_{i=0}^{n-1} 1.03^{i}$$
 
 Y, para hacer una ley general no dependiente del tipo de interés, podemos sustituir la expresión para que se adapte a cualquier tipo de interés anual $i$ en tanto por uno, podríamos escribir la función anterior como:
 
-$$ E(n) = Q' \cdot \sum_{j=0}^{n-1} (1 + i)^{t}$$
+$$ E(n) = Q' \cdot \sum_{j=0}^{n-1} (1 + i)^{j}$$
 
 En el caso de Eulàlia el crecimiento de su dinero podríamos obtenerlo sustituyendo $Q'$ por los 2000 euros a lo largo de 12 meses y dejando el tipo de interés al 3 por ciento como antes:
 
-$$ E(n) = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{t}$$
+$$ E(n) = 24000 \cdot \sum_{i=0}^{n-1} (1.03)^{i}$$
 
 
 
@@ -279,22 +279,4 @@ $$ E(n) = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{t}$$
 
 Vamos a comparar como crece el dinero de _Luís_ $L(n)$ con respecto al de _Eulàlia_ $E(n)$ con las funciones que hemos visto para cada uno de ellos:
 
-$$ 
-\begin{align*} 
-   L(n) & =  60000n  \\
 
-   E(n) & = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{n}  \\
-\end{align*}
-$$
-
-Damos valores a los distintos años desde que empezamos a invertir:
-
-
-| n | L(n) | E(n) |
-|:-------------|:--------------:|:--------------:|
-| 1  | 60000  | 24000      |
-| 2  | 120000 | 72000      |
-| 3  | 180000 | 175440     |
-| 5  | 300000 | 484843.14  |
-| 10 | 600000 | 1909977.96 |
-| 15 | 900000 | 6369463.64 |
