@@ -10,6 +10,33 @@
         :root{
             --verdMeu:  rgb(70, 143, 70);
         }
+
+
+    /*NAVEGADOR APAREIX EN UNA LINIA I EL CUSTOMITZEM*/
+
+    header nav ul { 
+        text-align: center;
+        font-size: 1.2em;
+        background-color: blanchedalmond;
+        padding: .7em 0em .7em 0em;
+    }
+    header nav li {
+      display: inline-block;
+      margin-right: 2em; 
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    /*canviem de color i fem més grans els links del navegador quan fem hover damunt*/
+    header nav a:hover {text-transform: scale(2); color: green;}
+
+
+
+
+
         /* ESTIL PER AL CONTENIDOR QUE TINDRÀ EL FLEX */
         .contenidor {
             display: flex;
@@ -25,6 +52,7 @@
             height: 100%;
         }
 
+        
        
         .div-esquerre {background-color: var(--verdMeu);}
         .div-dret {background-color: white;}
@@ -49,6 +77,14 @@
 </head>
 <body>
 
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ahorros e inflación</a></li>
+            <li><a href="#">Ahorro recurrente</a></li>
+        </ul>
+    </nav>
+</header>    
 
 <div class="contenidor">
     <div class="div-esquerre">
@@ -148,5 +184,7 @@
 
 
 <script src="script.js"></script>
+<script src="scriptExponencialRecurrent.js"></script>
+
 </body>
 </html>
