@@ -312,9 +312,9 @@ _Eulàlia_, invirtiendo a un tres por ciento anual, tendrá más patrimonio que 
 
 En resumen, que _Eulàlia_ seguirá siendo pobre independientemente de lo que haga.
 
-Para ver como calcular el crecimiento del dinero de _Eulàlia_ y de Luís tenemos sendas funciones. Aquí abajo ponemos la función $E(n)$ con la que modelizamos el crecimiento del patrimonio de _Eulàlia_:
+Para ver como calcular el crecimiento del dinero de _Eulàlia_ y de Luís tenemos sendas funciones. Aquí abajo ponemos la función $E(n)$ con la que hemos visualizado el patrimonio de _Eulàlia_ junto con un bucle para imprimir el crecimiento del dinero:
 
-https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c8bc3cec5c37ad/scriptExponencialRecurrent.js#L10-L21
+https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c8bc3cec5c37ad/scriptExponencialRecurrent.js#L10-L33
 
 
 
