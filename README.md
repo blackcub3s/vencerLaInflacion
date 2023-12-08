@@ -213,17 +213,17 @@ Hace tiempo escuché una especie de acertijo:
 
 Es una pregunta muy abierta pero, para tratar de responderla, podríamos tratar de estimar qué porcentaje anual puede conseguir _Eulalia_ en sus inversiones y así comparar el crecimiento del dinero de _Eulalia_ en comparación con el de _Luís_ que, si bien tendría un crecimiento de dinero gradual, podría ser superado por el de _Eulalia_ con el paso del tiempo. Vamos a asumir que Eulalia consigue un interes anual neto sobre su capital, año a año, del 3 por ciento.
 
-## Crecimiento del dinero de Luís (lineal)
+## Crecimiento del dinero de Luís (lineal, con ahorro recurrente)
 
-La función que identificaría el crecimiento del dinero que luís ahorra cada año (Q) en función del tiempo en años (t) sería una función $L(t)$ que sería, pues, lineal:
+La función que identificaría el crecimiento del dinero que luís ahorra cada año (Q) en función del tiempo en años (n) sería una función $L(n)$ que sería, pues, lineal:
 
 $$L(t) = Qt$$
 
 Que en el caso particular: 
 
-$$L(t) = 5000 \cdot 12 \cdot t =  6000t$$
+$$L(t) = 5000 \cdot 12 \cdot t =  60000t$$
 
-## Crecimiento del dinero de Eulalia (exponencial con ahorro recurrente)
+## Crecimiento del dinero de Eulalia (exponencial, con ahorro recurrente)
 
 El caso de Eulalia sería distinto. El crecimiento de su dinero sería exponencial y, además, habría que tener en cuenta un ahorro recurrente, digamos, anual. Así pues, la función $E(n)$ sería un poco más compleja.
 
@@ -267,5 +267,24 @@ Y, para hacer una ley general no dependiente del tipo de interés, podemos susti
 
 $$ E(n) = Q' \cdot \sum_{j=0}^{n-1} (1 + i)^{t}$$
 
+En el caso de Eulàlia el crecimiento de su dinero podríamos obtenerlo sustituyendo $Q'$ por los 2000 euros a lo largo de 12 meses y dejando el tipo de interés al 3 por ciento como antes:
+
+$$ E(n) = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{t}$$
+
+
 
 [^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección. Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
+
+# Crecimiento lineal con ahorro recurrente vs. exponencial con ahorro recurrente
+
+Vamos a comparar como crece el dinero de _Luís_ ( $L(n)$ ) con respecto al de _Eulàlia_ ( $E(n)$ ) con las funciones que hemos visto para cada uno de ellos:
+
+$$L(n) =  60000t$$
+
+$$ E(n) = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{t}$$
+
+| n | L(n) | E(n) |
+|:-------------|:--------------:|--------------:|
+| 1 | 60000 | Right content |
+| 2 | Center content | Right content |
+| 3 | Center content | Right content |
