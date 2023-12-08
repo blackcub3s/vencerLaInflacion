@@ -282,7 +282,7 @@ Vamos a comparar como crece el dinero de _Lu√≠s_ $L(n)$ con respecto al de _Eul√
 $$ 
 \begin{align*} 
    L(n) & =  60000n \\
-   E(n) & = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{n} \\
+   E(n) & = 24000 \cdot \sum_{i=0}^{n-1} (1.03)^{i} \\
 \end{align*}
 $$
 
