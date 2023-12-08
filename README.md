@@ -277,13 +277,13 @@ $$ E(n) = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{t}$$
 
 # Crecimiento lineal con ahorro recurrente vs. exponencial con ahorro recurrente
 
-Vamos a comparar como crece el dinero de _Luís_ ( $L(n)$ ) con respecto al de _Eulàlia_ ( $E(n)$ ) con las funciones que hemos visto para cada uno de ellos:
+Vamos a comparar como crece el dinero de _Luís_ $L(n)$ con respecto al de _Eulàlia_ $E(n)$ con las funciones que hemos visto para cada uno de ellos:
 
 $$ 
 \begin{align*} 
-   L(n) & =  60000n
+   L(n) & =  60000n  \\
 
-   E(n) & = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{n}
+   E(n) & = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{n}  \\
 \end{align*}
 $$
 
