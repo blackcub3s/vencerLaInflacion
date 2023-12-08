@@ -8,7 +8,7 @@
 
 
         :root{
-            --verdMeu:  rgb(70, 143, 70);
+            --verdMeu:  rgb(218, 171, 130);
         }
 
 
@@ -41,7 +41,7 @@
         .contenidor {
             display: flex;
             flex-direction: row;
-            height: 100vh;
+            height: 50vh;
             margin: 0;
             padding: 0;
         }
@@ -52,6 +52,14 @@
             height: 100%;
         }
 
+        .div-dret{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            
+        }
+
         
        
         .div-esquerre {background-color: var(--verdMeu);}
@@ -60,14 +68,16 @@
         /* MEDIA QUERY PER A MOSTRAR-LO BÉ A MÒBIL 
         -DIV BLANC (GRÀFIC) A SOTA I DIV VERD (FORMULARI) DAMUNT
         -PER ARA NOME SFUNCIONA SI NO H HA EL GRAFIC PLOTLY DINS EL DIV DE LA DRETA...  O SEA QUE NO VA */
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 1000px) {
             .contenidor {flex-direction: column;}
             .div-esquerre {order: 1;}
             .div-dret {order: 2;}
             #graficPlotly {order: 3;}
         }
 
-
+        #graficPlotly {
+            margin-top: 7em;
+        }
     </style>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="estilsFormulari.css">
@@ -124,61 +134,64 @@
     </div>
     
     <div class="div-dret"> 
-        <div id = "graficPlotly"></div> <!--LA MEDIA QUERY FUNCIONA SI NO HI HA EL GRAFIC, PERÒ AMB EL GRAFIC NO: CAL MIRAR COM AFECTAR AL GRAFIC AMB LA MEDIA QUERY -->
+
+        <table>
+            <caption>Tabla1: Incremento del capital por la inversión en función del tiempo</caption>
+            <thead>
+                <tr>
+                    <th>nAños</th>
+                    <th>Q(n)</th>
+                    <th>ganancia acumulada</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>LOREM</td>
+                    <td>LOREM</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>LOREM</td>
+                    <td>LOREM</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>LOREM</td>
+                    <td>LOREM</td>
+                </tr>
+                <tr>
+                    <th>10</th>
+                    <td>LOREM</td>
+                    <td>LOREM</td>
+                </tr>
+                <tr>
+                    <th>20</th>
+                    <td>LOREM</td>
+                    <td>LOREM</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td>SUMA</td>
+                </tr>
+            </tfoot>
+        </table>
+
+       
+        <!--LA MEDIA QUERY FUNCIONA SI NO HI HA EL GRAFIC, PERÒ AMB EL GRAFIC NO: CAL MIRAR COM AFECTAR AL GRAFIC AMB LA MEDIA QUERY -->
         <!--
-            <div id = "taulaPreus">
-                <table>
-                    <caption>Tabla1: Incremento del capital por la inversión en función del tiempo</caption>
-                    <thead>
-                        <tr>
-                            <th>nAños</th>
-                            <th>Q(n)</th>
-                            <th>ganancia acumulada</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <th>1</th>
-                            <td>LOREM</td>
-                            <td>LOREM</td>
-                        </tr>
-                        <tr>
-                            <th>3</th>
-                            <td>LOREM</td>
-                            <td>LOREM</td>
-                        </tr>
-                        <tr>
-                            <th>5</th>
-                            <td>LOREM</td>
-                            <td>LOREM</td>
-                        </tr>
-                        <tr>
-                            <th>10</th>
-                            <td>LOREM</td>
-                            <td>LOREM</td>
-                        </tr>
-                        <tr>
-                            <th>20</th>
-                            <td>LOREM</td>
-                            <td>LOREM</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th></th>
-                            <td></td>
-                            <td>SUMA</td>
-                        </tr>
-                    </tfoot>
-                </table>
-
-            </div>
         -->
     </div>
     
+    
 
 </div>
+
+<div id = "graficPlotly"></div>
     
     
 

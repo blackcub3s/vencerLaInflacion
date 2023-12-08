@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Adjust the height as needed to center vertically */
+    height: 50vh; /* Adjust the height as needed to center vertically */
   }
   
   /* Style the form elements */
@@ -27,7 +27,7 @@ fieldset {
   
   label {
     display: block;
-    margin: .2em 0;
+   
     font-weight: bold;
     
   }
