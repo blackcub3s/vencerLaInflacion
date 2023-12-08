@@ -281,9 +281,9 @@ Vamos a comparar como crece el dinero de _Luís_ ( $L(n)$ ) con respecto al de _
 
 $$ 
 \begin{align*} 
-   L(n) =  60000n
+   L(n) & =  60000n
 
-   E(n) = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{n}
+   E(n) & = 24000 \cdot \sum_{j=0}^{n-1} (1.03)^{n}
 \end{align*}
 $$
 
