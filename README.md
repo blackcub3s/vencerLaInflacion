@@ -213,7 +213,7 @@ Hace tiempo escuché una especie de acertijo:
 
 Es una pregunta muy abierta pero, para tratar de responderla, podríamos tratar de estimar qué porcentaje anual puede conseguir _Eulalia_ en sus inversiones y así comparar el crecimiento del dinero de _Eulalia_ en comparación con el de _Luís_ que, si bien tendría un crecimiento de dinero gradual, podría ser superado por el de _Eulalia_ con el paso del tiempo. Vamos a asumir que Eulalia consigue un interes anual neto sobre su capital, año a año, del 3 por ciento.
 
-## Crecimiento del dinero de luís (lineal)
+## Crecimiento del dinero de Luís (lineal)
 
 La función que identificaría el crecimiento del dinero que luís ahorra cada año (Q) en función del tiempo en años (t) sería una función $L(t)$ que sería, pues, lineal:
 
@@ -223,11 +223,11 @@ Que en el caso particular:
 
 $$L(t) = 5000 \cdot 12 \cdot t =  6000t$$
 
-## crecimiento del dinero de eulalia (exponencial con ahorro recurrente)
+## Crecimiento del dinero de Eulalia (exponencial con ahorro recurrente)
 
-El caso de eulalia sería distinto. El crecimiento de su dinero sería exponencial y, además, habría que tener en cuenta un ahorro recurrente, digamos, anual. Así pues, la funcion $E(t)$ sería un poco más compleja. Vamos a construirla.
+El caso de Eulalia sería distinto. El crecimiento de su dinero sería exponencial y, además, habría que tener en cuenta un ahorro recurrente, digamos, anual. Así pues, la función $E(n)$ sería un poco más compleja.
 
-Asumamos que cuando pasa un año todo lo que ha ahorrado _Eulalia_ (llamémoslo $Q'$) lo invierte a un interés anual de un 3% ($i = 0.03$ ). Si tomamos estos datos, al final del primer año Eulalia tendría una cantidad $E(1)$ igual a $Q'$ que invertiría sin cesar año a año. Si en lugar de tomar $1 + i$ como coeficiente de incremento tomamos su $1.03$, su caso de inversión particular, tenemos:
+Para construirla asumamos que cuando pasa el primer año de ahorro, todo lo que ha conseguido acumular _Eulalia_ exclusivamente de su salario anual (llamémoslo $Q'$) lo invierte entonces un interés anual de un 3% ($i = 0.03$ ). Si tomamos estos datos, al final del primer año Eulalia tendría una cantidad $E(1)$ igual a $Q'$. Para los siguientes años, si en lugar de tomar $1 + i$ como coeficiente de incremento tomamos $1.03$ tenemos que su dinero crece así:
 
 $$ 
 \begin{align*} 
@@ -251,23 +251,21 @@ $$
 \end{align*}
 $$
 
-De ello podemos sacar una ley general para el caso de Eulalia:
+Y de ellas podemos sacar una ley general para el caso de Eulalia:
 
-$$ E(t) = Q' \cdot 1.03^{t-1} +  Q' \cdot 1.03^{t-2} + [...] + Q' \cdot 1.03 + q$$
+$$ E(n) = Q' \cdot 1.03^{t-1} +  Q' \cdot 1.03^{t-2} + [...] + Q' \cdot 1.03 + q$$
 
-Que factorizando nos quedaría:
+Que factorizando quedaría:
 
-$$ E(t) = Q' \cdot (1.03^{t-1} +  1.03^{t-2} + [...] +  1.03 + 1)$$
+$$ E(n) = Q' \cdot (1.03^{t-1} +  1.03^{t-2} + [...] +  1.03 + 1)$$
 
-Y considerando la propiedad asociativa de la suma podemos reescribir los sumandos del parentesis de izquierda a derecha y representarlos con un sumatorio tal que así:
+Y considerando la propiedad asociativa de la suma podemos reescribir los sumandos del paréntesis de menor a mayor (ahora están de mayor a menor) y representarlos con un sumatorio, tal que así:
 
-$$ E(t) = Q' \cdot \sum_{i=0}^{n-1} 1.03^{t}$$
+$$ E(n) = Q' \cdot \sum_{i=0}^{n-1} 1.03^{t}$$
 
+Y, para hacer una ley general no dependiente del tipo de interés, podemos sustituir la expresión para que se adapte a cualquier tipo de interés anual $i$ en tanto por uno, podríamos escribir la función anterior como:
 
-Y en general, sustituyendo la expresión para que se adapte a cualquier tipo de interés anual $i$ en tanto por uno, podríamos escribir la función anterior como:
-
-
-$$ E(t) = Q' \cdot \sum_{i=0}^{n-1} (1 + i)^{t}$$
+$$ E(n) = Q' \cdot \sum_{j=0}^{n-1} (1 + i)^{t}$$
 
 
-[^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección.Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
+[^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección. Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
