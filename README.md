@@ -18,7 +18,13 @@
    - 4.4 [Representación del Gráfico de Incremento de Renta vs. Gráfico de Decremento Inflacionario](#representación-del-gráfico-de-incremento-de-renta-vs-gráfico-de-decremento-inflacionario)
    - 4.5 [Cálculo del Punto de Corte del Gráfico de Incremento de Renta y el Gráfico de Decremento Inflacionario](#cálculo-del-punto-de-corte-del-gráfico-de-incremento-de-renta-y-el-gráfico-de-decremento-inflacionario)
 5. [Conclusiones](#conclusiones)
-6. [Anexo](#Anexo)
+6. [Anexo](#anexo)
+   - [Acertijo](#acertijo)
+   - [Crecimiento del dinero de Luís (lineal, con ahorro recurrente)](#crecimiento-del-dinero-de-luís-lineal-con-ahorro-recurrente)
+   - [Crecimiento del dinero de Eulàlia (exponencial, con ahorro recurrente)](#crecimiento-del-dinero-de-eulàlia-exponencial-con-ahorro-recurrente)
+   - [Crecimiento lineal con ahorro recurrente vs. exponencial con ahorro recurrente](#crecimiento-lineal-con-ahorro-recurrente-vs-exponencial-con-ahorro-recurrente)
+ 
+
 
 
 # Introducción
@@ -207,6 +213,8 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 # Anexo
 
+## Acertijo
+
 Hace tiempo escuché una especie de acertijo: 
 
 "_Luís cobra 10 000 euros al mes, ahorra la mitad de esa candidad mensualmente y no invierte su dinero. Eulàlia cobra 3000 euros al mes, ahorra 2000 euros porque vive "frugalmente" y sí invierte su dinero. ¿Quien ahorra más? ¿Luís o Eulàlia?_"
@@ -273,7 +281,7 @@ $$ E(n) = 24000 \cdot \sum_{i=0}^{n-1} (1.03)^{i}$$
 
 
 
-# Crecimiento lineal con ahorro recurrente vs. exponencial con ahorro recurrente
+## Crecimiento lineal con ahorro recurrente vs. exponencial con ahorro recurrente
 
 Vamos a comparar como crece el dinero de _Luís_ $L(n)$ con respecto al de _Eulàlia_ $E(n)$ con las funciones que hemos visto para cada uno de ellos:
 
