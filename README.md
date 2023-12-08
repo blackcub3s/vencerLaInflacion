@@ -209,9 +209,9 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 Hace tiempo escuché una especie de acertijo: 
 
-"_Luís cobra 10 000 euros al mes, ahorra la mitad de esa candidad mensualmente y no invierte su dinero. Eulalia cobra 3000 euros al mes, ahorra 2000 euros porque vive "frugalmente" y sí invierte su dinero. ¿Quien ahorra más? ¿Luís o Eulalia?_"
+"_Luís cobra 10 000 euros al mes, ahorra la mitad de esa candidad mensualmente y no invierte su dinero. Eulàlia cobra 3000 euros al mes, ahorra 2000 euros porque vive "frugalmente" y sí invierte su dinero. ¿Quien ahorra más? ¿Luís o Eulàlia?_"
 
-Es una pregunta muy abierta pero, para tratar de responderla, podríamos tratar de estimar qué porcentaje anual puede conseguir _Eulalia_ en sus inversiones y así comparar el crecimiento del dinero de _Eulalia_ en comparación con el de _Luís_ que, si bien tendría un crecimiento de dinero gradual, podría ser superado por el de _Eulalia_ con el paso del tiempo. Vamos a asumir que Eulalia consigue un interes anual neto sobre su capital, año a año, del 3 por ciento.
+Es una pregunta muy abierta pero, para tratar de responderla, podríamos tratar de estimar qué porcentaje anual puede conseguir _Eulàlia_ en sus inversiones y así comparar el crecimiento del dinero de _Eulàlia_ en comparación con el de _Luís_ que, si bien tendría un crecimiento de dinero gradual, podría ser superado por el de _Eulàlia_ con el paso del tiempo. Vamos a asumir que Eulàlia consigue un interés anual neto sobre su capital, año a año, del 3 por ciento.
 
 ## Crecimiento del dinero de Luís (lineal, con ahorro recurrente)
 
@@ -223,11 +223,11 @@ Que en el caso particular:
 
 $$L(t) = 5000 \cdot 12 \cdot t =  60000t$$
 
-## Crecimiento del dinero de Eulalia (exponencial, con ahorro recurrente)
+## Crecimiento del dinero de Eulàlia (exponencial, con ahorro recurrente)
 
-El caso de Eulalia sería distinto. El crecimiento de su dinero sería exponencial y, además, habría que tener en cuenta un ahorro recurrente, digamos, anual. Así pues, la función $E(n)$ sería un poco más compleja.
+El caso de Eulàlia sería distinto. El crecimiento de su dinero sería exponencial y, además, habría que tener en cuenta un ahorro recurrente, digamos, anual. Así pues, la función $E(n)$ sería un poco más compleja.
 
-Para construirla asumamos que cuando pasa el primer año de ahorro, todo lo que ha conseguido acumular _Eulalia_ exclusivamente de su salario anual (llamémoslo $Q'$) lo invierte entonces un interés anual de un 3% ($i = 0.03$ ). Si tomamos estos datos, al final del primer año Eulalia tendría una cantidad $E(1)$ igual a $Q'$. Para los siguientes años, si en lugar de tomar $1 + i$ como coeficiente de incremento tomamos $1.03$ tenemos que su dinero crece así:
+Para construirla asumamos que cuando pasa el primer año de ahorro, todo lo que ha conseguido acumular _Eulàlia_ exclusivamente de su salario anual (llamémoslo $Q'$) lo invierte entonces un interés anual de un 3% ($i = 0.03$ ). Si tomamos estos datos, al final del primer año _Eulàlia_ tendría una cantidad $E(1)$ igual a $Q'$. Para los siguientes años, si en lugar de tomar $1 + i$ como coeficiente de incremento tomamos $1.03$ tenemos que su dinero crece así:
 
 $$ 
 \begin{align*} 
@@ -251,7 +251,7 @@ $$
 \end{align*}
 $$
 
-Y de ellas podemos sacar una ley general para el caso de Eulalia:
+Y de ellas podemos sacar una ley general para el caso de Eulàlia:
 
 $$ E(n) = Q' \cdot 1.03^{n-1} +  Q' \cdot 1.03^{n-2} + [...] + Q' \cdot 1.03 + q$$
 
@@ -306,8 +306,8 @@ Damos valores a los distintos años desde que empezamos a invertir (separador de
 
 </div>
 
-Eulàlia tendrá más patrimonio que David cuando lleve 56 años invirtiendo. ¡Doradas sean las bondades del interés compuesto! Puede que Eulàlia pueda permitirse un mejor ataúd que Luís, aunque siendo ella tan frugal probablemente habrá dejado en su testamento a su familia que compren el más barato de todos.
+Eulàlia, invirtiendo a un tres por ciento anual, tendrá más patrimonio que David cuando lleve 56 años invirtiendo. ¡Doradas sean las bondades del interés compuesto! Puede que ella pueda permitirse un mejor ataúd que Luís, aunque siendo tan frugal probablemente habrá dejado en su testamento que su familia compre el más barato de todos...
 
-Y qué hubiese pasado si Ana hubiese conseguido una rentabilidad del 10 por ciento anual? Pues que hubiese ganado a Luís en solo 18 años, amasando más de un millón de euros (1094380 €). Algo irreal, por supuesto, porque en búsqueda de una rentabilidad tan grande probablemente caería en estafas piramidales, criptomonedas, habría invertido en deuda de estados fallidos que no devuelven el dinero (Islandia, 2008), etc.
+¿Y qué hubiese pasado si Ana hubiese conseguido una rentabilidad del 10 por ciento anual? Pues que hubiese ganado a Luís en solo 18 años y hubiese amasando más de un millón de euros (1094380 €). Algo irreal, por supuesto, porque en búsqueda de una rentabilidad tan grande probablemente caería en estafas piramidales, criptomonedas o habría invertido en deuda de estados fallidos que no devuelven el dinero (Islandia, 2008), etc.
 
 En resumen, que Ana seguirá siendo pobre independientemente de lo que haga.
