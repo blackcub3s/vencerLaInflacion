@@ -286,19 +286,19 @@ $$
 \end{align*}
 $$
 
-Damos valores a los distintos años desde que empezamos a invertir:
+Damos valores a los distintos años desde que empezamos a invertir (separador de miles, un punto):
 
 
 <div align="center">
 
 | n  |   L(n)   |     E(n)       |
 |:--:|:--------:|:--------------:|
-| 1  |  60000   |     24000      |
-| 2  | 120000   |     72000      |
-| 3  | 180000   |    175440      |
-| 5  | 300000   |    484843      |
-| 10 | 600000   |   1909978      |
-| 15 | 900000   |   6369464      |
+| 1  |  60.000   |     24.000      |
+| 2  | 120.000   |     72.000      |
+| 3  | 180.000   |    175.440      |
+| 5  | 300.000   |    484.843      |
+| 10 | 600.000   |   1.909.978      |
+| 15 | 900-000   |   6.369.464      |
 
 </div>
 
