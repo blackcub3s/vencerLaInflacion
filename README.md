@@ -306,3 +306,4 @@ Damos valores a los distintos años desde que empezamos a invertir (separador de
 
 </div>
 
+Eulàlia tendrá más patrimonio que David cuando lleve 56 años invirtiendo. ¡Doradas sean las bondades del interés compuesto! Puede que Eulàlia pueda permitirse un mejor ataúd que Luís, aunque siendo ella tan frugal probablemente habrá dejado en su testamento a su familia que compren el más barato de todos y sigan reinvirtiendo el dinero.
