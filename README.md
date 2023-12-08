@@ -273,8 +273,6 @@ $$ E(n) = 24000 \cdot \sum_{i=0}^{n-1} (1.03)^{i}$$
 
 
 
-[^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección. Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
-
 # Crecimiento lineal con ahorro recurrente vs. exponencial con ahorro recurrente
 
 Vamos a comparar como crece el dinero de _Luís_ $L(n)$ con respecto al de _Eulàlia_ $E(n)$ con las funciones que hemos visto para cada uno de ellos:
@@ -308,7 +306,7 @@ Damos valores a los distintos años desde que empezamos a invertir (separador de
 
 _Eulàlia_, invirtiendo a un tres por ciento anual, tendrá más patrimonio que David cuando lleve 56 años invirtiendo. ¡Doradas sean las bondades del interés compuesto! Puede que ella pueda permitirse un mejor ataúd que Luís, aunque siendo tan frugal probablemente habrá dejado en su testamento que su familia compre el más barato de todos...
 
-¿Y qué hubiese pasado si _Eulàlia_ hubiese conseguido una rentabilidad del 10 por ciento anual? Pues que hubiese ganado a Luís en solo 18 años y hubiese amasando más de un millón de euros (1094380 €). Algo irreal, por supuesto, porque en búsqueda de una rentabilidad tan grande probablemente caería en estafas piramidales, criptomonedas o habría invertido en deuda de estados fallidos que no devuelven el dinero (Islandia, 2008), etc.
+¿Y qué hubiese pasado si _Eulàlia_ hubiese conseguido una rentabilidad del 10 por ciento anual? Pues que hubiese ganado a Luís en solo 18 años y hubiese amasando más de un millón de euros (1.094.380 €). Algo irreal, por supuesto, porque en búsqueda de una rentabilidad tan grande probablemente caería en estafas piramidales; por ejemplo, habría invertido en deuda de estados o empresas fallidos/as que no devuelven el dinero (Islandia, crisis financiera de 2008 a 2010[^2]; Albania, esquemas piramidales de 1997[^3]) o en estafas relacionadas con las criptomonedas en donde los fundadores de los exchange se quedan todo o gran parte del capital (véanse las estafas piramidales de FTX con Sam Bankman Fried[^4], del exchange canadiense QuadrigaCX[^5], o la criptomoneda OneCoin acuñada por Ruja Ignatova[^6] calificada por el new york times como una de las estafas más grandes de la historia).
 
 En resumen, que _Eulàlia_ seguirá siendo pobre independientemente de lo que haga.
 
@@ -318,3 +316,19 @@ https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c
 
 
 
+
+
+
+
+
+[^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección. Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
+
+[^2]: [https://en.wikipedia.org/wiki/2008%E2%80%932011_Icelandic_financial_crisis](https://en.wikipedia.org/wiki/2008%E2%80%932011_Icelandic_financial_crisis) for more information.
+
+[^3]: [https://en.wikipedia.org/wiki/1997_Albanian_civil_unrest](https://en.wikipedia.org/wiki/1997_Albanian_civil_unrest)
+
+[^4]: [https://es.wikipedia.org/wiki/Sam_Bankman-Fried](https://es.wikipedia.org/wiki/Sam_Bankman-Fried)
+
+[^5]: [https://es.cointelegraph.com/news/bankrupt-crypto-exchange-quadrigacx-to-start-interim-distribution-of-funds](https://es.cointelegraph.com/news/bankrupt-crypto-exchange-quadrigacx-to-start-interim-distribution-of-funds)
+
+[^6]: [https://ca.wikipedia.org/wiki/Ruja_Ignatova](https://ca.wikipedia.org/wiki/Ruja_Ignatova)
