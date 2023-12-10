@@ -275,7 +275,7 @@ Y considerando la propiedad asociativa de la suma podemos reescribir los sumando
 
 $$ E(n) = Q' \cdot \sum_{i=0}^{n-1} 1.03^{i}$$
 
-Para hacer una ley general no dependiente del tipo de interés podemo adaptar a cualquier tipo de interés anual en tanto por uno $i$ la expresión anterior, reescribiéndola de este modo:
+Para hacer una ley general no dependiente de un tipo de interés particular podemos sustituir $1.03$ por $1 + i$ en la expresión anterior, reescribiéndola de este modo:
 
 $$ E(n) = Q' \cdot \sum_{j=0}^{n-1} (1 + i)^{j}$$
 
