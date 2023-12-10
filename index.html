@@ -12,26 +12,45 @@
         }
 
 
-    /*NAVEGADOR APAREIX EN UNA LINIA I EL CUSTOMITZEM*/
+        * {
+            margin:0;
+            padding:0;
+        }
 
-    header nav ul { 
-        text-align: center;
-        font-size: 1.2em;
-        background-color: blanchedalmond;
-        padding: .7em 0em .7em 0em;
-    }
-    header nav li {
-      display: inline-block;
-      margin-right: 2em; 
-    }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2em; /*valor per defecte a 1em, si el treus no passa res PERO AIXI POTS MODIFICARS*/
+        }
 
-    header nav a {
-      text-decoration: none;
-      color: #333;
-    }
 
-    /*canviem de color i fem més grans els links del navegador quan fem hover damunt*/
-    header nav a:hover {text-transform: scale(2); color: green;}
+        table, td, th {
+            border: 2px solid grey;
+            border-collapse: collapse;
+        }
+
+        table {
+            text-align: center  ;
+        }
+
+        /*NAVEGADOR APAREIX EN UNA LINIA I EL CUSTOMITZEM*/
+        header nav ul { 
+            text-align: center;
+            font-size: 1.2em;
+            background-color: blanchedalmond;
+            padding: .7em 0em .7em 0em;
+        }
+        header nav li {
+        display: inline-block;
+        margin-right: 2em; 
+        }
+
+        header nav a {
+        text-decoration: none;
+        color: #333;
+        }
+
+        /*canviem de color i fem més grans els links del navegador quan fem hover damunt*/
+        header nav a:hover {text-transform: scale(2); color: green;}
 
 
 
@@ -50,36 +69,52 @@
         .div-esquerre, .div-dret {
             flex: 1;
             height: 100%;
+            display: flex;
         }
 
         .div-dret{
-            display: flex;
             justify-content: center;
             align-items: center;
-            height: 50vh;
-            
         }
 
-        
-       
         .div-esquerre {background-color: var(--verdMeu);}
-        .div-dret {background-color: white;}
+        .div-dret {
+            background-color: black;
+            color: white;
+        }
 
         /* MEDIA QUERY PER A MOSTRAR-LO BÉ A MÒBIL 
         -DIV BLANC (GRÀFIC) A SOTA I DIV VERD (FORMULARI) DAMUNT
         -PER ARA NOME SFUNCIONA SI NO H HA EL GRAFIC PLOTLY DINS EL DIV DE LA DRETA...  O SEA QUE NO VA */
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1300px) {
             .contenidor {flex-direction: column;}
             .div-esquerre {order: 1;}
             .div-dret {order: 2;}
-            #graficPlotly {order: 3;}
+
         }
 
+
+
+
         #graficPlotly {
-            margin-top: 7em;
+            position: relative;
+            top: 1em;
+            margin: 0 auto; /* Add this line to center the element horizontally */
         }
+
+
+
+        /*ESTILS DE LA TAULA*/
+        th, td {
+            padding: .1em;
+        }
+
+        th {
+            background-color: brown;
+        }
+
     </style>
-    <link rel="stylesheet" href="estilos.css">
+    
     <link rel="stylesheet" href="estilsFormulari.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
@@ -136,10 +171,10 @@
     <div class="div-dret"> 
 
         <table>
-            <caption>Tabla1: Incremento del capital por la inversión en función del tiempo</caption>
+            <caption>Tabla1: Incremento del capital por la inversión en función del número de años (n)</caption>
             <thead>
                 <tr>
-                    <th>nAños</th>
+                    <th>n</th>
                     <th>Q(n)</th>
                     <th>ganancia acumulada</th>
                 </tr>
@@ -147,34 +182,34 @@
 
             <tbody>
                 <tr>
-                    <th>1</th>
+                    <td>1</td>
                     <td>LOREM</td>
                     <td>LOREM</td>
                 </tr>
                 <tr>
-                    <th>3</th>
+                    <td>2</td>
                     <td>LOREM</td>
                     <td>LOREM</td>
                 </tr>
                 <tr>
-                    <th>5</th>
+                    <td>3</td>
                     <td>LOREM</td>
                     <td>LOREM</td>
                 </tr>
                 <tr>
-                    <th>10</th>
+                    <td>4</td>
                     <td>LOREM</td>
                     <td>LOREM</td>
                 </tr>
                 <tr>
-                    <th>20</th>
+                    <td>5</td>
                     <td>LOREM</td>
                     <td>LOREM</td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <th></th>
+                    <td></td>
                     <td></td>
                     <td>SUMA</td>
                 </tr>
@@ -187,11 +222,11 @@
         -->
     </div>
     
-    
-
 </div>
 
 <div id = "graficPlotly"></div>
+
+
     
     
 

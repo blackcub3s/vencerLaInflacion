@@ -77,25 +77,25 @@ El cálculo de la inflación es algo de lo que solamente se habla con respecto a
 
 ### Forma multiplicativa
 
-De forma análoga a lo que pasaba con el interés compuesto, la inflación funciona de forma similar. Con la fórmula de cálculo 1, que denominaremos $Q_{inf}(n)$, si tenemos 10 000 euros y el dinero no está invertido con una inflación de 6%  de interés interanual el capital iría variando:
+De forma análoga a lo que pasaba con el interés compuesto, la inflación funciona de forma similar. Con la fórmula de cálculo 1, que denominaremos $Q_{inf}(n)$, si hoy tenemos 10 000 euros pero el dinero no está invertido, con una inflación de 6% de interés interanual el potencial de compra del capital se iría "perdiendo" -a pesar de que mantuviésemos la misma cantidad-:
 
-En un año podríamos comprar con 10 000 euros lo que ahora compraríamos con $Q_{inf}(1)$:
+Por ejemplo, al cabo de un año podríamos comprar con 10 000 euros lo que ahora compraríamos con 9400 euros ($Q_{inf}(1)$), dado que:
 
 $$ Q_{inf}(1) = 10000 \cdot 0.94 = 9400 $$
 
-En dos años nuestro capital habrá minorado a:
+En dos años podríamos comprar lo que ahora compran 8836 euros:
 
 $$ Q_{inf}(2) = (10000 \cdot  0.94)* 0.94 = 8836 $$
 
-Quedando reducido el tercer año en:
+En tres años
 
 $$ Q_{inf}(3) = (10000 \cdot 0.94\cdot 0.94 )  \cdot 0.94 \approx 8305.84 $$
 
-Y, por lo tanto, siguiendo el razonamiento inductivo, igual que antes, es muy fácil ver que la fórmula general para calcular cuánto habrá decrecido nuestro capital por la inflación es usar una función donde a nuestro capital inicial $Q$ lo multiplicamos por un "descuento" anual, al que denominaremos $1 - i^{'}$, donde i' será el que yo denomino "interés inflacionario" del dinero o, el que en españa sería el IPC, según la siguiente expresión $Q_{inf}(n)$ (de cantidad -quantitat del catalán- inflacionada):
+Y así sucesivamente. Por lo tanto, desarrollando el razonamiento inductivo que acabamos de empezar es muy fácil ver que la fórmula general para cuantificar a cuánto habrá "decrecido" nuestro capital debido a la inflación (o a cuánto habrá decrecido el potencial de compra del mismo, en el futuro) es usar una función donde a nuestro capital inicial $Q$ lo multiplicamos por un tanto por uno de "descuento" anual, al que denominaremos $1 - i^{'}$. En esta fórmula, i' será "interés inflacionario" del dinero (en españa el IPC), según la siguiente expresión $Q_{inf}(n)$ (Q de cantidad -del catalán- inflacionada):
 
 $$ Q_{inf}(n) = Q \cdot (1-i^{'})^n $$
 
-Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ que pasan, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interes compuesto $Q_{g}(n)$, pero ahora generando la función $Q_{p[Inf]}(n)$ (<strong>cantidad de pérdidas inflacionarias en función del número de años</strong>) que proponemos a continuación:
+Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ años que pasan desde el momento inicial que consideremos para nuestro capital inicial, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interés compuesto $Q_{g}(n)$, pero ahora generando la función $Q_{p[Inf]}(n)$ (<strong>cantidad de pérdidas inflacionarias en función del número de años</strong>) que proponemos a continuación:
 
 $$ Q_{p[Inf]}(n) = Q - Q_{inf}(n) $$
 
