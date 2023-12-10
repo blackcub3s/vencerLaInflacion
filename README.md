@@ -87,11 +87,11 @@ En dos años podríamos comprar lo que ahora compran 8836 euros:
 
 $$ Q_{inf}(2) = (10000 \cdot  0.94)* 0.94 = 8836 $$
 
-En tres años
+En tres años:
 
 $$ Q_{inf}(3) = (10000 \cdot 0.94\cdot 0.94 )  \cdot 0.94 \approx 8305.84 $$
 
-Y así sucesivamente. Por lo tanto, desarrollando el razonamiento inductivo que acabamos de empezar es muy fácil ver que la fórmula general para cuantificar a cuánto habrá "decrecido" nuestro capital debido a la inflación (o a cuánto habrá decrecido el potencial de compra del mismo, en el futuro) es usar una función donde a nuestro capital inicial $Q$ lo multiplicamos por un tanto por uno de "descuento" anual, al que denominaremos $1 - i^{'}$. En esta fórmula, i' será "interés inflacionario" del dinero (en españa el IPC), según la siguiente expresión $Q_{inf}(n)$ (Q de cantidad -del catalán- inflacionada):
+Y así sucesivamente. Por lo tanto, desarrollando el razonamiento inductivo que acabamos de empezar es muy fácil ver que la fórmula general para cuantificar a cuánto habrá "decrecido" nuestro capital debido a la inflación (o a cuánto habrá decrecido el potencial de compra del mismo, en el futuro) _es usar una función donde a nuestro capital inicial $Q$ lo multiplicamos por un tanto por uno de "descuento" anual, al que denominaremos $1 - i^{'}$_. En esta fórmula, i' será "interés inflacionario" del dinero (en españa el IPC), según la siguiente expresión $Q_{inf}(n)$ (Q de cantidad -del catalán- inflacionada):
 
 $$ Q_{inf}(n) = Q \cdot (1-i^{'})^n $$
 
