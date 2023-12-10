@@ -219,11 +219,11 @@ Es decir, con la inflación al 6% anual y las inversiones en interés compuesto 
 
 ## Acertijo
 
-Hace tiempo escuché una especie de acertijo: 
+Hace tiempo leí la siguiente pregunta: 
 
 "_Luís cobra 10 000 euros al mes, ahorra la mitad de esa candidad mensualmente y no invierte su dinero. Eulàlia cobra 3000 euros al mes, ahorra 2000 euros porque vive "frugalmente" y sí invierte su dinero. ¿Quien ahorra más? ¿Luís o Eulàlia?_"
 
-Es una pregunta muy abierta pero, para tratar de responderla, podríamos tratar de estimar qué porcentaje anual puede conseguir _Eulàlia_ en sus inversiones y así comparar el crecimiento del dinero de _Eulàlia_ en comparación con el de _Luís_ que, si bien tendría un crecimiento de dinero gradual, podría ser superado por el de _Eulàlia_ con el paso del tiempo. Vamos a asumir que Eulàlia consigue un interés anual neto sobre su capital, año a año, del 3 por ciento.
+Es una pregunta muy abierta pero, para responderla, es crucial estimar qué porcentaje anual puede conseguir _Eulàlia_ en sus inversiones y así comparar el crecimiento del dinero de _Eulàlia_ en comparación con el de _Luís_. Si bien luís tiene un elevado salario y su ahorro es gradual, podría verse superado por el de _Eulàlia_ con el paso del tiempo. La cuestión es: ¿cuándo? ¿Se va a producir durante la vida de _Eulàlia_? Vamos a asumir que _Eulàlia_ consigue un interés anual neto sobre su capital, año a año, del 3 por ciento.
 
 ## Crecimiento del dinero de Luís (lineal, con ahorro recurrente)
 
