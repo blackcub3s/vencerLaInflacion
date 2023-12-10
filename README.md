@@ -3,7 +3,7 @@
 1. [Introducción](#introducción)
 2. [Interés Compuesto](#interés-compuesto)
    - 2.1 [Fórmula de cálculo (tradicional)](#Fórmula-de-cálculo-tradicional)
-   - 2.2 [Fórmula de cálculo (con ahorro salarial anual)](#Fórmula-de-cálculo-con-ahorro-salarial-anual)
+   - 2.2 [Fórmula de cálculo (exponencial, con ahorro recurrente)](#Fórmula-de-cálculo-exponencial-con-ahorro-recurrente)
 
     
 3. [Inflación](#inflación)
@@ -65,7 +65,7 @@ $$ Q_{g}(n) = Q(n)  - Q$$
 
 $$ Q_{g}(n) = Q \cdot (1+i)^n - Q$$
 
-## Fórmula de cálculo (con ahorro salarial anual)
+## Fórmula de cálculo (exponencial, con ahorro recurrente)
 
 Para esta sección remitimos al lector al anexo (véase [link](#Anexo)), dado que su complejidad técnica es mayor. Por ahora, podemos decir que la mejor forma de ahorrar puede ser reinvertir todos nuestros ahorros, no solamente unos ahorros iniciales. En este caso el incremento exponencial que produce el interés compuesto en el capital inicial invertido más la cantidad de ahorro que se produce anualmente en un salario tienen un efecto multiplicativo muy interesante.
 
