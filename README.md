@@ -87,7 +87,7 @@ En dos años podríamos comprar lo que ahora compran 8836 euros:
 
 $$ Q_{inf}(2) = (10000 \cdot  0.94)* 0.94 = 8836 $$
 
-En tres años:
+Y en tres años:
 
 $$ Q_{inf}(3) = (10000 \cdot 0.94\cdot 0.94 )  \cdot 0.94 \approx 8305.84 $$
 
@@ -135,7 +135,7 @@ La idea de nuestro programa es hacer una aplicación web que dada una inflación
 
 2) Un gráfico que muestre como <underline>"decrementa" el capital</underline> debido a la <strong>inflación</strong>: este gráfico podremos mirarlo como "<i>con la inflación que habrá desde ahora mismo hasta un determinado año $n$ cuántas cosas podré comprar en el año $n$ con exactamente el mismo número de euros que tengo hoy, en relación a cuántas cosas podría adquirir hoy</i>". Es decir, si tengo 10 000 euros y la inflación es de un  100 por ciento al año, el año que viene seguiré teniendo 10 000 euros, sí, pero solo podré comprar lo mismo que hoy comprarían 5 000 euros (porque en un año, de media, las cosas van a costar el doble).
 
-3)  un gráfico que represente nuestras ganancias año a año, por un lado; y nuestras pérdidas por inflación en valor absoluto también año a año, por el otro. Además, sería interesante que muostrase una aproximación al punto de corte de ambas funciones de forma análoga a como lo hace google con su sistema. Este punto tres es algo inédito que no hemos visto en ninguna función de cálculo para la inflación. Y hay que añadir algo MUY importante: nótese que crece más rápido la función que incrementa el dinero con interés compuesto ( $Q(n)$ ) que no lo rápido que decrece la función que muestra el decrecimiento por inflación ( $Q_{inf}(n)$ ). Por lo tanto, y por poner un ejemplo, con un interés medio del 3 por ciento que se puede obtener ahora mismo en depósitos españoles podemos vencer una inflación del 6 por ciento, en 17 años, si lo hacemos bien tomando beneficios del interés compuesto.
+3)  Un gráfico que represente nuestras ganancias año a año, por un lado; y nuestras pérdidas por inflación en valor absoluto también año a año, por el otro. Además, sería interesante que mostrase una aproximación al punto de corte de ambas funciones de forma análoga a como lo hace google con su sistema. Este punto tres es algo inédito que no hemos visto en ninguna función de cálculo para la inflación. Y hay que añadir algo MUY importante: nótese que crece más rápido la función que incrementa el dinero con interés compuesto ( $Q(n)$ ) que no lo rápido que decrece la función que muestra el decrecimiento por inflación ( $Q_{inf}(n)$ ). Por lo tanto, y por poner un ejemplo, con un interés medio del 3 por ciento que se puede obtener ahora mismo en depósitos españoles podemos vencer una inflación del 6 por ciento, en 17 años, si lo hacemos bien tomando beneficios del interés compuesto.
 
 ## Gráfico de variación del capital por inversión
 
@@ -275,7 +275,7 @@ Y considerando la propiedad asociativa de la suma podemos reescribir los sumando
 
 $$ E(n) = Q' \cdot \sum_{i=0}^{n-1} 1.03^{i}$$
 
-Y, para hacer una ley general no dependiente del tipo de interés, podemos sustituir la expresión para que se adapte a cualquier tipo de interés anual $i$ en tanto por uno, podríamos escribir la función anterior como:
+Para hacer una ley general no dependiente del tipo de interés podemo adaptar a cualquier tipo de interés anual en tanto por uno $i$ la expresión anterior, reescribiéndola de este modo:
 
 $$ E(n) = Q' \cdot \sum_{j=0}^{n-1} (1 + i)^{j}$$
 
