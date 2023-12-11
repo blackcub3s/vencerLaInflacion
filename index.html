@@ -29,7 +29,7 @@
         }
 
         table {
-            text-align: center  ;
+            text-align: center;
         }
 
         /*NAVEGADOR APAREIX EN UNA LINIA I EL CUSTOMITZEM*/
@@ -40,13 +40,13 @@
             padding: .7em 0em .7em 0em;
         }
         header nav li {
-        display: inline-block;
-        margin-right: 2em; 
+            display: inline-block;
+            margin-right: 2em; 
         }
 
         header nav a {
-        text-decoration: none;
-        color: #333;
+            text-decoration: none;
+            color: #333;
         }
 
         /*canviem de color i fem més grans els links del navegador quan fem hover damunt*/
@@ -67,7 +67,7 @@
 
         /*FEM QUE OCUPIN L'ALTURA COMPLETA DE LA PANTALLA*/
         .div-esquerre, .div-dret {
-            flex: 1;
+            flex: 1; /*CAL ENTENDRE-HO BÉ*/
             height: 100%;
             display: flex;
         }
@@ -77,19 +77,35 @@
             align-items: center;
         }
 
-        .div-esquerre {background-color: var(--verdMeu);}
+
+        .div-esquerre {
+            background-color: var(--verdMeu);
+            
+            
+        }
         .div-dret {
             background-color: black;
             color: white;
         }
 
         /* MEDIA QUERY PER A MOSTRAR-LO BÉ A MÒBIL 
-        -DIV BLANC (GRÀFIC) A SOTA I DIV VERD (FORMULARI) DAMUNT
-        -PER ARA NOME SFUNCIONA SI NO H HA EL GRAFIC PLOTLY DINS EL DIV DE LA DRETA...  O SEA QUE NO VA */
+        -DIV DEL GRÀFIC A SOTA DE TOT.  DIV ESQUERRE (form) a dalt de tot. DIV DRET (taula) a la dreta.
+        -HA COSTAT MOLT PODER MANEJAR EL GRAFIC DE PLOTLY I HEM HAGUT DE POSAR PADDINGS VARIABLES AMB LA MEDIA QUERY*/
         @media screen and (max-width: 1300px) {
             .contenidor {flex-direction: column;}
-            .div-esquerre {order: 1;}
-            .div-dret {order: 2;}
+            #graficPlotly {
+                position: relative;
+                top: 25em;
+            }
+            .div-esquerre {
+                padding-top: 2.5em;
+                padding-bottom:2em;
+            }
+            
+            .div-dret {
+                padding-top: 2.5em;
+                padding-bottom: 4em;
+            }
 
         }
 
@@ -97,8 +113,6 @@
 
 
         #graficPlotly {
-            position: relative;
-            top: 1em;
             margin: 0 auto; /* Add this line to center the element horizontally */
         }
 

@@ -7,7 +7,7 @@ function L(n,Q) {
 }
 
 
-//PRE: n ---------> nombre d'anys invertint amb n >= 1 (de any 0 a any 1 la persona estalvia la quantitat Q)
+//PRE: n ---------> nombre d'anys invertint amb n >= 1 (de any 0 a any 1 la persona estalvia la quantitat Q, que no rendeix interès)
 //     i ---------> interès net anual en les inversions (en tant per u)
 //     Q ---> Quantitat salarial estalviada en un any per una persona, descomptant impostos i gastos de vida.
 //POST: retorna els diners que tindrà a l'any n-èssim. [FUNCIÓ EXPONENCIAL -AMB ESTALVI RECURRENT-] que 
@@ -29,7 +29,6 @@ for (let i = 1; i <= n; ++i) {
     if (Q_Eulalia > Q_lluis) {
         break;
     }
-
 }
 
 

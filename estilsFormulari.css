@@ -2,7 +2,8 @@
 
 /* Center the form within the div */
 .formulari {
-    display: flex;
+    display: flex; 
+    flex: auto; /*LA CLAU per fer centrar el formulari BY MEEE*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
