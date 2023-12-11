@@ -17,6 +17,9 @@
             padding:0;
         }
 
+
+
+
         body {
             font-family: 'Times New Roman', Times, serif;
             font-size: 1.2em; /*valor per defecte a 1em, si el treus no passa res PERO AIXI POTS MODIFICARS*/
@@ -50,7 +53,12 @@
         }
 
         /*canviem de color i fem més grans els links del navegador quan fem hover damunt*/
-        header nav a:hover {text-transform: scale(2); color: green;}
+        header nav a:hover {
+            font-size: 1.05em;
+            color: green;
+            transition: font-size 0.3s ease;
+            
+        }
 
 
 
