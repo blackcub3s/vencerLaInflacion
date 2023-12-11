@@ -42,7 +42,8 @@ function FesGraficInteresCompost() {
 
     // FEM LA DATA ARRAY PASSANT UN JAVASCRIPT OBJECT AMB ELS PUNTS X, Y
     //MODE LINIES PER FER-EL GRAFIC CONTINU
-    var dades = [{x: x, y: y, mode: 'lines', type: 'scatter'}];
+    var dades = [{x: x, y: y, mode: 'lines', type: 'scatter', line: {color: 'green'}}];
+    
 
     //fem gràfiic
     Plotly.react('graficPlotly', dades, layout);
@@ -102,7 +103,7 @@ function FesGraficInflacio_i_InteresCompost() {
 
     // FEM LA DATA ARRAY PASSANT UN JAVASCRIPT OBJECT AMB ELS PUNTS X, Y
     //MODE LINIES PER FER-EL GRAFIC CONTINU
-    var dades_creixementCalers = {x: x, y: y, mode: 'lines', type: 'scatter'/*, line: {color: 'blue'}*/, name:"<b>Incremento</b> de Q<br>por interés compuesto"};
+    var dades_creixementCalers = {x: x, y: y, mode: 'lines', type: 'scatter', line: {color: 'green'}, name:"<b>Incremento</b> de Q<br>por interés compuesto"};
     var dades_disminucioCalers = {x: x, y: y_, mode: 'lines', type: 'scatter', line: {color: 'red'},name:"<b>Disminución</b> de Q<br> por inflación"};
 
 
@@ -113,47 +114,65 @@ function FesGraficInflacio_i_InteresCompost() {
 
 
 
-//AQUESTA FUNCIÓ EMPLENA LA TAULA D'INTERÈS COMPOST DELS ANYS CORRESPONENTS
+//AQUESTA FUNCIÓ EMPLENA LA TAULA D'INTERÈS COMPOST DELS ANYS CORRESPONENTS I POSA EL CAPSAL DE COLOR GUANY
 function FesTaulaInteresCompost() {
-
     //CAPSAL TAULA
     document.getElementById("capsalTaula").innerHTML = "Tabla1: Incremento del capital Q por la inversión en función del número de años (n)";
-    
-    var elementTbody = document.getElementById("cosTaula");
     var matriu = document.querySelectorAll("tbody > tr"); //selecciono els table row (LES FILES DE LA TAULA)
 
-    //DADES QUE HI HAURÀ A LA COLUMNA DELS ANYS
-    const arr_anys = [1,2,3,5,10,15,20];
+    //TABLE HEAD
+    var capsalTaula = document.querySelectorAll("thead > tr > th");  //selecciono els th i poso els titols
+    var capsaleresTaula = ["n","Q(n)","Ganancia<br>Acumulada","%<br>Acumulado"];
+    for (var i = 0; i < capsalTaula.length; ++i) {
+        capsalTaula[i].innerHTML = capsaleresTaula[i];
+        capsalTaula[i].style.cssText = "background-color: green;";
+    } 
 
-    var k = 0;
+    //TABLE BODY
+
+    const arr_anys = [1,2,3,5,10,15,20]; //DADES QUE HI HAURÀ A LA COLUMNA DELS ANYS
+
+    for (var i = 0; i < matriu.length; ++i) {
+        var fila = matriu[i].querySelectorAll("td"); //var fila = matriu[i];  //xat gpt m'ha dit que no puc seleccionar amb indexos sino que he de feusar lap roxima linia
+        for (var j = 0; j < fila.length; ++j) {
+            if (j == 0) {fila[j].innerHTML = arr_anys[i];}  //EMPLENO LA COLUMNA DELS ANYS AMB AQUESTES DADES (1a col)
+            else if (j == 1) {fila[j].innerHTML = Math.round(Q(i+1));} //EMPLENO COLUMNA DELS ANYS
+            else if (j == 2) {fila[j].innerHTML = Math.round(Q_g(i+1));}//EMPLENO LA COLUMNA DE Q_g(n) AMB LES DADES (2a Col) (k es n d'anys)
+            else if (j == 3) {fila[j].innerHTML = ((Q_g(i+1) / Qinicial)*100).toFixed(2);}//EMPLENO LA COLUMNA DE % acumulats (3acol)
+        }
+    }
+    console.log("GRAFIC INTERES COMPOST FET");
+}
+
+//FUNCIO QUE EMPLENA LA TAULA D'INFLACIÓ AMB LES FUNCIONS CORRESPONENTS I POSA CAPSAL DE COLOR PERDUA
+function FesTaulaInflacio() {
+    //CAPSAL TAULA
+    document.getElementById("capsalTaula").innerHTML = "Tabla1: Decremento del capital Q_inf por la inflación en función del número de años (n)";
+    var matriu = document.querySelectorAll("tbody > tr"); //selecciono els table row (LES FILES DE LA TAULA)
+
+    //TABLE HEAD
+    var capsalTaula = document.querySelectorAll("thead > tr > th");  //selecciono els th i poso els titols
+    var capsaleresTaula = ["n","Q_inf(n)","Pérdida<br>Acumulada","%<br>Acumulado"];
+    for (var i = 0; i < capsalTaula.length; ++i) {
+        capsalTaula[i].innerHTML = capsaleresTaula[i]; //defineixo els titols al capsal
+        capsalTaula[i].style.cssText = "background-color: brown;";  //defineixo color capsal taula
+    } 
+
+
+
+    //TABLE BODY
+    const arr_anys = [1,2,3,5,10,15,20];    //DADES QUE HI HAURÀ A LA COLUMNA DELS ANYS
+
     for (var i = 0; i < matriu.length; ++i) {
         var fila = matriu[i].querySelectorAll("td"); //var fila = matriu[i];  //xat gpt m'ha dit que no puc seleccionar amb indexos sino que he de feusar lap roxima linia
         for (var j = 0; j < fila.length; ++j) {
             //EMPLENO LA COLUMNA DELS ANYS AMB AQUESTES DADES (1a col)
-            if (j == 0) { 
-                console.log(fila[i]);
-                fila[j].innerHTML = arr_anys[k];
-                k = k + 1;
-            }
-            //EMPLENO LA COLUMNA DE Q(n) AMB LES DADES (2a Col)
-            else if (j == 1) {
-                fila[j].innerHTML = Q(k); //k es el nombre d'anys
-            }
-            //EMPLENO LA COLUMNA DE Q_g(n) AMB LES DADES (2a Col)
-            else if (j == 2) {
-                fila[j].innerHTML = Q_g(k);
-            }
-            else if (j == 3) {
-                fila[j].innerHTML = ((Q_g(k) / Qinicial)*100).toFixed(2);
-            }
+            if (j == 0) {fila[j].innerHTML = arr_anys[i];}
+            else if (j == 1) {fila[j].innerHTML = Math.round(Q_inf(i+1));} //EMPLENO COLUMNA DELS ANYS
+            else if (j == 2) {fila[j].innerHTML = -Math.round(Q_p(i+1));}   //EMPLENO LA COLUMNA DE Q_inf(n) AMB LES DADES (2a Col) (k es n d'anys)
+            else if (j == 3) {fila[j].innerHTML = -((Q_p(i+1) / Qinicial)*100).toFixed(2);}//EMPLENO LA COLUMNA DE % acumulats (3acol)
         }
-    }
-
-    
-    console.log("GRAFIC INTERES COMPOST FET");
-}
-
-function FesTaulaInflacio() {
+    }    
     console.log("FES GRAFIC INFLACIO");
 }
 
