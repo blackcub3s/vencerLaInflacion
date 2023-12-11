@@ -3,7 +3,7 @@
 //POST: valor d'increment del capital en funció de n anys
 //variacio de quanitat inicial amb l'interes compost i
 function Q(n) {
-    return Qinicial * Math.pow((1+i),n);
+    return Math.round(Qinicial * Math.pow((1+i),n));
 }
 
 //disminucio de la quantitat inicial per la inflació
@@ -113,7 +113,49 @@ function FesGraficInflacio_i_InteresCompost() {
 
 
 
+//AQUESTA FUNCIÓ EMPLENA LA TAULA D'INTERÈS COMPOST DELS ANYS CORRESPONENTS
+function FesTaulaInteresCompost() {
 
+    //CAPSAL TAULA
+    document.getElementById("capsalTaula").innerHTML = "Tabla1: Incremento del capital por la inversión en función del número de años (n)";
+    
+    var elementTbody = document.getElementById("cosTaula");
+    var elementsTableData = document.querySelectorAll("tbody > tr > td"); //si no seleccionaria tots els td
+
+    //DADES QUE HI HAURÀ A LA COLUMNA DELS ANYS
+    const arr_anys = [1,2,3,5,10,15,20];
+
+    var j = 0;
+    for (var i = 0; i < elementsTableData.length; ++i) {
+        //EMPLENO LA COLUMNA DELS ANYS AMB AQUESTES DADES (1a col)
+        if (i % 3 == 0) { 
+            elementsTableData[i].innerHTML = arr_anys[j];
+            j = j + 1;
+        }
+        //EMPLENO LA COLUMNA DE Q(n) AMB LES DADES (2a Col)
+        else if ((i + 1) % 3 ) {
+            var n = arr_anys[j - 1]; //els anys (ojo amb l'algoritme)
+            elementsTableData[i].innerHTML = Q(n);
+        }
+        //EMPLENO LA COLUMNA DE Q_g(n) AMB LES DADES (2a Col)
+        else {
+            var n = arr_anys[j - 1]; //els anys (ojo amb l'algoritme)
+            elementsTableData[i].innerHTML = Q_g(n);
+        }
+    }
+    
+    document.querySelector("#sumatoriTaula").innerHTML = "3%"; 
+
+    console.log("GRAFIC INTERES COMPOST FET");
+}
+
+function FesTaulaInflacio() {
+    console.log("FES GRAFIC INFLACIO");
+}
+
+function FesTaulaInflacio_i_InteresCompost() {
+    console.log("FES GRAFIC INFLACIO I INTERES COMPOST");
+}
 
 var Qinicial = 100000;
 var totalAnys = 20;
@@ -141,10 +183,13 @@ function main() {
     const rButtons = document.getElementsByName('opcio')
     if (rButtons[0].checked) {
         FesGraficInteresCompost();
+        FesTaulaInteresCompost();
     } else if (rButtons[1].checked) {
         FesGraficInflacio();
+        FesTaulaInflacio();
     } else if (rButtons[2].checked) {
         FesGraficInflacio_i_InteresCompost();
+        FesTaulaInflacio_i_InteresCompost();
     }
 }
     //if (document.getElementById("capital").value)

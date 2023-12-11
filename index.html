@@ -26,10 +26,8 @@
         }
 
 
-        table, td, th {
-            border: 2px solid grey;
-            border-collapse: collapse;
-        }
+
+       
 
         table {
             text-align: center;
@@ -137,6 +135,13 @@
             background-color: brown;
         }
 
+        table, td, th {
+            border-collapse: collapse;
+            border: 1px solid white;
+        }
+
+        td, th {padding: 0em .8em 0em .8em;} /*AMPLADA DE LA TAULA*/
+
     </style>
     
     <link rel="stylesheet" href="estilsFormulari.css">
@@ -195,47 +200,56 @@
     <div class="div-dret"> 
 
         <table>
-            <caption>Tabla1: Incremento del capital por la inversión en función del número de años (n)</caption>
+            <caption id ="capsalTaula">Taula 1</caption>
             <thead>
                 <tr>
                     <th>n</th>
                     <th>Q(n)</th>
-                    <th>ganancia acumulada</th>
+                    <th>Ganancia<br>acumulada</th>
                 </tr>
             </thead>
 
-            <tbody>
+            <tbody id = "cosTaula">
                 <tr>
-                    <td>1</td>
-                    <td>LOREM</td>
-                    <td>LOREM</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>LOREM</td>
-                    <td>LOREM</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                 </tr>
                 <tr>
-                    <td>3</td>
-                    <td>LOREM</td>
-                    <td>LOREM</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>LOREM</td>
-                    <td>LOREM</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                 </tr>
                 <tr>
-                    <td>5</td>
-                    <td>LOREM</td>
-                    <td>LOREM</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>SUMA</td>
+                    <td colspan="2"> Total: </td>
+                    <!--<td> - </td> -->
+                    <td id = "sumatoriTaula"> - </td>
                 </tr>
             </tfoot>
         </table>
