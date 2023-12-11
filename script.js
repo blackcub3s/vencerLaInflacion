@@ -117,7 +117,7 @@ function FesGraficInflacio_i_InteresCompost() {
 function FesTaulaInteresCompost() {
 
     //CAPSAL TAULA
-    document.getElementById("capsalTaula").innerHTML = "Tabla1: Incremento del capital por la inversión en función del número de años (n)";
+    document.getElementById("capsalTaula").innerHTML = "Tabla1: Incremento del capital Q por la inversión en función del número de años (n)";
     
     var elementTbody = document.getElementById("cosTaula");
     var matriu = document.querySelectorAll("tbody > tr"); //selecciono els table row (LES FILES DE LA TAULA)
