@@ -120,32 +120,36 @@ function FesTaulaInteresCompost() {
     document.getElementById("capsalTaula").innerHTML = "Tabla1: Incremento del capital por la inversión en función del número de años (n)";
     
     var elementTbody = document.getElementById("cosTaula");
-    var elementsTableData = document.querySelectorAll("tbody > tr > td"); //si no seleccionaria tots els td
+    var matriu = document.querySelectorAll("tbody > tr"); //selecciono els table row (LES FILES DE LA TAULA)
 
     //DADES QUE HI HAURÀ A LA COLUMNA DELS ANYS
     const arr_anys = [1,2,3,5,10,15,20];
 
-    var j = 0;
-    for (var i = 0; i < elementsTableData.length; ++i) {
-        //EMPLENO LA COLUMNA DELS ANYS AMB AQUESTES DADES (1a col)
-        if (i % 3 == 0) { 
-            elementsTableData[i].innerHTML = arr_anys[j];
-            j = j + 1;
-        }
-        //EMPLENO LA COLUMNA DE Q(n) AMB LES DADES (2a Col)
-        else if ((i + 1) % 3 ) {
-            var n = arr_anys[j - 1]; //els anys (ojo amb l'algoritme)
-            elementsTableData[i].innerHTML = Q(n);
-        }
-        //EMPLENO LA COLUMNA DE Q_g(n) AMB LES DADES (2a Col)
-        else {
-            var n = arr_anys[j - 1]; //els anys (ojo amb l'algoritme)
-            elementsTableData[i].innerHTML = Q_g(n);
+    var k = 0;
+    for (var i = 0; i < matriu.length; ++i) {
+        var fila = matriu[i].querySelectorAll("td"); //var fila = matriu[i];  //xat gpt m'ha dit que no puc seleccionar amb indexos sino que he de feusar lap roxima linia
+        for (var j = 0; j < fila.length; ++j) {
+            //EMPLENO LA COLUMNA DELS ANYS AMB AQUESTES DADES (1a col)
+            if (j == 0) { 
+                console.log(fila[i]);
+                fila[j].innerHTML = arr_anys[k];
+                k = k + 1;
+            }
+            //EMPLENO LA COLUMNA DE Q(n) AMB LES DADES (2a Col)
+            else if (j == 1) {
+                fila[j].innerHTML = Q(k); //k es el nombre d'anys
+            }
+            //EMPLENO LA COLUMNA DE Q_g(n) AMB LES DADES (2a Col)
+            else if (j == 2) {
+                fila[j].innerHTML = Q_g(k);
+            }
+            else if (j == 3) {
+                fila[j].innerHTML = ((Q_g(k) / Qinicial)*100).toFixed(2);
+            }
         }
     }
-    
-    document.querySelector("#sumatoriTaula").innerHTML = "3%"; 
 
+    
     console.log("GRAFIC INTERES COMPOST FET");
 }
 
@@ -157,12 +161,21 @@ function FesTaulaInflacio_i_InteresCompost() {
     console.log("FES GRAFIC INFLACIO I INTERES COMPOST");
 }
 
+
+
+
+
+
+
+
+
+
 var Qinicial = 100000;
 var totalAnys = 20;
 var i = 3/100; //interes anual: 3 per cent.
 var i_prima = 6/100; //inlfacio anual
 
-var AmpladaGrafic = window.screen.width/2;
+var AmpladaGrafic = window.screen.width*(7/10);
 var AlturaGrafic = window.screen.height*0.8;
 
 
