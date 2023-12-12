@@ -183,16 +183,18 @@ function FesTaulaInflacio_i_InteresCompost() {
 
 
 
+// OBTENIM VALORS FORMULARI
 
-
-
-
-
-
-var Qinicial = 100000;
+//var Qinicial = 100000;
 var totalAnys = 20;
-var i = 3/100; //interes anual: 3 per cent.
-var i_prima = 6/100; //inlfacio anual
+//var i = 3/100; //interes anual: 3 per cent.
+//var i_prima = 6/100; //inlfacio anual
+
+
+
+
+
+
 
 var AmpladaGrafic = window.screen.width*(7/10);
 var AlturaGrafic = window.screen.height*0.8;
@@ -210,9 +212,25 @@ var layout = {
 Plotly.react('graficPlotly',[{x:[0,15],y:[0,40000], line: {color: 'white'}}], layout)
 
 
-
+//DECLARO LES VARIABLES GLOBALS FORA DEL MAIN PERQUE ESTIGUIN DISPONIBLES
+var Qinicial;
+var i_prima;
+var i;
 function main() {
+    
+    //OBTINC DADES FORMULARIS
+    Qinicial = document.getElementById("capital").value;        //Quantitat inicial inversió a moment 0
+    i_prima = document.getElementById("inflacion").value/100;   //inflacio anual (tant per u)
+    i = document.getElementById("interes_inversion").value/100; //interes anual inversio (tant per u)
     const rButtons = document.getElementsByName('opcio')
+
+    // MOSTRA DADES
+    console.log("Capital:", capital);
+    console.log("Inflacion:", inflacion);
+    console.log("Interes Inversion:", interes_inversion);
+    //console.log("Opcion:", rButtons.value); //MIRA SI AIXO VA
+
+
     if (rButtons[0].checked) {
         FesGraficInteresCompost();
         FesTaulaInteresCompost();
@@ -224,13 +242,6 @@ function main() {
         FesTaulaInflacio_i_InteresCompost();
     }
 }
-    //if (document.getElementById("capital").value)
-    //document.getElementById("capital").value
-    
-
-
-
-//var graphDiv = document.getElementById('graficPlotly')
 
 
 
