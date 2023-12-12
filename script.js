@@ -136,9 +136,9 @@ function FesTaulaInteresCompost() {
         var fila = matriu[i].querySelectorAll("td"); //var fila = matriu[i];  //xat gpt m'ha dit que no puc seleccionar amb indexos sino que he de feusar lap roxima linia
         for (var j = 0; j < fila.length; ++j) {
             if (j == 0) {fila[j].innerHTML = arr_anys[i];}  //EMPLENO LA COLUMNA DELS ANYS AMB AQUESTES DADES (1a col)
-            else if (j == 1) {fila[j].innerHTML = Math.round(Q(i+1));} //EMPLENO COLUMNA DELS ANYS
-            else if (j == 2) {fila[j].innerHTML = Math.round(Q_g(i+1));}//EMPLENO LA COLUMNA DE Q_g(n) AMB LES DADES (2a Col) (k es n d'anys)
-            else if (j == 3) {fila[j].innerHTML = ((Q_g(i+1) / Qinicial)*100).toFixed(2);}//EMPLENO LA COLUMNA DE % acumulats (3acol)
+            else if (j == 1) {fila[j].innerHTML = Math.round(Q(arr_anys[i]));} //EMPLENO COLUMNA DELS ANYS
+            else if (j == 2) {fila[j].innerHTML = Math.round(Q_g(arr_anys[i]));}//EMPLENO LA COLUMNA DE Q_g(n) AMB LES DADES (2a Col) (arr_anys[i] es n d'anys)
+            else if (j == 3) {fila[j].innerHTML = ((Q_g(arr_anys[i]) / Qinicial)*100).toFixed(2);}//EMPLENO LA COLUMNA DE % acumulats (3acol)
         }
     }
     console.log("GRAFIC INTERES COMPOST FET");
@@ -168,9 +168,9 @@ function FesTaulaInflacio() {
         for (var j = 0; j < fila.length; ++j) {
             //EMPLENO LA COLUMNA DELS ANYS AMB AQUESTES DADES (1a col)
             if (j == 0) {fila[j].innerHTML = arr_anys[i];}
-            else if (j == 1) {fila[j].innerHTML = Math.round(Q_inf(i+1));} //EMPLENO COLUMNA DELS ANYS
-            else if (j == 2) {fila[j].innerHTML = -Math.round(Q_p(i+1));}   //EMPLENO LA COLUMNA DE Q_inf(n) AMB LES DADES (2a Col) (k es n d'anys)
-            else if (j == 3) {fila[j].innerHTML = -((Q_p(i+1) / Qinicial)*100).toFixed(2);}//EMPLENO LA COLUMNA DE % acumulats (3acol)
+            else if (j == 1) {fila[j].innerHTML = Math.round(Q_inf(arr_anys[i]));} //EMPLENO COLUMNA DELS ANYS
+            else if (j == 2) {fila[j].innerHTML = -Math.round(Q_p(arr_anys[i]));}   //EMPLENO LA COLUMNA DE Q_inf(n) AMB LES DADES (2a Col) (k es n d'anys)
+            else if (j == 3) {fila[j].innerHTML = -((Q_p(arr_anys[i]) / Qinicial)*100).toFixed(2);}//EMPLENO LA COLUMNA DE % acumulats (3acol)
         }
     }    
     console.log("FES GRAFIC INFLACIO");
