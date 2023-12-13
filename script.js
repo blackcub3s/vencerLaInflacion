@@ -196,8 +196,8 @@ var totalAnys = 20;
 
 
 
-var AmpladaGrafic = window.screen.width*(7/10);
-var AlturaGrafic = window.screen.height*0.8;
+var AmpladaGrafic = window.screen.width*(8/10);
+var AlturaGrafic = window.screen.height*0.7;
 
 
 //FEM UN GRÀFIC INICIAL AMB DOS PUNTS EN BLANC PER MOSTRAR A L'USUARI
