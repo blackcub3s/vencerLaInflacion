@@ -218,7 +218,7 @@ Plotly.react('graficPlotly',[{x:[0,15],y:[0,40000], line: {color: 'white'}}], la
 function fesScrollAtaula_enMobils() {
     var taula = document.getElementsByClassName('div-dret')[0];
     if (window.matchMedia('(max-width: 1300px)').matches) { // COMPROVO SI LA MEDIA QUERY ESTA ACTIVA
-        taula.scrollIntoView({ behavior: 'smooth' }); // FES SCROLL
+        taula.scrollIntoView({ behavior: 'smooth' }); // FES SCROLL A LA TAULA 
     }
 }
 
