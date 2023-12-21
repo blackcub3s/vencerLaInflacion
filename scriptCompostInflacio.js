@@ -213,6 +213,26 @@ var layout = {
 Plotly.react('graficPlotly',[{x:[0,15],y:[0,40000], line: {color: 'white'}}], layout)
 
 
+//PRE: Existeix la taula i una media query de max-width: 1300px i es fa clic a un botó que l'activa
+//POST: Es fa scroll a la taula
+function fesScrollAtaula_enMobils() {
+    var taula = document.getElementsByClassName('div-dret')[0];
+    if (window.matchMedia('(max-width: 1300px)').matches) { // COMPROVO SI LA MEDIA QUERY ESTA ACTIVA
+        taula.scrollIntoView({ behavior: 'smooth' }); // FES SCROLL
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 //DECLARO LES VARIABLES GLOBALS FORA DEL MAIN PERQUE ESTIGUIN DISPONIBLES
 var Qinicial;
 var i_prima;
@@ -251,11 +271,10 @@ function main() {
                 FesGraficInflacio_i_InteresCompost();
                 FesTaulaInflacio_i_InteresCompost();
             } else {alert("Mira que tanto %TIN y % INFLACION estén llenos (con valores positivos).");}
-
         }
+        //fas l'scroll perquè baixi
+        fesScrollAtaula_enMobils();
     }
-
-
 }
 
 
