@@ -100,7 +100,7 @@
         }
 
 
-        /* MEDIA QUERY PER A MOSTRAR-LO BÉ A MÒBIL 
+        /* MEDIA QUERY PER A MOSTRAR-LO BÉ A UNA TABLET O A L'ORDINADOR QUAN T'APROPES
         -DIV DEL GRÀFIC A SOTA DE TOT.  DIV ESQUERRE (form) a dalt de tot. DIV DRET (taula) a la dreta.
         -HA COSTAT MOLT PODER MANEJAR EL GRAFIC DE PLOTLY I HEM HAGUT DE POSAR PADDINGS VARIABLES AMB LA MEDIA QUERY*/
         @media screen and (max-width: 1300px) {
@@ -136,9 +136,49 @@
                 font-size: .7em;
             }
 
+            fieldset {
+                text-align: center; 
+                display: grid;
+                grid-template-columns: 1fr;
+                
+                
+            }
+
+
+
+
+
 
         }
 
+        /* MEDIA QUERY PER A MOSTRAR-LO BÉ A UN MOBIL. TOQUEM QUE ELS CAMPS DEL FORMULARI ES POSIN UN SOBRE L'ALTRTE*/
+        @media screen and (max-width: 500px) {
+
+            #graficPlotly {
+                position: relative;
+                top: 35em;
+            }
+
+            .div-esquerre {
+                padding-top: 10em;
+                padding-bottom:10em;
+                
+            }
+            
+            /*
+            .div-dret {
+                padding-bottom: 10em;
+            }
+            */
+            
+
+
+            form .inline-form{
+                color: green;
+                display: flex;
+                flex-direction: column;               
+            }
+        }
 
 
 
@@ -178,6 +218,7 @@
         <ul>
             <li><a href="index.html">Ahorros e inflación</a></li>
             <li><a href="#">Ahorro recurrente</a></li>
+            <li><a href="https://github.com/blackcub3s/vencerLaInflacion">Modelo teórico</a></li>
         </ul>
     </nav>
 </header>    
@@ -187,32 +228,34 @@
         <!--TO DO -->
         <div class="formulari">
             <form>
-            <div class="inline-form">
-                <label for="capital">capital inicial</label>
-                <input type="number" id="capital" name="capital" step="0.01" min="0" title="Introduce tu capital inicial"  placeholder="300000" required>
-            </div>
-            <div class="inline-form">
-                <label for="inflacion">% inflación</label>
-                <input type="number" id="inflacion" name="inflacion" step="0.01" min="0" placeholder="6" required>
+                <div class="inline-form" id="vertical">
+                    <label for="capital">capital inicial</label>
+                    <input type="number" id="capital" name="capital" step="0.01" min="0" title="Introduce tu capital inicial"  placeholder="" required>
+                </div>
+                <div class="inline-form">
+                    <label for="interes_inversion">% TIN</label>
+                    <input type="number" id="interes_inversion" name="interes_inversion" step="0.01" min="0" placeholder="" required>
 
-                <label for="interes_inversion">% TIN</label>
-                <input type="number" id="interes_inversion" name="interes_inversion" step="0.01" min="0" placeholder="3" required>
-            </div>
-              
-              <fieldset>
-                <legend>Qué gráfico quieres mostrar?</legend>
-                <label>
-                  <input type="radio" name="opcio" value="interes_compuesto" title="el interes compuesto que crees que puedes conseguir año a año"> Interés compuesto
-                </label>
-                <label>
-                  <input type="radio" name="opcio" value="reduccion_inflacion"> Inflación
-                </label>
-                <label>
-                  <input type="radio" name="opcio" value="inversion_vs_inflacion" checked> Interés vs inflación
-                </label>
-              </fieldset>
-          
-              <button type="button" id = "botoEnviar" onclick="main()">Enviar</button>
+                    <label for="inflacion">% inflación</label>
+                    <input type="number" id="inflacion" name="inflacion" step="0.01" min="0" placeholder="" required>
+
+
+                </div>
+                
+                <fieldset>
+                    <legend>Qué gráfico quieres mostrar?</legend>
+                    <label>
+                        <input type="radio" name="opcio" value="interes_compuesto" title="el interes compuesto que crees que puedes conseguir año a año" checked> Interés compuesto
+                    </label>
+                    <label>
+                        <input type="radio" name="opcio" value="reduccion_inflacion"> Inflación
+                    </label>
+                    <label>
+                        <input type="radio" name="opcio" value="inversion_vs_inflacion"> Interés vs inflación
+                    </label>
+                </fieldset>
+            
+                <button type="button" id = "botoEnviar" onclick="main()">Enviar</button>
 
             </form>
         </div>
@@ -294,7 +337,7 @@
     
 
 
-<script src="script.js"></script>
+<script src="scriptCompostInflacio.js"></script>
 <script src="scriptExponencialRecurrent.js"></script>
 
 </body>

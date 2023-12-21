@@ -30,7 +30,7 @@ function FesGraficInteresCompost() {
         height: AlturaGrafic
     };
 
-    // GENEREM ELS PUNTS X I Y DEL GRÀFIC
+    // GENEREM ELS PUNTS X i Y DEL GRÀFIC
     let x = [];
     let y = [];
     let y_ = []
@@ -183,6 +183,7 @@ function FesTaulaInflacio_i_InteresCompost() {
 
 
 
+
 // OBTENIM VALORS FORMULARI
 
 //var Qinicial = 100000;
@@ -222,25 +223,39 @@ function main() {
     Qinicial = document.getElementById("capital").value;        //Quantitat inicial inversió a moment 0
     i_prima = document.getElementById("inflacion").value/100;   //inflacio anual (tant per u)
     i = document.getElementById("interes_inversion").value/100; //interes anual inversio (tant per u)
-    const rButtons = document.getElementsByName('opcio')
+    const rButtons = document.getElementsByName('opcio');
+
+    
 
     // MOSTRA DADES
-    console.log("Capital:", capital);
-    console.log("Inflacion:", inflacion);
-    console.log("Interes Inversion:", interes_inversion);
+    console.log("Capital:", Qinicial);
+    console.log("Inflacion (tant per 1):", i_prima);
+    console.log("Interes Inversion (tant per 1):", i);
     //console.log("Opcion:", rButtons.value); //MIRA SI AIXO VA
 
+    if (Qinicial == 0) { //si no hi ha capital inicial introduit (quan és buit camp capital inicial) no deixem calcular res. 
+        alert("Introducir capital inicial !!!")
+    } else {
+        if (rButtons[0].checked) {  //demanem calculs interès compost (després de comprovar % creixement interès)
+            if (i > 0) {        
+                FesGraficInteresCompost();
+                FesTaulaInteresCompost(); 
+            } else {alert("Introduce un interes positivo anual en el campo %TIN para saber cuánto va a crecer tu dinero con la inversión!");}
+        } else if (rButtons[1].checked) { //demanem calculs inflació  (després de comprovar camp % inflació necessari)
+            if (i_prima > 0) { 
+                FesGraficInflacio();
+                FesTaulaInflacio();
+            } else {alert("Introduce un interes positivo anual en el campo % inflación para saber la pérdidad de potencial adquisitivo!");}
+        } else if (rButtons[2].checked) { //demanem mostrar pèrdues d'inflació amb els guanys d'interès compost
+            if (i_prima > 0 && i > 0) {
+                FesGraficInflacio_i_InteresCompost();
+                FesTaulaInflacio_i_InteresCompost();
+            } else {alert("Mira que tanto %TIN y % INFLACION estén llenos (con valores positivos).");}
 
-    if (rButtons[0].checked) {
-        FesGraficInteresCompost();
-        FesTaulaInteresCompost();
-    } else if (rButtons[1].checked) {
-        FesGraficInflacio();
-        FesTaulaInflacio();
-    } else if (rButtons[2].checked) {
-        FesGraficInflacio_i_InteresCompost();
-        FesTaulaInflacio_i_InteresCompost();
+        }
     }
+
+
 }
 
 

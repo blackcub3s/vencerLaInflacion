@@ -79,7 +79,7 @@ El cálculo de la inflación es algo de lo que solamente se habla con respecto a
 
 De forma análoga a lo que pasaba con el interés compuesto, la inflación funciona de forma similar. Con la fórmula de cálculo 1, que denominaremos $Q_{inf}(n)$, si hoy tenemos 10 000 euros pero el dinero no está invertido, con una inflación de 6% de interés interanual el potencial de compra del capital se iría "perdiendo" -a pesar de que mantuviésemos la misma cantidad-:
 
-Por ejemplo, al cabo de un año podríamos comprar con 10 000 euros lo que ahora compraríamos con 9400 euros ($Q_{inf}(1)$), dado que:
+Por ejemplo, al cabo de un año podríamos comprar con 10 000 euros lo que ahora compraríamos con 9400 euros, dado que:
 
 $$ Q_{inf}(1) = 10000 \cdot 0.94 = 9400 $$
 
