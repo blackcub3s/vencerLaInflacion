@@ -261,19 +261,19 @@ function main() {
                 FesGraficInteresCompost();
                 FesTaulaInteresCompost(); 
                 fesScrollAtaula_enMobils(); //fas scroll
-            } else {alert("Introduce un interes positivo anual en el campo %TIN para saber cuánto va a crecer tu dinero con la inversión!");}
+            } else {alert("Introduce un interes positivo anual en el campo % Interes para saber cuánto va a crecer tu dinero con la inversión!");}
         } else if (rButtons[1].checked) { //demanem calculs inflació  (després de comprovar camp % inflació necessari)
             if (i_prima > 0) { 
                 FesGraficInflacio();
                 FesTaulaInflacio();
                 fesScrollAtaula_enMobils();
-            } else {alert("Introduce un interes positivo anual en el campo % inflación para saber la pérdidad de potencial adquisitivo!");}
+            } else {alert("Introduce un interes positivo anual en el campo % inflacion para saber la perdida de potencial adquisitivo!");}
         } else if (rButtons[2].checked) { //demanem mostrar pèrdues d'inflació amb els guanys d'interès compost
             if (i_prima > 0 && i > 0) {
                 FesGraficInflacio_i_InteresCompost();
                 FesTaulaInflacio_i_InteresCompost();
                 fesScrollAtaula_enMobils();
-            } else {alert("Mira que tanto %TIN y % INFLACION estén llenos (con valores positivos).");}
+            } else {alert("Mira que tanto % Interes y % Inflacion esten llenos y con valores positivos.");}
         }
         //fas l'scroll perquè baixi
         

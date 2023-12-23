@@ -25,10 +25,7 @@ form {
 
   
   label {
-    display: block;
-   
     font-weight: bold;
-    
   }
   
   input[type="number"] {

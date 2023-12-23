@@ -211,16 +211,20 @@
 
         td, th {padding: 0em .8em 0em .8em;} /*AMPLADA DE LA TAULA*/
 
+
+
     </style>
     
     <link rel="stylesheet" href="estilsFormulari.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
 
 
 </head>
 <body>
 
 <header>
+    
     <nav>
         <ul>
             <li><a href="index.html">Ahorros e inflación</a></li>
@@ -235,16 +239,16 @@
         <!--TO DO -->
         <div class="formulari">
             <form>
-                <div class="inline-form" id="vertical">
-                    <label for="capital">capital inicial</label>
-                    <input type="number" id="capital" name="capital" step="0.01" min="0" title="Introduce tu capital inicial"  placeholder="" required>
+                <div class="inline-form">
+                    <!--<label for="capital">capital inicial</label>-->
+                    <input type="number" id="capital" name="capital" step="0.01" min="0" title="Introduce tu capital inicial"  placeholder="Capital inicial" required>
                 </div>
                 <div class="inline-form">
-                    <label for="interes_inversion">% TIN</label>
-                    <input type="number" id="interes_inversion" name="interes_inversion" step="0.01" min="0" placeholder="" required>
+                    <!--<label for="interes_inversion">% interés</label>-->
+                    <input type="number" id="interes_inversion" name="interes_inversion" step="0.01" min="0" placeholder="% interés" required>
 
-                    <label for="inflacion">% inflación</label>
-                    <input type="number" id="inflacion" name="inflacion" step="0.01" min="0" placeholder="" required>
+                    <!--<label for="inflacion">% inflación</label>-->
+                    <input type="number" id="inflacion" name="inflacion" step="0.01" min="0" placeholder="% inflació" required>
 
 
                 </div>
@@ -252,7 +256,7 @@
                 <fieldset>
                     <legend>Qué gráfico quieres mostrar?</legend>
                     <label>
-                        <input type="radio" name="opcio" value="interes_compuesto" title="el interes compuesto que crees que puedes conseguir año a año" checked> Interés compuesto
+                        <input type="radio" name="opcio" value="interes_compuesto" title="el interes compuesto que crees que puedes conseguir año a año" checked> Interés
                     </label>
                     <label>
                         <input type="radio" name="opcio" value="reduccion_inflacion"> Inflación
