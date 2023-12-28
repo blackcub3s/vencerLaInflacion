@@ -38,19 +38,28 @@
         }
         /*NAVEGADOR APAREIX EN UNA LINIA I EL CUSTOMITZEM*/
         header nav ul { 
-            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             font-size: 1.2em;
             background-color: blanchedalmond;
-            padding: .7em 0em .7em 0em;
-        }
-        header nav li {
-            display: inline-block;
-            margin-right: 2em; 
+            text-align: center;
         }
 
+        header nav ul li {
+            display: inline-block;
+            margin: 0em; 
+            padding: .5em 0em .5em 0em;
+
+            border-right: 1px solid brown;
+        }
+
+        header nav ul li:last-child {
+            border-right: none; /*trec el vestigi de la border de la dreta*/
+        }
         header nav a {
             text-decoration: none;
             color: #333;
+            
         }
 
         /*canviem de color i fem més grans els links del navegador quan fem hover damunt*/
