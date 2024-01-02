@@ -17,17 +17,10 @@
             padding:0;
         }
 
-
-
-
         body {
             font-family: 'Times New Roman', Times, serif;
             font-size: 1.4em; /*valor per defecte a 1em, si el treus no passa res PERO AIXI POTS MODIFICARS*/
         }
-
-
-
-       
 
         table {
             text-align: center;
@@ -36,6 +29,7 @@
         caption {
             padding-bottom:1em;
         }
+        
         /*NAVEGADOR APAREIX EN UNA LINIA I EL CUSTOMITZEM*/
         header nav ul { 
             display: grid;
@@ -66,8 +60,13 @@
         header nav a:hover {
             font-size: 1.05em;
             color: green;
-            transition: font-size 0.3s ease;
-            
+            transition: font-size 0.3s ease;    
+        }
+
+        /*TOT ELEMENT LI SORTIRA MARCAT EN COLOR, NO NOMES EL LINK -PER AIXO FEM LI HOVER- canviem de color i fem més grans els links del navegador quan fem hover damunt*/
+        header nav li:hover {
+            background-color:   rgb(216, 190, 156);
+            transition: background-color 0.3s ease;  
         }
 
 
