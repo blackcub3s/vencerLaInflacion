@@ -273,15 +273,15 @@ $$ E(n) = Q' \cdot (1.03^{n-1} +  1.03^{n-2} + [...] +  1.03 + 1)$$
 
 Y considerando la propiedad asociativa de la suma podemos reescribir los sumandos del paréntesis de menor a mayor (ahora están de mayor a menor) y representarlos con un sumatorio, tal que así:
 
-$$ E(n) = Q' \cdot \sum_{i=0}^{n-1} 1.03^{i}$$
+$$ E(n) = Q' \cdot \sum_{i=1}^{n} 1.03^{i-1}$$
 
 Para hacer una ley general no dependiente de un tipo de interés particular podemos sustituir $1.03$ por $1 + i$ en la expresión anterior, reescribiéndola de este modo:
 
-$$ E(n) = Q' \cdot \sum_{j=0}^{n-1} (1 + i)^{j}$$
+$$ E(n) = Q' \cdot \sum_{j=1}^{n} (1 + i)^{j-1}$$
 
 En el caso de Eulàlia el crecimiento de su dinero podríamos obtenerlo sustituyendo $Q'$ por los 2000 euros a lo largo de 12 meses y dejando el tipo de interés al 3 por ciento como antes:
 
-$$ E(n) = 24000 \cdot \sum_{i=0}^{n-1} (1.03)^{i}$$
+$$ E(n) = 24000 \cdot \sum_{i=1}^{n} (1.03)^{i-1}$$
 
 
 
