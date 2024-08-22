@@ -97,9 +97,13 @@ $$ Q_{inf}(n) = Q \cdot (1-i^{'})^n $$
 
 Para esta forma de cálculo podemos sacar las "pérdidas" inflacionarias a lo largo de los $n$ años que pasan desde el momento inicial que consideremos para nuestro capital inicial, de forma análoga a como hicimos con las la fórmula de variación del capital mediante interés compuesto $Q(n)$ mediante la expresión de ganancias del interés compuesto $Q_{g}(n)$, pero ahora generando la función $Q_{p[Inf]}(n)$ (<strong>cantidad de pérdidas inflacionarias en función del número de años</strong>) que proponemos a continuación:
 
-$$ Q_{p[Inf]}(n) = Q - Q_{inf}(n) $$
+$$ 
 
-$$ Q_{p[Inf]}(n) = Q - Q \cdot (1-i^{'})^n $$
+Q_{p[Inf]}(n) = Q - Q_{inf}(n) 
+
+Q_{p[Inf]}(n) = Q - Q \cdot (1-i^{'})^n 
+
+$$
 
 Siendo esta fórmula de cálculo idéntica a la que implementan los desarrolladores en la aplicación bancaria de BBVA, al menos, a fecha de septiembre-octubre de 2023.
 
@@ -335,15 +339,15 @@ https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c
 
 [^1]: Un método numérico para hallar n, con el resto de valores conocidos es usar el método de bisección. Es una una espécie de búsqueda dicotómica en la que vamos aproximando de forma tentativa la solución a la ecuación.
 
-[^2]: [https://en.wikipedia.org/wiki/2008%E2%80%932011_Icelandic_financial_crisis](https://en.wikipedia.org/wiki/2008%E2%80%932011_Icelandic_financial_crisis)
+[^2]: https://en.wikipedia.org/wiki/2008%E2%80%932011_Icelandic_financial_crisis
 
-[^3]: [https://en.wikipedia.org/wiki/1997_Albanian_civil_unrest](https://en.wikipedia.org/wiki/1997_Albanian_civil_unrest)
+[^3]: https://en.wikipedia.org/wiki/1997_Albanian_civil_unrest
 
-[^4]: [https://es.wikipedia.org/wiki/Sam_Bankman-Fried](https://es.wikipedia.org/wiki/Sam_Bankman-Fried)
+[^4]: https://es.wikipedia.org/wiki/Sam_Bankman-Fried
 
-[^5]: [https://es.cointelegraph.com/news/bankrupt-crypto-exchange-quadrigacx-to-start-interim-distribution-of-funds](https://es.cointelegraph.com/news/bankrupt-crypto-exchange-quadrigacx-to-start-interim-distribution-of-funds)
+[^5]: https://es.cointelegraph.com/news/bankrupt-crypto-exchange-quadrigacx-to-start-interim-distribution-of-funds
 
-[^6]: [https://ca.wikipedia.org/wiki/Ruja_Ignatova](https://ca.wikipedia.org/wiki/Ruja_Ignatova)
+[^6]: https://ca.wikipedia.org/wiki/Ruja_Ignatova
 
 [^7]: https://www.km77.com/coches/volkswagen/golf/2013/3-puertas/gti/golf-3p-gti-20-tsi-220-cv/datos
 
