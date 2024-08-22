@@ -198,6 +198,9 @@ $$(1-i^{'})^n + (1+i)^n = 2$$
 Para obtener la expresión $n(i,i^{'})$ (n en función del interés de la inversión $i$ y de la inflación $i^{'}$ ) como deseábamos con la última ecuación nos hemos dado cuenta que no se puede conseguir mediante técnicas numéricas algebraicas tradicionales; son necesarias técnicas computacionales o métodos numéricos para obtenerla[^1]. Hemos usado la representación de funciones de google para que en una inflación del 6% ( $i^{'}=0.06$ ) y un interés en las inversiones del 3% ( $i^{'}=0.03$ ) en cuántos años $n$ podremos vencer la inflación tratando de solucionar la expresión:
 
 $$(1 - 0.06)^n + (1 + 0.03)^n = 2$$ 
+
+Que es: 
+
 $$0.94^n + 1.03^n = 2$$ 
 
 Y el resultado ha sido el siguiente:
