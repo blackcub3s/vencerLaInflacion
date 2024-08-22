@@ -197,8 +197,8 @@ $$(1-i^{'})^n + (1+i)^n = 2$$
 
 Para obtener la expresión $n(i,i^{'})$ (n en función del interés de la inversión $i$ y de la inflación $i^{'}$ ) como deseábamos con la última ecuación nos hemos dado cuenta que no se puede conseguir mediante técnicas numéricas algebraicas tradicionales; son necesarias técnicas computacionales o métodos numéricos para obtenerla[^1]. Hemos usado la representación de funciones de google para que en una inflación del 6% ( $i^{'}=0.06$ ) y un interés en las inversiones del 3% ( $i^{'}=0.03$ ) en cuántos años $n$ podremos vencer la inflación tratando de solucionar la expresión:
 
-$$ (1 - 0.06)^n + (1 + 0.03)^n = 2 $$
-$$ 0.94^n + 1.03^n = 2 $$
+$$(1 - 0.06)^n + (1 + 0.03)^n = 2$$ 
+$$0.94^n + 1.03^n = 2$$ 
 
 Y el resultado ha sido el siguiente:
 
@@ -345,6 +345,6 @@ https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c
 
 [^6]: [https://ca.wikipedia.org/wiki/Ruja_Ignatova](https://ca.wikipedia.org/wiki/Ruja_Ignatova)
 
-[^7]: [https://www.km77.com/coches/volkswagen/golf/2013/3-puertas/gti/golf-3p-gti-20-tsi-220-cv/datos](coste de un golf gti en 2013)
+[^7]: https://www.km77.com/coches/volkswagen/golf/2013/3-puertas/gti/golf-3p-gti-20-tsi-220-cv/datos
 
-[^8]:  [https://www.km77.com/coches/volkswagen/golf/2020/5-puertas/gti/golf-gti-20-tsi-180-kw-245-cv/datos](coste de un golf gti en 2023)
+[^8]:  https://www.km77.com/coches/volkswagen/golf/2020/5-puertas/gti/golf-gti-20-tsi-180-kw-245-cv/datos
