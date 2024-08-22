@@ -29,9 +29,9 @@
 
 # Introducción
 
-La inflación es una lacra producida por la impresión sin restricciones de moneda por parte de los bancos centrales (Reserva Federal en EEUU, Banco Central Europeo en Europa, Banco Central de la República Argentina, en Argentina, etc.). Al aumentar la masa monetaria de forma artificiosa para subvencionar el déficit presupuestario de los estados, empresas o individuos, permitiendo que estos se endeuden excesivamente a futuro y que esa deuda se eternalice y nunca se pague, se genera algo inevitable: el incremento de la masa monetaria sin que ello conlleve un incremento parejo de los bienes producidos. Esto, al menos bajo mi leal saber y entender, genera la inflación.
+A grandes rasgos podemos decir que la inflación es una lacra producida por la impresión sin restricciones de moneda por parte de los bancos centrales (Reserva Federal en EEUU, Banco Central Europeo en Europa, Banco Central de la República Argentina, en Argentina, etc.) cuando no existe suficiente demanda de la divisa en cuestión en el mercado de cambio. Al aumentar la masa monetaria de forma artificiosa para subvencionar el déficit presupuestario de los estados, empresas o individuos, permitiendo que estos se endeuden excesivamente a futuro y que no se devuelva el monto prestado -quedando este eternalizado- sin que esto conlleve un incremento parejo de los bienes producidos genera, al menos según mi leal saber y entender, inflación.
 
-Si se mantuviese durante un período de 10 años la inflación interanual de entorno el 6 por ciento que tenemos ahora a finales de 2023, implicaría inevitablemente que el capital que la gente tenga en liquidez va a reducirse a la mitad. Reitero: <strong>la población española tiene el potencial de perder la mitad de su dinero en 10 años</strong> (o lo que es lo mismo: si hoy 30 000 euros compran un coche, en 10 años se necesitarán 60 000 para comprar un producto con el mismo nivel de correspondencia en la gama del fabricante que hayamos escogido).
+Si se mantuviese durante un período de 10 años la inflación interanual de entorno el 6 por ciento que tenemos ahora a finales de 2023, implicaría inevitablemente que el capital que la gente tenga en liquidez va a reducirse a la mitad. Reitero: <strong>la población española tiene el potencial de perder la mitad de su dinero en 10 años</strong> (o lo que es lo mismo: si hoy 30 000 euros compran un coche, en 10 años se necesitarán 60 000 para comprar un producto con el mismo nivel de correspondencia en la gama del fabricante que hayamos escogido). Por poner un par de ejemplos tomando los datos de la base de datos de precios de kilómetro77: un golf GTI costaba 32 850€ en el año 2013[^7] mientras que a día de hoy, en en 2023, cuesta 45 985 €[^8] (un incremento del 40%). 
 
 Con este repositorio queremos cumplir una triple función: primero, generar una herramienta didáctica con la que poder explicar y calcular visualmente el <strong>interés compuesto</strong> de imposiciones a plazo, bonos del estado u otros instrumentos financieros que generen un retorno fijo anual; segundo, queremos enseñar y calcular visualmente <strong>el efecto que la inflación tiene en nuestro capital</strong> y como este efecto se puede representar mediante una "minoración" de la capacidad de compra de nuestro dinero con el paso de los años; finalmente, queremos proporcionar al lector y al usuario de esta aplicación web una herramienta para entender como evitar el efecto de la inflación sobre nuestros ahorros y así calcular cuántos años son necesarios para que un capital inicial que queremos preservar, al que denominaremos $Q$, no se pierda por efecto de la misma. Con este repositorio demostramos que es posible vencer la inflación si la rentabilidad de las inversiones es inferior a la inflación, mediante el interés compuesto.
 
@@ -197,8 +197,8 @@ $$(1-i^{'})^n + (1+i)^n = 2$$
 
 Para obtener la expresión $n(i,i^{'})$ (n en función del interés de la inversión $i$ y de la inflación $i^{'}$ ) como deseábamos con la última ecuación nos hemos dado cuenta que no se puede conseguir mediante técnicas numéricas algebraicas tradicionales; son necesarias técnicas computacionales o métodos numéricos para obtenerla[^1]. Hemos usado la representación de funciones de google para que en una inflación del 6% ( $i^{'}=0.06$ ) y un interés en las inversiones del 3% ( $i^{'}=0.03$ ) en cuántos años $n$ podremos vencer la inflación tratando de solucionar la expresión:
 
-$$ (1 - 0.06)^n + (1 + 0.03)^n = 2$$
-$$ 0.94^n + 1.03^n = 2$$
+$$ (1 - 0.06)^n + (1 + 0.03)^n = 2 $$
+$$ 0.94^n + 1.03^n = 2 $$
 
 Y el resultado ha sido el siguiente:
 
@@ -344,3 +344,7 @@ https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c
 [^5]: [https://es.cointelegraph.com/news/bankrupt-crypto-exchange-quadrigacx-to-start-interim-distribution-of-funds](https://es.cointelegraph.com/news/bankrupt-crypto-exchange-quadrigacx-to-start-interim-distribution-of-funds)
 
 [^6]: [https://ca.wikipedia.org/wiki/Ruja_Ignatova](https://ca.wikipedia.org/wiki/Ruja_Ignatova)
+
+[^7]: [https://www.km77.com/coches/volkswagen/golf/2013/3-puertas/gti/golf-3p-gti-20-tsi-220-cv/datos](coste de un golf gti en 2013)
+
+[^8]:  [https://www.km77.com/coches/volkswagen/golf/2020/5-puertas/gti/golf-gti-20-tsi-180-kw-245-cv/datos](coste de un golf gti en 2023)
