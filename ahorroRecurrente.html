@@ -234,27 +234,6 @@
         document.addEventListener("DOMContentLoaded", function () {
             const radioButtons = document.getElementsByName("opcio"); //agafo els radiobuttons
             const  inputInteresInverio = document.getElementById("interes_inversion"); //prenc l'input dinteres dinversio
-            const inputInflacio = document.getElementById("inflacion"); //prenc l'input d'interes d'inflacio
-
-            inputInflacio.style.display = "none";
-
-            // MIRO CADA RADIOBUTTON I OBSEVO SI HI HA HAGUT UN CANVI
-            for (const radioButton of radioButtons) {
-                radioButton.addEventListener('change', function() {
-                    if (radioButton.checked) {
-                        if (radioButton.value === 'interes_compuesto') {
-                            inputInteresInverio.style.display = "block";
-                            inputInflacio.style.display = "none";
-                        } else if (radioButton.value === 'reduccion_inflacion') {
-                            inputInteresInverio.style.display = "none";
-                            inputInflacio.style.display = "block";
-                        } else if (radioButton.value === 'inversion_vs_inflacion') {
-                            inputInteresInverio.style.display = "block";
-                            inputInflacio.style.display = "block";
-                        }
-                    }
-                });
-            }
         });
 
     </script>
@@ -266,8 +245,8 @@
     
     <nav>
         <ul>
-            <li><a href="index.html" id="linkMarcat">Ahorros e inflación</a></li>
-            <li><a href="ahorroRecurrente.html">Ahorro recurrente</a></li>
+            <li><a href="index.html">Ahorros e inflación</a></li>
+            <li><a href="ahorroRecurrente.html" id="linkMarcat">Ahorro recurrente</a></li>
             <li><a href="https://github.com/blackcub3s/vencerLaInflacion">Modelo teórico</a></li>
         </ul>
     </nav>
@@ -279,31 +258,18 @@
         <div class="formulari">
             <form>
                 <div class="inline-form">
-                    <!--<label for="capital">capital inicial</label>-->
                     <input type="number" id="capital" name="capital" step="0.01" min="0" title="Introduce tu capital inicial"  placeholder="Capital inicial, tus ahorros (Q)" required>
+                    <input type="number" id="ahorroAnual" name="ahorroAnual" step="0.01" min="0" placeholder="ahorro anual de tu salario" required>
                 </div>
                 <div class="inline-form">
                     <!--<label for="interes_inversion">% interés</label>-->
                     <input type="number" id="interes_inversion" name="interes_inversion" step="0.01" min="0" placeholder="% interés de tu inversión" required>
 
-                    <!--<label for="inflacion">% inflación</label>-->
-                    <input type="number" id="inflacion" name="inflacion" step="0.01" min="0" placeholder="% inflación anual" required>
-
 
                 </div>
                 
-                <fieldset>
-                    <legend>Qué gráfico quieres mostrar?</legend>
-                    <label>
-                        <input type="radio" name="opcio" value="interes_compuesto" title="el interes compuesto que crees que puedes conseguir año a año" checked> Interés
-                    </label>
-                    <label>
-                        <input type="radio" name="opcio" value="reduccion_inflacion"> Inflación
-                    </label>
-                    <label>
-                        <input type="radio" name="opcio" value="inversion_vs_inflacion"> Interés vs inflación
-                    </label>
-                </fieldset>
+
+
             
                 <button type="button" id = "botoEnviar" onclick="main()">Enviar</button>
 
@@ -320,7 +286,8 @@
                 <tr>
                     <th>n</th>
                     <th>Q(n)</th>
-                    <th>Ganancia<br>acumulada</th>
+                    <th>E(n)</th>
+                    <th style="font-size: .8em;">Q(n) + E(n)<br><span style="font-size: .5em;">Ganancia Acumulada</span></th>
                     <th>%<br>acumulado</th>
                 </tr>
             </thead>
@@ -331,25 +298,10 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
@@ -360,8 +312,30 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
+                    <td>-</td>
                 </tr>
                 <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
@@ -387,7 +361,8 @@
     
 
 
-<script src="scriptCompostInflacio.js"></script>
+
+<script src="scriptExponencialRecurrent.js"></script>
 
 </body>
 </html>

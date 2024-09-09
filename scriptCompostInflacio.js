@@ -117,7 +117,7 @@ function FesGraficInflacio_i_InteresCompost() {
 //AQUESTA FUNCIÓ EMPLENA LA TAULA D'INTERÈS COMPOST DELS ANYS CORRESPONENTS I POSA EL CAPSAL DE COLOR GUANY
 function FesTaulaInteresCompost() {
     //CAPSAL TAULA
-    document.getElementById("capsalTaula").innerHTML = "Tabla1: Incremento del capital Q por la inversión en función del número de años (n)";
+    document.getElementById("capsalTaula").innerHTML = "Tabla 1: Incremento del capital Q por la inversión en función del número de años (n)";
     var matriu = document.querySelectorAll("tbody > tr"); //selecciono els table row (LES FILES DE LA TAULA)
 
     //TABLE HEAD
@@ -147,7 +147,7 @@ function FesTaulaInteresCompost() {
 //FUNCIO QUE EMPLENA LA TAULA D'INFLACIÓ AMB LES FUNCIONS CORRESPONENTS I POSA CAPSAL DE COLOR PERDUA
 function FesTaulaInflacio() {
     //CAPSAL TAULA
-    document.getElementById("capsalTaula").innerHTML = "Tabla1: Decremento del capital Q_inf por la inflación en función del número de años (n)";
+    document.getElementById("capsalTaula").innerHTML = "Tabla 2: Decremento del capital Q_inf por la inflación en función del número de años (n)";
     var matriu = document.querySelectorAll("tbody > tr"); //selecciono els table row (LES FILES DE LA TAULA)
 
     //TABLE HEAD
@@ -177,7 +177,8 @@ function FesTaulaInflacio() {
 }
 
 function FesTaulaInflacio_i_InteresCompost() {
-    console.log("FES GRAFIC INFLACIO I INTERES COMPOST");
+    console.log("Tabla 3: FES raula INFLACIO I INTERES COMPOST");
+    
 }
 
 

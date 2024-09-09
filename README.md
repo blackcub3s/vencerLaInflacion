@@ -331,7 +331,13 @@ Para ver como calcular el crecimiento del dinero de _Eulàlia_ y de Luís tenemo
 https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c8bc3cec5c37ad/scriptExponencialRecurrent.js#L10-L33
 
 
+## Crecimiento exponencial con ahorro recurrente sumando crecimiento por interés compuesto
 
+Este título puede ejemplificarse con tener una cantidad inicial de dinero a la que aplicamos un interés compuesto, por un lado; y por el otro, ir ahorrando con el salario tal y como lo hizo _Eulàlia_ en los ejemplos anteriores. En otras palabras, el crecimiento del capital en este caso vendrá dado por la suma de las funciones ya detalladas $$ Q(n) $$ y $$ E(n) $$:
+
+$$ Q(n) + E(n) = Q \cdot (1+i)^n + Q' \cdot \sum_{j=0}^{n-1} (1 + i)^{j}$$
+
+Esto es lo que queda recogido en la página web, apartado "Ahorro recurrente".
 
 
 
