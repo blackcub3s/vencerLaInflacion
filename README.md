@@ -23,6 +23,7 @@
    - 6.2 [Crecimiento del dinero de Luís (lineal, con ahorro recurrente)](#crecimiento-del-dinero-de-luís-lineal-con-ahorro-recurrente)
    - 6.3 [Crecimiento del dinero de Eulàlia (exponencial, con ahorro recurrente)](#crecimiento-del-dinero-de-eulàlia-exponencial-con-ahorro-recurrente)
    - 6.4 [Crecimiento lineal con ahorro recurrente vs. exponencial con ahorro recurrente](#crecimiento-lineal-con-ahorro-recurrente-vs-exponencial-con-ahorro-recurrente)
+   - 6.5 [Crecimiento exponencial con ahorro recurrente sumando crecimiento por interés compuesto](#Crecimiento-exponencial-con-ahorro-recurrente-sumando-crecimiento-por-interés-compuesto)
  
 
 
@@ -333,11 +334,11 @@ https://github.com/blackcub3s/vencerLaInflacion/blob/03f95a763e086fc2bfc3dd46c1c
 
 ## Crecimiento exponencial con ahorro recurrente sumando crecimiento por interés compuesto
 
-Este título puede ejemplificarse con tener una cantidad inicial de dinero a la que aplicamos un interés compuesto, por un lado; y por el otro, ir ahorrando con el salario tal y como lo hizo _Eulàlia_ en los ejemplos anteriores. En otras palabras, el crecimiento del capital en este caso vendrá dado por la suma de las funciones ya detalladas $$ Q(n) $$ y $$ E(n) $$:
+Si tenemos una cantidad inicial de dinero a la que aplicamos un interés compuesto, por un lado; y por el otro, año a año podemos tener una cantidad constante ahorrada a partir de nuestro salario, como lo hizo _Eulàlia_ en los ejemplos anteriores, entonces necesitamos una forma de calcular las ganancias del capital que va creciendo pero también las ganancias que de forma creciente hacen nuestro salario (de forma acumulativa). En otras palabras, el crecimiento del capital en este caso vendrá dado por la suma de las funciones ya detalladas $Q(n)$ y $E(n)$:
 
 $$ Q(n) + E(n) = Q \cdot (1+i)^n + Q' \cdot \sum_{j=0}^{n-1} (1 + i)^{j}$$
 
-Esto es lo que queda recogido en la página web, apartado "Ahorro recurrente".
+Esto es lo que queda recogido en la página web, apartado "Ahorro recurrente" (véase: [link](https://blackcub3s.github.io/vencerLaInflacion/ahorroRecurrente.html))
 
 
 
