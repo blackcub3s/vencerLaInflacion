@@ -109,6 +109,12 @@
         }
 
 
+        @media screen and (min-width: 1300px) {
+            #contenidorMissatgeGraficNoMostrat > p{
+                display: none;
+            }
+        }
+
         /* MEDIA QUERY PER A MOSTRAR-LO BÉ A UNA TABLET O A L'ORDINADOR QUAN T'APROPES
         -DIV DEL GRÀFIC A SOTA DE TOT.  DIV ESQUERRE (form) a dalt de tot. DIV DRET (taula) a la dreta.
         -HA COSTAT MOLT PODER MANEJAR EL GRAFIC DE PLOTLY I HEM HAGUT DE POSAR PADDINGS VARIABLES AMB LA MEDIA QUERY*/
@@ -151,6 +157,16 @@
                 grid-template-columns: 1fr;
                 
             }
+
+            .contenidorGrafic {
+                display: none;
+            }
+
+            #contenidorMissatgeGraficNoMostrat > p{
+                display: block;
+                color: white;
+            }
+
 
             /*MEDIA QUERY PER A MÒBIL*/
             @media screen and (max-width: 800px) {
@@ -364,6 +380,10 @@
 </div>
 
 
+<div id="contenidorMissatgeGraficNoMostrat" style="display: flex; flex-direction: column; justify-content: center; align-items: center; position: fixed; bottom: 0; width: 60%; left: 50%; transform: translateX(-50%);">
+    <p>El gráfico no se puede mostrar en la versión de móvil. ¡Por favor, visualízalo en el ordenador!</p>
+</div>
+
 
     
     
@@ -371,6 +391,8 @@
 
 
 <script src="scriptExponencialRecurrent.js"></script>
+
+
 
 </body>
 </html>
