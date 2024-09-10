@@ -258,6 +258,7 @@ function main() {
     } else {
         fesGraficInteresCompost_i_graficEstalviRecurrent();
         FesTaula_Q_E_i_sumaQ_E();
+        fesScrollAtaula_enMobils();
     }
 }
 

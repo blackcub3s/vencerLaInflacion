@@ -137,8 +137,8 @@
             }
             
             .div-dret {
-                padding-top: 5em;
-                padding-bottom: 5em;
+                padding-top: 6em;
+                padding-bottom: 10em;
             }
 
             th, td {
@@ -150,12 +150,20 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 
-                
             }
 
+            /*MEDIA QUERY PER A MÒBIL*/
+            @media screen and (max-width: 800px) {
 
+                table {
+                    font-size: .7em;
+                }   
 
-
+                #capsalTaula {
+                    font-size: .7em;
+                }
+                
+            }
 
 
         }
@@ -280,7 +288,7 @@
     
     <div class="div-dret"> 
 
-        <table>
+        <table >
             <caption id ="capsalTaula"></caption>
             <thead>
                 <tr>
