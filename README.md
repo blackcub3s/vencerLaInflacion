@@ -182,7 +182,7 @@ En este gráfico la importancia está encontrar el momento en que se produce el 
 
 Como decíamos en el apartado anterior, el punto de corte entre las funciones $Q_{g}(n)$ y $Q_{p'[Inf]}(n)$ es importante porque el número de años (variable $n$) al que ambas funciones cortan es el número de años que hay que estar invertiendo el dinero con interés compuesto $i$ para no perderlo por una supuesta inflación constante $i'$.
 
-Para encontrar el punto de corte podríamos tratar de sustituir los valores $i$ e $i^{'}$ tanto en la función que hemos visto para las ganancias de los intereses ( $Q_{g}(n)$ ) y para la función de pérdidas producidas por la inflación mediante la FORMA 1 de cálculo ( $Q_{p[Inf]}(n)$ ), respectivamente. Igualándolas podemos intentar obtener n en función de $i$ y de $i^{'} ( $n(i,i^{'}) )$ manipulando algebraicamente:
+Para encontrar el punto de corte podríamos tratar de sustituir los valores $i$ e $i^{'}$ tanto en la función que hemos visto para las ganancias de los intereses ( $Q_{g}(n)$ ) y para la función de pérdidas producidas por la inflación mediante la FORMA 1 de cálculo ( $Q_{p[Inf]}(n)$ ), respectivamente. Igualándolas podemos intentar obtener n en función de $i$ y de $i^{'} ( $n(i,i^{'})$ ) manipulando algebraicamente:
 
 $$Q_{g}(n) = Q_{p[Inf]}(n)$$
 
