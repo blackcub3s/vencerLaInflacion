@@ -139,9 +139,11 @@ La idea de nuestro programa es hacer una aplicación web que dada una inflación
 
 3)  Un gráfico que represente nuestras ganancias año a año, por un lado; y nuestras pérdidas por inflación en valor absoluto también año a año, por el otro. Además, sería interesante que mostrase una aproximación al punto de corte de ambas funciones de forma análoga a como lo hace google con su sistema. Este punto tres es algo inédito que no hemos visto en ninguna función de cálculo para la inflación. Y hay que añadir algo MUY importante: nótese que crece más rápido la función que incrementa el dinero con interés compuesto ( $Q(n)$ ) que no lo rápido que decrece la función que muestra el decrecimiento por inflación ( $Q_{inf}(n)$ ). Por lo tanto, y por poner un ejemplo, con un interés medio del 3 por ciento que se puede obtener ahora mismo en depósitos españoles podemos vencer una inflación del 6 por ciento, en 17 años, si lo hacemos bien tomando beneficios del interés compuesto.
 
+4) Un gráfico que muestre como crece el capital inicial invertido teniendo en cuenta también el ahorro salarial que año a año añadimos a esta piscina de inversión. 
+
 ## Gráfico de variación del capital por inversión
 
-En la aplicación web queremos mostrar $Q(n)$, de forma análoga a como lo muestra google. Para $Q = 100 000$ euros de capital inicial y un interés compuesto $i = 0.03$ (3%) la función exponencial en el buscador queda de este modo:
+En la aplicación web queremos mostrar $Q(n)$, de forma análoga a como nos lo muestra el generador de gráficos de google. Para $Q = 100 000$ euros de capital inicial y un interés compuesto $i = 0.03$ (3%) la función exponencial en el buscador tiene este aspecto:
 
 ![No mostra exponencial](imagenes/image.png)
 
