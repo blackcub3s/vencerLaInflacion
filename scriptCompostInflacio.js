@@ -23,7 +23,7 @@ function Q_p(n) {
 function FesGraficInteresCompost() {
     // POSEM LES ETIQUETS DEL GRÀFIC
     var layout = {
-        title: 'Incremento del capital inciial',
+        title: 'Incremento del capital inicial',
         xaxis: { title: 'n (número de años)' },
         yaxis: { title: 'Q(n) (mi capital)' },
         width: AmpladaGrafic , // Change the width to your desired value
