@@ -131,7 +131,7 @@ $$Q \cdot (1-i^{'})^n \lt \dfrac{Q}{(1+i^{'})^n}$$
 
 ## Cálculos
 
-La idea de nuestro programa es hacer una aplicación web que dada una inflación entrada por el usuario y un tipo de interés que el mismo pueda ganar con sus inversiones, muestre:
+En la landing page de la aplicación web que hemos desplegado [link](https://blackcub3s.github.io/vencerLaInflacion/ahorroRecurrente.html) hemos conseguido que dada una inflación entrada por el usuario y un cantidad inicial, o bien una dada de interés al que se puede hacer rendir el dinero y una cantidad inicial de partida muestre:
 
 1) Un gráfico de como <underline>incrementa el capital</underline> con el <strong>interés compuesto</strong>.
 
@@ -139,27 +139,29 @@ La idea de nuestro programa es hacer una aplicación web que dada una inflación
 
 3)  Un gráfico que represente nuestras ganancias año a año, por un lado; y nuestras pérdidas por inflación en valor absoluto también año a año, por el otro. Además, sería interesante que mostrase una aproximación al punto de corte de ambas funciones de forma análoga a como lo hace google con su sistema. Este punto tres es algo inédito que no hemos visto en ninguna función de cálculo para la inflación. Y hay que añadir algo MUY importante: nótese que crece más rápido la función que incrementa el dinero con interés compuesto ( $Q(n)$ ) que no lo rápido que decrece la función que muestra el decrecimiento por inflación ( $Q_{inf}(n)$ ). Por lo tanto, y por poner un ejemplo, con un interés medio del 3 por ciento que se puede obtener ahora mismo en depósitos españoles podemos vencer una inflación del 6 por ciento, en 17 años, si lo hacemos bien tomando beneficios del interés compuesto.
 
-4) Un gráfico que muestre como crece el capital inicial invertido teniendo en cuenta también el ahorro salarial que año a año añadimos a esta piscina de inversión. 
+Asimismo, dentro del apartado ahorro recurente [link](https://blackcub3s.github.io/vencerLaInflacion/ahorroRecurrente.html) hemos conseguido que: 
+
+4) Dado un capital inicial, una cantidad estimada de ahorro anual con nuestro salario y el porcentaje de interés que prevemos que podemos mantener a lo largo de los años, muestre un gráfico con diversas líneas. Entre estas línias habrá una que muestre como crece el capital inicial invertido, otra que muestre el ahorro salarial que año a año podemos conseguir y como este ahorro aumenta también por el interés compuesto y, entre otras, la suma de ambas mostrando la capacidad máxima de ahorro sumando todos los factores (tanto el capital inicial como su interés compuesto como el ahorro anual y el interés compuesto de los ahorros que crecen porque añadimos más cantidad a la piscina, no solo por el interés).
 
 ## Gráfico de variación del capital por inversión
 
 En la aplicación web queremos mostrar $Q(n)$, de forma análoga a como nos lo muestra el generador de gráficos de google. Para $Q = 100 000$ euros de capital inicial y un interés compuesto $i = 0.03$ (3%) la función exponencial en el buscador tiene este aspecto:
 
-![No mostra exponencial](imagenes/image.png)
+![No mostra exponencial de mostra](imagenes/image.png)
 
 Y en nuestra aplicación web queda así:
 
-TO DO
+![no mostra exponencial de l'app](imagenes/incrementPerInteresCompost.png)
 
 ## Disminución del capital por inflación (sin invertir el capital)
 
 En la aplicación web queremos mostrar la función $Q_{inf}(n)$, como google. Igual que en el caso anterior, para 100 000 euros de capital inicial y para $i^{'} = 0.06$ (inflación del 6%) en el buscador queda:
 
-![no mostra reduccio exponencial](imagenes/image-1.png)
+![no mostra reduccio exponencial de mostra](imagenes/image-1.png)
 
-Y en nuestra aplicación web (en este caso para una cantidad de 2queda así:
+Y en nuestra aplicación web en este caso queda así:
 
-![no mostra reduccio exponencial](imagenes/disminucioPerInflacio.png)
+![no mostra reduccio exponencial de l'app](imagenes/disminucioPerInflacio.png)
 
 
 ## Representación del gráfico de incremento de renta vs. gráfico de decremento inflacionario
